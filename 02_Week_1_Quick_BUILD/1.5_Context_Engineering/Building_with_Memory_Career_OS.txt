@@ -1,0 +1,108 @@
+Video Title: Building with Memory; Career OS
+Duration: 16:01
+
+Transcript:
+
+00:00, Hey, everyone. So, today, I wanted to actually chat about, using memories in your solutions. For this, we're going to use the Google AI Studio.
+00:11, And what I thought was, like, what if we can build, like, a self-remembering career agents for you guys? Like, so this is something that, can help you, manage your career, and remember the interviews that you're taking, and things, things like that.
+00:27, So, let's actually first fire it up, and then we'll come back and look at this, experience.
+00:33, So, alright, let me just kind of, like, copy-paste this thing, go to the canonical…
+00:40, get this from here, and come and paste it. I want you to use the Gemini 3 Pro. If there is something faster available by the time you're watching it, just use that.
+00:51, But it's important that you use a strong model.
+00:54, Alright, let's take a look at what the prompt is.
+00:57, So, first of all, we are asking you to kind of build a chat interface. So, we are trying to build a career agent, which helps us, like, in prepare for an interview, or, like, apply for jobs and whatnot.
+01:08, It says, build a chat GPT-like chat interface with settings page for the following. Allow uploading of PDF images ETC, so I should not only be able to get a chat, I should be able to kind of upload those.
+01:18, Allow me to brainstorm what I want to do about my career, and use the Gemini 3 Pro Preview model to answer. So I'm kind of saying, like, what applications, what are the features?
+01:30, But I'm also saying that sometimes Gemini actually uses just a lower-end model, and I really want to not waste my time. I want… rather use the Gemini 3 Pro preview. In the start, give some choices of things the users can do.
+01:44, And with every response, give predictive pills that they can continue the conversation. We talked about predictive pills before.
+01:50, In this case, I wanted to be an agent. You are a product career OS, a strategy career agent for product manager. The objective is.
+01:59, Manage the user's job search like a product lifecycle. You must maintain a persistent JSON state object, PM memory, throughout the conversation.
+02:08, the memory… so there is actually a content around what memories are, but we are basically going to divide the memory into three parts, right? So, instead of just using the model as is, with the generic information with system prompt, I want to have three types of memory, long-term, mid-term, and short-term memory.
+02:27, And so, long-term memory should remember things like, what is the target role that I'm going after? For example, senior PM, group PM, a domain name, which industries that I want to apply on, like, what are some of the non-negotiable, like remote only, or some of the other aspects of it.
+02:43, And what are my superpowers? Like, so these are the things that you can store. So you… the key here is to actually define
+02:50, What exactly you want, so that system knows to kind| to look for that.
+02:55, Alright? And then, you can see that the mid-term goals are, sorry, mid-term,
+03:02, Pipeline is the career opportunity, current opportunity, gap analysis, approach, strategy of status, defining cold email, prep for phone screen. All of these things are midterm. And the short term is last action, the immediate output, wrote over the cover letter, like, it could be the chat thread and others.
+03:20, And, I wanted to kind of have some kind of safety check and others. Plus, I said that no login, no database, just to make it easier, if you guys want to expand it to kind| to have login, have database, and all those things, feel free to kind| to do that, just not the focus of this specific video.
+03:37, For example, if you're searching for a job for product manual when you are in space, have an agentic loop to kind| to get the right answers. Basically, it means that not just be a product, but I think be an agent overall, and we'll talk about that.
+03:48, In the future weeks. So, looks like it did make Product Career OS, Gemini 3 Pro powered. The goals are not set. It is giving me some initial
+03:58, prompts, you can see I've set here is, like, allow…
+04:02, In the start, give some choices for things I can do, so analyze my resume gap, find remote PM roles, mock interview for senior PMs.
+04:10, let's just do this, right? So, I want to do a mock interview for senior PMs, and it should actually just kind| to go back and, present me prompts that I'm able to do.
+04:20, In the future, you should also be able to kind| to change that to Opus, Sonnet, some of the other aspects of it, and all of those things are there. You can see it gives me a follow-up interview.
+04:32, Actually, I'm not interested in this, so what I'm gonna do,
+04:35, Well, let's do reset session. What I'm gonna do is…
+04:40, Set my goal, to be, Director… product. Management.
+04:51, In the Bay Area, right? So you can just set this goal, and hopefully the memory gets set right here, which it says that, you know, the long-term memory is being kind| to, like, happening.
+05:05, And let's see if it actually happens.
+05:10, Okay, there you go. You can see that it has automatically identified the memory. So the way it works is, like, the system, when it kind| to achieves… understands that there is something worth remembering, it will go ahead and kind| to do it. Let's go to the memory setting and see what they have done. It actually has given the JSON
+05:27, And it can see that it has specified the target role, domain is unspecified, non-negotiables are not there. So let me just kind| to say domain. Domain…
+05:39, is fintech… is where I'm, looking for. My name is Vikas Runta.
+05:50, I'm just kind| to making it up at this point. And then let's see what other things are there. So it's like…
+05:56, I, let's say if I find an article about Google interviews, Google… product manager, interview.
+06:08, So, let's say if I find this article and I really like it.
+06:12, What I can do is, I can take this.
+06:16, And let's see, I would love to kind| to see if it actually can remember that.
+06:23, Alright, let this one finish. FinTech spelling is wrong. But you can say it says, fintech AI Focus. Let me just go to my memory. You can see that it has actually added FinTech.
+06:37, As this thing. I don't know if it has added my name, so that is one thing that maybe I will kind| to improve over here, is like, hey, accept more fluid memory.
+06:47, So… but at this point.
+06:50, I can actually draft an AI fintech review summary, list top 5 fintechs hiring for AI. So, it can actually look for the Bay Area hiring, because it is using memory. At this point, it should only give me
+07:02, the Bay Area hiring, because I believe that the, non-negotiable, it does say, the role is Director Plus in the Bay Area.
+07:10, And since we are using Gemini, it can actually search on the web. So I'm supposing that it'll bring a lot of the Bay Area-based hiring only here. So let's take a look.
+07:28, Alright, it finished that.
+07:31, Okay, first of all, it remembered my name, Vikash, right? Like, so we say, Vikash, the market is shifting in your favor, we are seeing, bifurcation of AI roles in fintech.
+07:42, The product builders, risk management is giving me certain things. The top 5 director roles matching GenAI, it gives me rippling. So, the thing to see is, like, these responses are…
+07:53, Not just generic. They're giving me specific roles, and it didn't give me the URL, so I can always ask to, like, include the URL, but I think let's take a look.
+08:03, It is giving me… Why the agentic played the hook?
+08:07, the PayPal Senior Director, so it is giving me all director-level roles. Intuit, Director, SoFi Director, Senior Director,
+08:17, Remember, can you add the URL?
+08:21, To apply for these roles.
+08:27, And you can see that it starts to become… very quickly, it will become very personalized. This is what we kind| to hear about when you build memory on ChatGPD and others, is, like, you actually specify that user database and kind| to go build out this memory for you.
+08:44, Alright, so this memory setting actually applies for these things. You can see current opportunities are rippling PayPal into it, so the memory can be significantly enhanced.
+08:53, And let's see if I click on any one of these.
+08:58, Okay, just taking me to Rippling's, this thing, PayPal career. So, you can literally ask to see, kind| to show me the specific roles and things like that. Alright, let me go back and, see if I can actually teach this to kind| to, like, understand what are the different, types of job interview looks like. So.
+09:16, What if I say, hey, I found this
+09:20, a good way to prepare for Google Product Manager.
+09:27, interview.
+09:30, Can you remember the, framework?
+09:36, Also, list out the summary of the framework for me.
+09:45, Okay.
+09:45, Alright, so this is just gonna go ahead and do it. We'll come back as soon as it's done.
+09:51, Alright, looks like it finished. Actually, let me just collapse the left-hand side a little bit.
+09:57, So, I've indexed the exponent framework into the midterm strategy, so it has stored that strategic note. While this framework is the gold standard for PMs, as a director candidate, you must adopt it.
+10:09, You cannot just follow the steps. You must demonstrate authority, yada yada yada yada, and it kind| to gives me the framework that it has proposed, like, circles. So, looks like it is using the circles framework from Lewis Lin. Again, I'm not recommending that this is the right framework, we just chose one, and kind| to went with that, and
+10:29, now let me ask, if I have to ask, and I think one of the improvements that we have to kind| to do, and this is something that you guys can do, allow you to kind| to do new tabs, or new chat interfaces.
+10:39, Help me?
+10:43, Help me answer… the question…
+10:51, for Google, interview.
+10:55, Improve YouTube.
+11:00, use the framework. It should automatically use the framework. So let's see if it actually does use the framework or not. In the meantime, I'm going to go to the memory setting, and you can see if it has, adaptive framework. It says exponent Google Director Adopted.
+11:18, And let's see what it actually has.
+11:22, Part of your job is to kind| to make this memory good. Like, look, the first prompt is not gonna make the memory good. What you really want to do is you make them want to make the memory good, you want to understand your specific application, and based on that, make the memory good. So in this particular case, because this is the most common,
+11:41, Simulation Mode Google Director interview, so, it has provided… I don't know what…
+11:52, Did you use any framework?
+11:57, for Google From the memory.
+12:05**, So I can't wait to see what you guys end up building from this.
+12:09**, And, like, can you actually build a… you can see the current focus is Google, YouTube, FinTech AI roles, but I think, what can you guys build?
+12:17**, Which is gonna be super important. Yes, I explicitly used the exponent circles framework from your midterm memory, but I applied the director adoption we discussed. So it actually remembers this, and you can see the format is not good. So let's add a couple of enhancements. We can say…
+12:34**, The format is broken.
+12:38**, Let me take a screenshot of this.
+12:46**, As well as, the memory can be more fluid.
+12:58**, Lastly, Can you give a way to start?
+13:03**, New chat threads.
+13:06**, Okay? I'm just gonna go ahead and say that so that it can fix some of the formats here, as well as kinda, like, makes the memory fluid, so we'll come back once it's done.
+13:18**, While it's doing it, highly recommend that you guys actually go build this.
+13:22**, I think this can actually help you with doing a better interview prep yourself, just this itself would be super valuable. And then, over time, look for how can you change the model so things like more powerful, like Opus 4.5,
+13:37**, How can you provide better memory so that it remembers for each of the, interview types, like Google and others? It allows you to kind| to, like, remember and, put the right, prompt.
+13:51**, In the meantime, let's just go to… PM role.
+13:56**, Bay Area. I'm just gonna take the first, job that kind| to comes, comes up here.
+14:03**, dice… And, just copy this and say…
+14:15**, Help me.
+14:16**, prepare for this role. If I post the, like, the description, sometimes you can paste the URL as well, like, because Google is able to search that, that'd be great. You can see the memory actually vanished because I refreshed it, and I'm using the local storage. If I was using a database, that won't be the case.
+14:34**, And so it has done that. I don't see a way of,
+14:38**, I still don't see a way of kind| to starting a new chat thread here, so if… but, you know, the output is a little bit better. This is a technical PM role. It says long-term objective is a technical product manager. It has already kind| to, like, achieved that. Maybe that was not my goal, but it just kind| to sees that.
+14:56**, So I can't wait to see what you guys build, and if you actually use this to kind| to, like, improve your, mocking or, like, tracking your interviews and stuff like that.
+15:06**, So, good luck. This hopefully should give you a great idea of, like, why you can take a chatbot and really, really make it effective, for you, if you are using it to kind| to, like, really do things like, you know, memory. Some of the other use cases for memory would be
+15:24**, If you're, building, like, a meal planning app, you can, memory can remember your allergies, it can remember your preferences, or what restaurants that you buy to, like, what are the, websites that you can buy it from.
+15:37**, If you are doing, doing my, maybe a trip planning app, then you can remember your preferences. Like, this person really prefers to kind| to go into,
+15:48**, And I'll see it versus not, and so the memory is really what personalizes the chat, and it goes a really long way to remember and bring that out. All right, thank you.

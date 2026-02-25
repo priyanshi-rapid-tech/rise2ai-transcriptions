@@ -1,0 +1,59 @@
+Video Title: Building a classfier using an LLM
+Duration: 09:21
+
+Transcript:
+
+00:01, Right, so let's talk about building ML classifier, mainly using generative AI models. So, look, classification is one| to the big use cases for machine learning, it has always been. There are so many different places where we need to classify something as 1 or a 0.
+00:19, It could be as simple as classifying a picture with a dog or not a dog. It could be a hot dog or not a hot dog. It's famously seen by the Silicon Valley series.
+00:31, That, if you have not seen it, highly recommend just search for Silicon Valley Hot Dog Classifier, or click on this link, and take a look at why this was, so…
+00:41, so cool, that it made it part| to the Silicon Valley series. But broadly, today, what we want to see is, like, if there is any kind| to an input given, and in this case, for example, a spam detector.
+00:54, Where we say that the input text is a certain thing, the classifier can classify if it is a spam or not. It can go as an SMS and an email. A dog can be classified as a dog, a car can be classified as a car.
+01:07, Or not a car. And as you do that, it requires, typically has required ML scientists and others, or applied AI guys, to kind| to build the classifier, train it with specific datasets, and then see how the accuracy can be improved.
+01:23, With the advent| to generative AI, we are able to do all| to that with a single prompt. So, in this particular case, let's take a look. If we have to build an SMS classifier, where we have given an input text, how can we classify that as a spam or not spam?
+01:41, To read a little bit more about classification, I also recommend reading this article, from WANDB that is linked there, but LLMs are machine learning classifiers, where it actually talks about, a little bit about, like, what a classifiers and how it kind| to goes about,
+02:00, doing some| to these things. So it's… it's a pretty good read for folks, who are interested in this.
+02:08, Right? So, what I'm gonna do is, in this particular case, what I recommend is you start with just opening one| to the chat engines, for example, ChatGPT, or MetaAI, or Claude, or Gemini, and follow along and just prompt it as, as simple as this. So, to build a classifier.
+02:27, What you need is one system prompt which says, act as an SMS text classifier, and respond with every one| to those texts.
+02:36, I give you with just words spam or ham, and nothing else. So what I'm saying is, if I go to ChatGPD, and I copy and paste this, whatever text I give, it will generate.
+02:49, as either spam or ham. So in this particular case, it is actually going ahead and, doing, you know, doing it. I have the ChatGPT-5.
+03:01, So it is using this as a thinking mode, so I'm gonna actually turn off the thinking mode.
+03:07, Just because I want this thing to be faster, but you're happy, you know, feel free to kind| to use that. Now, if I send a text here, for example.
+03:18, Hello, how are you? It can either respond with spam or a ham, right? In this particular case, ham really means that, it's good for vegetarians, including
+03:31, you know, I don't need ham either, but it may seem not appropriate, but this is typically industry standard around, like, spam or ham. So, hello, how are you? It's good. How about if I say something like, do you…
+03:47, want.
+03:49, free, Bitcoin.
+03:53, Right? And this should ideally be, coming out| to the spam.
+03:58, And it came out as a spam. What I can do is, actually, now I can, so you can see that what we have done is already built a spam or a HAM classifier. One| to the things that we can do is we can also say, give me
+04:13, 20 examples.
+04:15, Text with spam.
+04:18, And examples in it.
+04:23, don't classify, so first I wanna… Just generate.
+04:27, This text, 20| to them.
+04:31, And, so it has given me 20 examples. Now I can just go ahead and say, go ahead.
+04:38, and classify… Each one…| to them.
+04:44, So it should just go ahead and kind| to, like, classify that. You can say spam, ham. It's kind| to hard to read, so I can say classify
+04:55, them, and, respond with original… Message.
+05:02, And, classier.
+05:04, an output.
+05:06, That's JSHAN. So, to make it more friendly with, with the coders, we can actually ask you to generate this into a JSHON. In this particular case, you can say, hey, are we still meeting at 6PM for dinner? Seems like a ham. Congratulations, you have won $400 or $500 in Walmart gift card. Click here to claim your…
+05:24, Yada yada yada, this is a spam, right? So it has gone ahead and… so a classifier, that would have taken us a really long time to kind| to kind| to build. We are able to build it. We saw this using ChatGPD.
+05:36, But I think if you're actually building a spam classifier, you're not gonna be, doing this in ChatGPT. So in this case, what I will do is, you can… you would use a playground, like OpenAI Playground or Google AI Studio, to do that. So, let me show the same thing, using Google AI Studio. In case| to Google AI Studio, I've selected the Google Flask Latest, let's leave it at that.
+05:59, I'm gonna change the system prompt to this.
+06:02, Which is act as SMS text classify and respond everyone to the text that is given. So, what I would say is I'm gonna turn off the thinking mode for now. I can turn it on if I really wanted to, but if I give it a text now, so let's just take one| to the texts from here.
+06:23, And see if it responds with a spam or a ham.
+06:27, It says HAM. Let's take another text here.
+06:32, And, this should say spam.
+06:35, spam. What you can see also is I can turn on thinking mode over here, right? And, which will make it think a little bit longer. So, let's just give the same text here. It may actually think, models can decide how much to think and when to think.
+06:54, But more interestingly, just like we did the JSON output here, to get the same output from the AI Studio, all I have to do is check the structured output. And so when I take an example again.
+07:07, Maybe here, I can take this one example, and let's start a new chat.
+07:16, I paste this. It can… it will give me a JSON output. It's, first| to all, it is thinking, and it gives me a JSON| to ham. I can actually… I just don't want the response like this, I want the response with the text.
+07:32, Include the original, text, SMS, the response…
+07:41, Right? And let's take another example here. Get people, iPhone, a free iPhone. It should be…
+07:52, coming out, first| to all, it is thinking, and you can see classification is spam, and original SMS was this, and if you look at the thinking,
+08:04, It's thinking through different aspects| to why this should be spam or not. And if you're happy with this, you can just hit Get Code, and actually either use the REST or Python or anything else, and you can see that you're able to deploy this model.
+08:16, As a spam builder, ready to go, because it already includes… so let me show you the Python code here. It already includes the prompt that you wanted it gonna have.
+08:27, And it has things like, you know, structured output and all those things are checked in, and then you are able to just use that and generate this and deploy this model.
+08:39, So, with that,
+08:43, With that, let's, we'll come back to looking at some| to the advanced ways to kind| to see how we can improve the classifier, but maybe question back to you.
+08:51, what would you do differently to improve the classifiers in such a way that the quality| to the response improves? It could be… or there is some other factor in which the response improves. For example, it could be the cost.
+09:07, And it could be the latency, or it could be some other aspects| to it. So, love to kind| to hear how you would go about doing that. Thank you.

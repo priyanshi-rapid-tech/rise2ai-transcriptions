@@ -1,0 +1,34 @@
+Video Title: What are agents? Quick Overview.
+Duration: 04:50
+
+Transcript:
+
+00:00, All right, folks, so quickly, I want to talk about…
+00:04, The agentic shift that is happening, and, like, as you move from chatbot.
+00:09, to, building agents, how should you kind of think about this?
+00:13, So, very quickly, people's expectations are changing. What it means is that people really want to go from, like, intention to intent.
+00:22, And, what it really means is, like, you want to, instead of actually defining.
+00:28, what you want, right? Like, or what, when, and where, exactly telling in a chatbot which is what you will do.
+00:36, You broadly let us know the high-level intent.
+00:40, Pardon me there, the left-hand side should really be, not, instructions, but, sorry, intent, but instructions. So let me just update that, really quick here.
+00:54, So, it really just kind| to goes from instructions to intent.
+00:59, Right? Which is, AI will figure out everything, what to do, what not to do. Let me give you some examples, right? Like, so, future of personal… let's take some examples to make it clear. In the future of a personal life, you know, when you say, plan me a 7-day trip for Paris.
+01:15, Your agent will actually know your preferences, family's preferences, checks all your calendar, books all your stuff, and actually, goes ahead and kind| to books the flights for you, kind| to books the hotels for you, not just kind| to providing you a summary of what it can do.
+01:32, If you want to build something like the future of work, the agent will enter the general… you know, you'll just say things like, hey, I want to enter the German market. It will not only just create a plan for you, because agents can take action.
+01:46, It can actually create, like, multiple agents, for example, the legal agent, the marketing agent, the logistic agents, together, they can generate, all the content needed, all the… it can start actually collaborating with lawyers and things like that, and can do things.
+02:02, So, fundamentally, what is an agent is…
+02:06, you need to kind| to, like, well, the definition of an agent is anything with agency. Agency is something that, you know, you, a piece of software, tool, product, person, human.
+02:18, or animal. Anyone can be an agent, as long as they have an agency. In this particular case, of course, we're talking about software. In the future, we may talk about robotics.
+02:28, But an agent is an entity with agency that acts with intentions to achieve a specific goal, right? Like, so, the cool thing about agents over just a chatbot is agents try to achieve a goal, versus a chatbot just answers… try to answer a question. And this is the big shift.
+02:45, From, instruction to intent.
+02:50, Let's take a couple of more examples around this. Like, so what it means is that agent is actually nothing but an LLM plus tool, but with a goal, and it can actually loop through, till the, till the goals are met, or agent kind| to gives up.
+03:05, Right.
+03:06, Some example is, if you are building an HR time off request product, then you may actually… LLM, you can say you have 15 days of PTO remaining, agents will actually not only just
+03:17, look it up and say, like, oh, looks like you want to file a PTO, it will identify the right days to kind| to file it, go file the PTO, it will update your calendar, it will notify your team.
+03:27, It kind| to does all of that task end-to-end.
+03:30, Same thing, meeting assistant, like, if you look at it, like, LLM versus Agentic, LLM will just say, here's a summary of what happened, and, you know, we built recently one. And Agentic will actually go ahead and update the CRM with the information. Maybe it will schedule a follow-up.
+03:46, It will send the recap email, and this is where it really starts to become, super interesting.
+03:53, Shopping products and search, same thing. It's like, LLM and Agentic. Here's the 5 laptop options. Instead of providing you the list, it can actually go ahead and do the job for you. So Agents literally want to do the job for you, LLM wants to propose how to do it best.
+04:09, Last example here is LLM, is, healthcare, is, may try to kind| to give you some information and say, hey, you may have to kind| to visit a doctor. In this case, you may still say go visit a doctor, but actually, it can help you book an appointment, sends medical history adds to calendar.
+04:26, arrange the transportation. Well, one more for the trip. Instead of, saying flights to Tokyo are cheapest on Tuesdays, just providing information, which is valuable.
+04:36, But beyond providing information, can it take action, like books, flights, and hotels, arranges visa, adds to calendar, order travel insurance? With that, I think let's go back, build some agents, but I just wanted to kind| to show you guys this.

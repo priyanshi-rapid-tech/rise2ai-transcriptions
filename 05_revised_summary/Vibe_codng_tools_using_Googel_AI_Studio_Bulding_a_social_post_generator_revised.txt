@@ -1,0 +1,34 @@
+# Lesson Summary: Vibe Coding with Google AI Studio
+
+### What are we building?
+We're exploring **Google AI Studio**, a massive "power-tool" for AI development. We'll be building a **Cross-Platform Social Media Generator**. This app takes one idea and simultaneously creates a long-form post for LinkedIn, a punchy tweet for X, and a hashtag-heavy visual post for Instagram—all while generating custom AI images for each platform. 
+
+### Quick thoughts before you start
+*   Why would a product manager use Google AI Studio instead of just asking ChatGPT to write their social media posts?
+*   How does "Agentic Debugging" (where the AI fixes its own errors) make you more confident in building complex software?
+
+### Expert Vocabulary
+*   **Google AI Studio:** A professional development environment that uses Gemini models. It's famous for having a "Deep Pocket" (large context window), meaning it can remember a massive amount of code at once.
+*   **Agentic Debugging:** A feature where the AI doesn't just show you an error; it automatically detects the mistake, analyzes it, and writes the fix without you asking.
+*   **Gemini 1.5 Pro:** Google's "smartest" model, best for deep reasoning and complex coding tasks.
+*   **Visual Annotation:** A tool that allows you to draw or write comments directly on your app's preview to tell the AI, "Change this button" or "Move this image."
+
+### Key Takeaways
+1. **Unmatched "Memory."** Because Google AI Studio has a huge token window, you can build much larger and more complex apps than in most other tools. It won't "forget" the beginning of your code as your project grows.
+2. **Built-in Image Power.** Unlike some builders that only handle text, AI Studio can easily integrate Google's image generation models, allowing your app to create custom visuals on the fly.
+3. **The "Self-Healing" App.** AI Studio excels at fixing its own bugs. If it tries to run the code and sees a "Syntax Error," it will work in the background to repair it until the app loads successfully.
+4. **Google Cloud Integration.** While slightly more technical to set up, AI Studio is directly linked to Google Cloud, making it the top choice if you want to ship an app that is "Enterprise Ready."
+
+### Reflection Questions
+*   How does the "Tone" of the output change when you ask the AI for a "Witty" post versus a "Professional" one?
+*   If the AI "thinks" for a long time (e.g., 200 seconds), what do you think it is doing in the background to ensure your app is high-quality?
+
+### Your Action Item
+Go to **aistudio.google.com**.
+1. Use the "I'm feeling lucky" prompt or type: "Build a cross-platform social media generator. I want it to create unique text and images for LinkedIn, Twitter, and Instagram from one single idea."
+2. **Connect your API Key** (Google will guide you through this).
+3. Test your app with the idea: "AI coding tools are the future of product management."
+4. Use the **Annotation Tool** to draw on the preview and ask the AI to "Make the fonts more modern."
+
+### In short...
+Google AI Studio is the "Pro Grade" choice for vibe coding. It combines deep intelligence with advanced debugging, making it the perfect home for your most ambitious AI projects.

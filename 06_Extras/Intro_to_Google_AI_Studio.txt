@@ -1,0 +1,61 @@
+Video Title: Intro to Google AI Studio
+Duration: 10:15
+
+Transcript:
+
+00:01, Hello?
+00:02, I want to talk about the Gemini and Google AI Studio. Basically, it's a place for you to use Gemini and experiment with it. It's a playground from Google, and it's a pretty good tool for experimenting with anything related to the Gemini.
+00:20, To get to that, if you just search for Google AI Studio, you will be taken here, again, AIstudio.google.com.
+00:28, And, what you want to do is you want to go to the chat interface over here, right? Like, so as you go in there, this is the place that allows, Google actually allows you to kind| to use any| to the Gemini models.
+00:40, and play with the configuration, things like temperature, or like settings, or system prompt and others, and really figure out what works for you or not. So this is a pretty good way for you to kind| to build any| to the systems.
+00:53, And because when you use Gemini directly and provide a prompt, you don't control the system prompt there. You also don't control the temperature and a lot| to the other aspects| to it. And ultimately, what you're able to do is, using Google AI Studio, you're able to refine your prompts, refine your settings, and once you're happy with them.
+01:11, you will be able to kind| to go ahead and deploy the code by getting the code right here from the Google AI Studio. So we're going to look at the following things today. One is how the interface, Google AI Studio interface works.
+01:24, What are ways to kind| to select the right model? What are the ways to kind| to prompt the model, the system prompt the model appropriately? How do you kind| to go about setting some| to the configuration, like temperature and structure output and others?
+01:36, And ultimately, once you are happy with the solution, how do you kind| to go about getting the code so that you are able to kind| to go ahead and deploy it?
+01:44, So…
+01:46, To start with, as you go here, you should go to the chat interface and just note that these things are dynamically changing every day, so your interface may look a little bit different, but the concepts should remain the same. So let's kind| to walk through this and see what's going on. Once you look at the chat, on the right-hand side, you will see there are multiple
+02:04, different options available. On the top is the, is the option to kind| to choose the right model. So if you click on the flash latest, and it may start with whatever
+02:15, else is there. You can choose all the models that are available. The good thing about this is it kind| to gives you the price as well, like, how much it is. The Nano Banana is the image generation, model, but the 2.5 Pro, for example, is input, input and output token is, like, $1.25 for the input.
+02:34, And, $10 for the output model, right? So, but you can, if you compare that with the flash, it's, you can see that, all context length, the input and output is significantly low, so $2.50 for the… versus $10, so one-fourth| to the price.
+02:52, But if you go to the flight flashlight latest, it's 40 cents. So instead| to $10, it's actually just 40 cents over here. So it's able to kind| to show, the prices right here. That kind| to gives you a sense| to why you should be choosing one. Like, if you're… if you can do the job with the flashlight latest.
+03:11, then you shouldn't be using the 2.5 Pro. But if you need that next version| to it, you should use it. For our purpose, we'll just use the Gemini Flash Latest. It's just fast and easy for us to kind| to do.
+03:23, The second option is the system instruction. This is where, for now, we're gonna leave it empty, but we'll come back and play with this, as well.
+03:31, And then the, the next thing that you will see is, they have temperature, and this will change based on what you have selected. So let me actually just select Nano Banana, for example, here, and show that…
+03:44, It kind| to changes the options available. Each| to the models have different options available, and based on what it is available, it may actually change.
+03:53, Some| to them may support thinking versus not thinking. For example, if I take the light latest, there is still a thinking mode, but you can see there are some differences, but if I go to the, flash latest.
+04:06, The number| to safety settings and others increase over here. So we are able to kind| to see some| to those things.
+04:14, Once we have… let's do this. Let's kind| to go about doing a very simple model and see how we can deploy it, and we can come back and explore some| to the other options as well. First thing what I'm going to do is, if I just leave the system instruction empty, which is, we just want to use a stock model.
+04:31, Without anything else. And let's say I wanna say, generate… Me a recipe for… Veggie?
+04:41, Sandwich.
+04:46, If this is what we want to do, by default, this is what it will generate. You can see that it is just using 2.5 flash.
+04:53, And, based on that, it is able to kind (of) do that. What you can see is that how many tokens has been used here. It's a 759 token for price and everything else.
+05:04, But maybe I'm not happy with this, right? Like, maybe I don't want to use our… my users, when I'm building a product, let's say, a recipe generator, I don't want our customers to just use the standard 2.5 flash.
+05:17, In this case, I can come back and set the system instruction. In this case, I'm just gonna say, I want…
+05:24, the recipe.
+05:26, for a product.
+05:28, But make it really short. Maybe just one line.
+05:36, Right? This is just to kind (of) see if it can actually do that. In this… now, I actually don't have to… I'm just gonna say new chat.
+05:45, But now I… I should be able to just kind (of) get… I don't have to, say, generate a recipe, because my system prompt does that, and I'm just gonna say.
+05:56, veggie sandwich again, and if I do that, it should generate a one-line, very good. Like, it generated a very simple, recipe, bread, veg bread, and smash. It's only 36 token, much better, and you can see that it's there. I can continue to update the instructions and say, speak.
+06:15, Like a pirate. And, you can see that it allows us to…
+06:22, Let us do that. So, I can, at this point, ask for a recipe for something else. Let's say…
+06:30, crepe, right? So let's see if I want to generate crepe, recipe. It just says flour, eggs, milk, cooked thin, right? And it's very, very simple. I don't know if it is,
+06:42, Following the parrot, so let me actually just say, must speak…
+06:47, in the tone, at all times. So I'm just kind (of) reinforcing our pirate thing, because I didn't see, that it was using that. So let's just generate a recipe for something else. Maybe, pasta?
+07:03, I'm just using simple items here. It does not do that. So,
+07:08, Alright, so maybe I don't do, one line here, maybe that's, that's the part, and this is part| to the prompt engineering that you have to kind (of) figure out, maybe the other models… actually, let me keep this the same system prompt.
+07:23, Let me change the model to, like, a 2.5 Pro, and I want to see if, if I try the pasta again, will it actually get fixed?
+07:40, So it's going in, it's going through a lot| to thinking.
+07:44, Okay, so you can see that that was the limitation| to the model itself, or maybe we have to change the prompt based on the model, so you can see it's mass floor and egg, then boil the rest warm. So it's actually falling, the pirate way| to kind (of) saying it. That was not the right accent that I used, but I'm just going to go back to the flash latest.
+08:02, Here. What you can also see is there are so many different options, and we'll come back and look at some| to these things. But let's say you're happy with this prompt, and you're happy with the settings.
+08:14, you can actually just go ahead and, get code, press the get code button here, and
+08:22, It lets you actually choose from different types| to code that you want to deploy. So if you want to deploy Python, or TypeScript, or Java, or REST, and this may, again, change as well.
+08:33, But you can see that it, actually brings whatever settings that you have provided there, it gets here, and it requires that you're gonna have an API key, and that is possible. So, in this particular case, once you're happy, you're able to directly export and build your product right out| to there.
+08:49, You know, some| to the other things that I want to show is they have different options. So, for example, what if I actually wanted the Flask latest, but I wanted the thinking? So, let me start a new chat.
+09:02, And I can say I want the thinking model. In this case, let me just do veggie sandwich.
+09:09, Again…
+09:12, And you can see that generally it would not would have been triggering the thoughts, but because| to the thinking model, it is doing that, if I turn it off, and I ask for the same exact prompt again.
+09:28, you should see that thinking should not happen at this point. But, for whatever reason, it's able to kind (of) follow the, the speak as a pirate at this point.
+09:37, If I wanted to kind (of) turn this into a structured output, because sometimes this would be, really hard for us to kind (of), like, follow, pass through, if you turn on the structured output here, then what it does is it actually gives you JSON.
+09:52, Right, so you can see that now the thinking mode is off, and it kind (of) gives you the JSON in the way you can… you want it. There are other options that we will talk about in different videos, but you have different ways to kind (of), like, define this.
+10:07, Hopefully, this gives you a good sense| to how to use Google AI Studio. You can get the API key if you go to the dashboard API key, again, or get API key at the bottom. Just remember that a lot| to these things, interface is gonna change, but fundamentally, they continue to remain the same thing. Have fun playing with Google AI Studio.

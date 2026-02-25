@@ -1,0 +1,34 @@
+# Lesson Summary: Vibe Design with Google Stitch
+
+### What are we building?
+We're exploring **Google Stitch**, a "Vibe Design" tool that allows you to generate complete app and website mockups using nothing but natural language. Think of it as a conversation-driven version of Figma—you describe the "vibe" and the pages you need, and the AI generates beautiful, high-fidelity designs for you to choose from.
+
+### Quick thoughts before you start
+*   Why is it better to design an app's look in a tool like Stitch before you start building the actual logic in Replit?
+*   How can a single redesign prompt (like "Make Notion more agentic") help you think of new product features you hadn't considered?
+
+### Expert Vocabulary
+*   **Vibe Design:** The process of describing the visual "feel" (colors, fonts, layout) to an AI rather than drawing it yourself.
+*   **Redesign Mode:** A feature in Google Stitch where you provide an existing link (like Notion.com) and ask the AI to give it a completely new look or purpose.
+*   **Design Variance:** Creating multiple versions of the same app (e.g., one that is "Professional and Clean" and one that is "Fun and Modern") to see which one feels right.
+*   **Direct Export:** The ability to move your finished designs from Stitch directly into coding environments like Google AI Studio or Replit.
+
+### Key Takeaways
+1. **Design and Apps or Websites.** You can toggle between "Web" and "App" modes. If you choose "App," Stitch will focus on mobile-friendly layouts, buttons, and navigation.
+2. **Generate Multiple Pages at Once.** Instead of just one screen, a good prompt (like "Build a marketplace for AI agents") will generate an entire user journey: a Home Page, Product Page, Seller Dashboard, and Checkout screen.
+3. **Iterate with Natural Language.** If you don't like a color or font, just say it. Prompts like "Can you not use purple?" or "Show me a darker version" allow you to refine the design in seconds.
+4. **Use Screenshots as Blueprints.** You can upload an image of a design you like and tell Stitch to use it as inspiration for your own project.
+
+### Reflection Questions
+*   How does being able to see a "Checkout" and "Dashboard" page early in the process help you plan your database better?
+*   Why should you prioritize "Design Variance" (seeing multiple options) before you start coding?
+
+### Your Action Item
+Go to **Google Stitch**.
+1. Use the prompt: "Build me an app for a high-end luxury watch rental service. Use elegant gold and charcoal colors."
+2. Identify the home page and the product page.
+3. Use the "Redesign" feature on a website you know well (like your favorite news site) and ask to "Make it futuristic and tech-focused."
+4. Click the **Export** button and see how easy it is to copy those designs into your clipboard.
+
+### In short...
+Google Stitch is where your visual ideas come to life. By "vibing" out your design first, you ensure that the product you eventually code looks just as good as it works.

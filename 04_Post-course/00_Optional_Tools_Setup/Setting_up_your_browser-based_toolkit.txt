@@ -1,0 +1,41 @@
+Video Title: Setting up your browser-based toolkit
+Duration: 06:06
+
+Transcript:
+
+00:01, Hey guys, welcome. So, today I want to talk about, what does it take to kind| to, what are browser-based tools that you should use, for vibe coding.
+00:11, And, so if I… let me just quickly share my screen. There are multiple browser-based tools that you can use. There is Reply.com that you can go to, or there is VZERO.
+00:23, By Vercel, that you can go to. Or AI Studio. This is… probably everybody already has an account with Google, so if you just go to AIstudio.google.com.
+00:31, There is Lovable that you can go to, which is, lovable.def.
+00:35, Or you can go to bolt.new, right? Like, so the common thing about all of these browser tools
+00:42, Is that it really allows you to kind| to, like, add a prompt on the left-hand side, or a prompt on the main menu, and just kind| to sift through the left or the right.
+00:51, And then really start… allows you to kind| to create a website, or a portal, or a design that you can actually do. I have detailed videos on each one of these, so that, you know, if you really want to get deeper into understanding that, that would be. But I just wanted to kind| to pop in and just say a very short video about what these are. I'm just going to show you one of them.
+01:12, So I think, let's just use, Bolt for this case, and then say, build… Mia website.
+01:21, That, shows the current Time of the world.
+01:28, Based on country.
+01:30, Okay, so this is something that I can just build out. Generally, you will have, like, some kind| to a model selector here, where it allows you to kind| to select a particular model, or sometimes they may just kind| to automate that, right? So, for example, in case of Replit.
+01:45, If I was doing the same thing, they have the build, but they don't have, like, the specific model. But in case of V0,
+01:53, if you look at it, they have the models, but they don't let you choose… they have the Opus 4.6 Fast, for example, but they also have the V0 Minu, V0 Pro, which behind the scene is powered by somebody else. Like, in this case, V0 Pro is powered by Cloud Sonnet.
+02:08, But they may just kind| to overlap it, because they keep changing the names. It's easier for you to kind| to understand, but keep changing the name based on where you are. So here, as soon as you hit, you will generally see that the windows are going to divide up into two parts. On the left-hand side is the builder, right-hand side is the preview.
+02:25, And, the agents will actually go into mostly a thinking and planning mode, and start to kind| to publish, sorry.
+02:32, build out. And once you're done, typically they will have a place to kind| to… for you to kind| to see the code, so you can see that while it is still building, there's a bunch of code that it has already generated with a single prompt.
+02:44, It may have things like for database and settings, but generally they will have a way for you to kind| to connect to your GitHub, share this project with somebody else.
+02:53, or publish it, so that you can publish it and actually get a URL. So as soon as you hit publish, since it is not built yet, it's not letting you publish. So why don't we come back to this in a second, once it is built.
+03:07, Still going on. Let's do this. In the meantime, why don't I show you also the same
+03:13, Same thing can be done on…
+03:15, Something like a desktop app, for example, Cursor or anti-gravity. So in this case, I'm just gonna go ahead and show you Cursor, which is… a lot of you are familiar with.
+03:24, In this case, as soon as I open cursor, it kind| to shows an open project, or a clone project for, this. I will generally say open project. I can say new folder, and just give it a name, demo proj.
+03:37, Right? And open that. Right? What it does is, like, it opens up a very similar kind| to a situation where you have, like, a window on one side, as an agent. I can pretty much… actually, let me copy exactly the same prompt here.
+03:52, And, post, paste it here, which will do the same thing, which is build me a website that shows me the current time of the world based on the country. And here you can see it has, again, the agent mode, plan mode, ask mode, but it also has ways to kind| to choose the model. Auto is the default.
+04:10, But if you remove the auto, it shows the model. So pretty much, whether it's web-based or it is,
+04:19, browser-based. It is exactly the same thing. So looks like it has completed, doing it on cursor. Let me just kind| to take a look of some of the responses. It says it's creating, creating this.
+04:33, Alright, it has created, like, 45 plus locations, design, how it works, and it tells me that I should open this, browser, alright? I can actually even ask it to, kind| to.
+04:45, Can you open… the link.
+04:48, So, I can be a little bit more lazy if I really wanted to, but it gave me a link here, right? So, I'm just gonna go ahead and click the link, and you can see that it opened it right here, so it has built inside the cursor, and it's kind| to showing it.
+05:05, And based on the location, I'm able to kind| to get this, to work, right? So this is Cursor. Let me go back to Bolt, real quick here. And, what you will see is… as soon as I can find the share button here…
+05:20, Alright, there you go. A board has also built it, right? And at this point, I can hit publish, and I'll come back and show you guys what it means to kind| to hit publish there.
+05:30, In a sec, but you can see all the code is here, and it has built a bunch of files, indexOSTML, JSON. I can look at the database, we are not using any database, or if it has authentication and other aspects of it.
+05:44, But what it has done is, since I have hit publish, it has given me a URL. So I can open this, copy this URL,
+05:53, Paste it into, a browser.
+05:56, And, voila, there's an error, which I can,
+06:02, you know, I can go fix it, but that's not the point of kind| to showing you the video. Please look at other videos where you can see this, and this whole published thing and everything else will go into a lot more detail. Alright, I wanted to keep it short, and I'll see you guys in the next video.

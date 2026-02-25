@@ -1,0 +1,26 @@
+Video Title: ICE 3.0
+Duration: 03:25
+
+Transcript:
+
+00:01, Alright, so I wanted to talk to you guys about innovation.
+00:06, And ICE, the story| to ICE 3.0.
+00:10, Look… When you think about how important is innovation in the product that you're building.
+00:17, And, or for your company. Sometimes we take innovation for granted. We assume that we don't have to always continuously innovate.
+00:27, Let's, let's talk about, the story| to ice.
+00:31, Right? Like, if you think about it, one| to the jobs for the ice is to cool down rigs, right? Like, that's the main purpose| to the ice. Of course, ice has multiple other jobs, but one| to the key jobs for ice is to cool down rigs.
+00:46, And, in case| to, when you start thinking about… as ICE3.0, sorry, ICE 1.0 was kind| to thought| to.
+00:55, Very early on, the way ice was brought to the customer was there were… people would go to the mountains with ice.
+01:05, And they will break the ice and put it into carriages with horse. And we'll ship it out as fast as they could to the customer across.
+01:12, their market base, or the TAM, was people that they could reach before the ice melted, and at a time when they wanted to kind| to enjoy the drinks. You know, people would actually wait for the ice to kind| to show up, and as soon as it showed up, they will take it, they will enjoy the drink.
+01:29, As a PM or a product manager for IceOne.0, your goals would be, a lot| to times, you may think about, can we build faster horses? Is there a way to kind| to make bigger carriages?
+01:39, Or is there a way to provide more insulation? Because each| to them, it allowed you to kind| to, like, increase your TAM, or, like, increase the amount| to ice that you are able to kind| to send for the lower cost.
+01:50, While the… while the people on ICE 1.0 kept focusing on faster horses, bigger carriages, and more insulation, they completely missed out on the ICE 2.0 innovation, which is…
+02:03, There were ice factories all around the town, where they put out the factories wherever they want, irrespective| to how far they are from the, from the mountains and whatnot. but…
+02:19, This was not done by the ICE1.0 folks. It was not the same folks who were kind| to running the horse and carriages, and this was done by a completely different set| to folks, the industrialists.
+02:28, They focused on how many locations that we can start on, like, what locations that we can go after, what is the distribution strategy, and what is the efficiency| to the factory. These are the features that they looked at.
+02:40, This was ultimately, disrupted by the invention| to refrigerator at home, which I call this ICE 3.0, and this was, you know, provided ease| to access, refilled with water, like, you can… you had the ice on demand when you want, where you want.
+02:59, at home at any point| to time, right? If you think about it.
+03:03, the job| to the ice hasn't changed across the T generation, right? Like, job| to the ice is still to cool down drinks.
+03:10, However, we, as the product builders, we continue to kind| to think about the current set| to features, and we think about why it is important to kind| to build for today, and we can think about faster horses, bigger carriages, why something else will wipe it off.
+03:25, So, what I highly recommend is whatever job that you're trying to do for your customers, right? Always to kind| to think about how you can innovate and get to the ICE3.0 so that somebody else is not disrupting. Think about disrupting yourself, going from Ice 1.0 to 2.0 to 3.0. Thank you.

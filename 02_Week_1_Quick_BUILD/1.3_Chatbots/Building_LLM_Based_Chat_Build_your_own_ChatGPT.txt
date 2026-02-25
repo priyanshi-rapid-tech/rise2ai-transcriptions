@@ -1,0 +1,152 @@
+Video Title: Building LLM Based Chat ; Build your own ChatGPT
+Duration: 24:40
+
+Transcript:
+
+00:01, Hey guys, welcome.
+00:04, So today, let's talk about building chat, you know, chat systems like ChatGPD and whatnot.
+00:12, And, this is probably gonna be a very important, lesson, because…
+00:16, a lot of us, we use this chat GPD kind| to a product, but we never know how it is built. So, I thought, if the question is to chat or not to chat, let's just… why don't we kind| to start building out a chatbot? So today, what I want to do is help you build
+00:33, a quick, a quick chat model, which is very similar to ChatGPD.
+00:40, But maybe even better, right? Something that allows you to kind| to, like, just go back and forth and use multiple different models, if you really wanted to kind| to use it, and just provide a way for you to kind| to achieve that functionality without using ChatGPD.
+00:53, So, with that, why don't we kind| to get started? What you would need is, of course, you will also need API keys, because, you know, anytime you want to use LLM,
+01:03, you have to have access to tokens, right? So, in this case, we will use something called Open Router, just because it provides a lot of different models. So we'll talk about what Open Router is quickly for a sec, but from there, we'll just kind| to go do it. You are free to use something like OpenAI.
+01:22, models, or just Gemini, or you can use directly the API keys for one of them. In my case, I just want to choose open router, just because of the flexibility that we'll talk about. Alright, so let's get started.
+01:35, Again, it's all about,
+01:39, to chat or not to chat, right? Like, so, let's chat, and we'll talk about how to build chat models, later as well.
+01:47, I thought maybe I can use,
+01:51, bolt.new here. So, the prompt that I will give you is I want… to build, chat model.
+02:01, Very similar.
+02:03, to ChatGPD.
+02:05, Not a model, but chat, interface.
+02:10, But, in my case… I want to be able to choose… any models from various Provider… Including… philanthropic.
+02:28, Openai, Gemini… Etc.
+02:35, For the LLM API, please… Use the interface.
+02:45, from, Open Router.
+02:51, Oh.
+02:52, Alright, so what is Open Router? Open Router is an AI gateway, is what they call it. What an AI gateway is, is,
+03:09, AI Gateway basically allows you to kind| to have a request, so if you kind| to look at this diagram.
+03:16, here.
+03:17, You can choose, like, based on, based on your request, you can choose either to kind| to go with… you can either specify what model that you want to choose, you can use… choose between OpenAI, Anthropic, Gemini, Gemini 3 Flash, and one of those.
+03:34, Either automatically, where the gateway makes the decision for you based on the request that you sent, or manually, where you can actually select what you want to do. And for all of it, you can manage your cost
+03:45, from Open Router. So, to kind| to, like, OpenRouter is a good one, there might be some other choices as well. Like, I have signed up for this. And, what you really need is you want to go to your keys.
+03:57, And, I'm just gonna create a new, key here, and let's just call it,
+04:06, Chat or not.
+04:09, And then I'm just gonna, give, $2 in this case.
+04:15, And, no expiration, and just create.
+04:19, So what I've done is, like, I've actually given $2 to this. I'll copy the…
+04:23, the API key here, which is important because we will use that here. So let's come back here, and I say, from the API, please use the interface from OpenRouter. I will provide you the key, the details of open router models.
+04:42, Can be found.
+04:44, at,
+04:47, A lot of times, I think, generally, it's not confused here, but I just want to be absolutely sure.
+04:53, And, I'm just gonna use, I think solid 4.5 seems fine. I don't need, like, I don't have, you know, money to pay for the other guys, unless it's… let it bid.
+05:06, So, few things to kind| to see.
+05:08, is, I want to build a chat interface with, you know, similar to Chad GPD, so it kind| to gives us a reference of what it should look like. I want to be able to choose any model from various, provider, so that I'm actually specifically saying what models are what provider, and I'm asking you to kind| to use open router.
+05:27, So, it's just gonna go ahead and build it. Let me come back in a couple of minutes. You guys should pause the video now, and put out this prompt. You know, give this prompt out, now.
+05:39, Oh, one thing is, in the VCM Canonical, and we may change the title of the name here of the doc, but in the VCM Canonical, I've actually put this here. This is just the quick prompt.
+05:51, But let me also show you, like, what is a better way to kind| to do this prompt. So, I will actually go ahead and copy this over to ChatGPD.
+06:00, And over here, I would say, I just can use, like, an auto model and say, help me.
+06:08, with the complete… romp… I can use on bold, dot new, for the following.
+06:18, And this is a much better way to kind| to prompt, instead of just directly giving a simple prompt, because what it does is…
+06:26, it actually will take a lot of time to actually define your requirements. This is your product requirements that you need to have.
+06:34, So those requirements will be brought in and made clear, here.
+06:39, You can see, this is what the requirement actually looks like. Built a production quality web app, UIX, a clean model. It kind| to talks about what the UI UX should be, what should the main panel look like.
+06:51, This would be, scrollable, bottom input area, multiple lines of input, model selection, allow select the model delivery through open router, and it actually has provided some of the model names. Back-end API, it kind| to provides you with the details about, like, the… this should correct to the open router.
+07:09, open router integration, architecture, it just kind| to gives so much. No authentication, no payments, no database persistent, no prompt marketplace, no tool calling, right? So these are some of the great stuff. Actually, I really like it. I'm gonna copy it over here, and call it Detailed Prompt.
+07:26, And we probably should just use this.
+07:29, Instead of using the…
+07:34, Using the prompt that we already have. So, let me do this. Let me actually put it into a different product here. We are using Base44. This is, another one of the products, and let's see if the results are, gonna be, any different.
+07:55, Alright, so let's go back to the bolt, and I'll come back once the product is ready.
+08:01, Alright, looks like it is, just ready. It has put some kind| to a username, password, okay?
+08:09, Right, let me actually ask you to kind| to remove the username and password. Remove… Username, password…
+08:18, And also… Use local browser… Storage… for everything.
+08:28, So in this case, I actually don't want the username and password. If that's the case, go ahead and do it. If you want to keep the username and password, you are also welcome to kind| to proceed in that direction.
+08:39, Alright, so, it just says ChatGPD Clone, which is not what I had in mind in terms of calling it, but I'm just gonna go to my API Gateway's OpenAI key, I'm just gonna copy that, and put the key over here.
+08:57, And then save.
+08:59, And let's see what happens.
+09:03, Hello?
+09:05, Okay. Well, in this case, looks like nothing happened.
+09:12, So I'm just gonna say I added the key, and then…
+09:17, I see a free, blank…
+09:21, Page. This is a good… oh.
+09:29, Okay, you have hit the rate limit. So, looks like I did hit the rate limit on bold.
+09:33, So, I'm so sorry, I would have to move you guys to a different platform. Actually, let's just see what's going on with the other one.
+09:42, Here, hopefully this does not hit the rate limit. So, alright, it looks like this has just completed. Let's just kind| to look through the output. So, chat entity, color palette, so it has done a so much better job. It's given a better name.
+09:56, Base44.com. Alright, alright, it has given me some starting prompts as well, right, which is pretty good.
+10:04, And it gave me a choice of, like, what model that actually I want to use, and it has a setting page where it kind| to gives me a system prompt, max number of tokens if I really wanted to.
+10:15, I actually, really like it. So, let's see, when does it ask for an open router API key?
+10:29, So…
+10:35, Heh, it actually provided… so, okay, maybe this is what it has done. Like, let me ask this question to them.
+10:43, Which is… Are you using your own models, or using open router API key?
+10:58, Right, so it's possible that they're using their own models where they may have a collaboration with OpenRouter. I know, Replit definitely has it, so maybe they also have it, and these are some of the good things to kind| to discover.
+11:11, And when you're confused like this, just ask that. I'm using the base 44's built-in Invoke LLM integration, not OpenRouter's API. You simply request OpenRouter with the backend API endpoint, but back-end functions are not enabled for this app. Okay, that's pretty good. So this is a front-end only app, and they have taken a decision.
+11:29, And to use it. So I guess this works for me as well. So we will look at how to use OpenRouter in some other case. But you can see that this is what vibing is all about, right? Like, my requirements are fluid. What I saw was Bolt, I ran out of tokens, so I just kind| to moved somewhere else.
+11:44, Base44 is saying that, hey, maybe the front end, and as long as the requirements are met, I want to continue to kind| to do this, right? So, now, a few things that you will notice here is, if I do a new chat.
+11:58, it kind| to just remembers and kind| to gives me this. This is a very good touch. So let's talk about, like, what are some of the right ways to kind| to build the chat interface or not.
+12:08, So, if I look through that, like, when should you add a chat versus not add a chat? And let's go through a couple of enhancements on this as well, right? So, the thing is, there is a co-pilot craze going on, right? Every product seems to be adding Ask AI,
+12:24, button these days, and maybe that's the right thing to do, but does your user actually need it, right? Like, that's a key question that you have to think about, is like, do you really need to have that? Let's strip away the hype and look at the user intent. Like, when is the user intent? What is the user intent that you actually need?
+12:41, what is the hype versus not. The golden rule is intent versus execution, right? Chat is best for…
+12:47, If the user knows what they want, right? Like, if they already know what they want.
+12:52, It's great. It just says, like, you know, for example, if I'm looking for a trip on, on Expedia, if I say, help me find flights for tomorrow morning.
+13:02, However, but they don't know, and it's really, they don't know how to kind| to do it, or they don't want to do it. In that case, chat is best, right? For example, they have given is, I want to analyze the Q3 sales trends, but I don't know which filters to click, right? Like, that's what the user is thinking, is like, hey, there's just too many filters.
+13:22, When to say yes to chat is when their workflows are complex. Task usually takes 10 plus clicks. You want to avoid your users to kind| to do that job for you.
+13:32, You want to avoid doing this with the natural language queries, right, where people have to actually define the SQL and things like that.
+13:41, In data, like, you're trying to take an action. Or troubleshooting, right? It's like, why is my bill too high? So whenever you have things like this, you want to build a co-pilot. This is where you will see, with a lot of the dashboards we'll have is, like, what's going on here, kind| to an interface.
+13:58, But there are times when you have to say no to chat, right? I think the high frequency actions, like volume control, next songs, it's much easier to press the next song versus to say.
+14:11, you know, can you go to the next song? Like, type it away, wait for the models to kind| to respond. Kind| to think of this like a car's dashboard, right? Like, in the car dashboard, you have a few buttons to kind| to turned on and off the fan, or you have something for the wiper, you can just immediately click.
+14:30, But sometimes you have to go through the soft interface, where it says, you have to go select the right settings, do a bunch of things.
+14:38, And… which is great, because you can support a lot of things, but when you think that people need it immediately, you want to provide that access immediately. So, this is where I'll also point you to one of my blog, items. If you go to vroom.substack.com.
+14:54, I've written a blog about,
+14:57, Copilots need joystick, not prompts. I'll put that into your,
+15:05, chat as well, over here. But the idea is, I think we should move away from, like, just co-pilots being, like, chat interfaces to joysticks.
+15:16, And some of the joystick movement actually comes from the fact that when you build interface, that people are able to kind| to quickly use to do certain tasks.
+15:25, some of the, some of the things that I already see here, this is a joystick movement where it's, like, they have a blank screen problem, they don't see that here. They're able to choose what model to use instead of asking the model to kind| to do. They're able to kind| to go to the setting and do it. We built a chat GPD,
+15:43, equivalent model here. This is… that is a little bit of a challenge, because it does not have any of the other, aspects of it, but we actually, if you built it as a co-pilot, which we'll do in the future projects, you will see that there is a lot of, aspects of, the things are gonna start to come up.
+16:03, Right? And they're providing, like, the copy button is a great joystick move as well. So, highly recommend you kind| to look at this article and kind| to look through it, think about what the thinking is. It's a little bit old, maybe almost a year now that I wrote this article, but I think this is something that you should kind| to think about.
+16:22, Alright, going back to the slides…
+16:28, So the key co-pilot mindset is… is you should think of, like, being an assistant. You're helping, you're co-piloting. You're not trying to replace the entire interface. A true co-pilot sits alongside the work, it does not replace the goal. It augments it, right?
+16:46, So it can suggest, So it can do things like suggest, summarize, draft, everything, right?
+16:55, Some of the best practices that we, the ChatGPT already included, just because we asked you to kind| to expand the prompt, but I think there are a few other missing that we should kind| to think about.
+17:06, Right? What is, there's a blank screen problem, right? Like, that is exactly the problem I think it is solving by giving this, predefined, aspects of it.
+17:17, Where, so don't leave them hanging, like, don't give them, like, a blank screen and they don't know where to type. So provide starter prompts, and suggest some chips immediately, right? Like, this can be called chips.
+17:30, And give it… give it more of a diversified, and if you have a lot of different ideas, maybe every time they come in, they should, kind| to load up, different interfaces. You can see that even in ChatGPD and others. Like, as you start to type, it suggests,
+17:46, Different, prompts that you can use, and this can get personalized over time, right?
+17:55, The second is what I call is a predictive pill. Like, after every AI response, suggest the next logical step.
+18:02, So, this is important, because…
+18:06, Let me just add this there, and I'll show you why it is important. Add…
+18:16, It's important because what it does is, like, after every response, it gives something else for them to do, instead of… they may have the… you solve the first blank screen problem by giving them a few recommendations, but once they have seen a few examples, they don't know what else to do. What if you can give them contextual,
+18:35, prediction pills. Pills are, like, just recommendations. I'll show you what it looks like once it completes. That is important.
+18:43, The second thing I would say is, like, verbosity.
+18:46, is important. There is an amount of, you know, you don't want to read a wall of text, but you don't want to also show them nothing and just kind| to show them the response right away. You should give the users a little bit of a control, like transparency and control, that there is, you know, some thinking going on, and that's why you see the thinking model
+19:04, In ChatGPD and others, where actually they are thinking you can expand and not.
+19:09, And do that, right? So think about that.
+19:13, And, for common choices, like, yes or no, give them buttons instead of, this, so…
+19:21, I can also call that out and say that. So, let's just actually start, so explain quantum computer. Simply, if I say that as a prompt, hopefully it should give me, like, 2 or 3 choices.
+19:36, There, and there you go. So you can see that, continue with, it says 2 or 3 pills, which is, what is a real-world application? Like, okay, that's pretty cool, I can use that. On the left-hand side also, if you see.
+19:49, It's a base 2444 chat interface itself. You can see there's suggestions around advanced model controls. So it's actually giving me things to kind| to do that I'm able to do that.
+20:01, And these are all, because if you, if you're looking at different chat interfaces, these are some of the things, that you should look at. It may even say that, do you want to continue or not, and the yes and no prompts may come from there, so definitely think about how can you add them as well.
+20:18, Right? More than anything else, in an LLM, people lose trust because they think that the responses are not appropriate. So make sure that you're grounding with your system proper and everything else, you're grounding the data with the right, right type of values.
+20:34, So that you don't hallucinate, you kind| to make sure that you're double-checking it, triple checking the data, and that could come through system prompts, and also sometimes be evals.
+20:43, That you add. Transparency, be honest about the AI's limitations. So, a simple thing that they have done here is, it says response may be inaccurate at the bottom, which really kind| to, like, informs them, but if… there are choices that you can do.
+21:00, For example, you can provide citation, which gives them confirmation that this is something that is possible or not.
+21:06, And, 21:08, you know, get people to actually, allow users to, edit the AI output to provide feedback. So, you know, one of the things that you can do is, up and down.
+21:19, But, currently, I think the problem is, even if they provide the up and down, we have to kind| to figure out how we're going to store it, how do you actually use and know what responses are working versus not responding.
+21:31, working, and those are all, gonna be very important. And at the same time, you know, what you can do is, like, actually, maybe I want the same chat to have, different…
+21:42, Can I have, the same chat?
+21:45, to… Continue.
+21:49, But with different, model, so that I can get a view from multiple 21:57, models, right? So once, once the current one is completed, I'm just gonna go ahead and, allow you to kind| to do it. Guys, please pause here if you're just kind| to watching this, pause here and kind| to go back and follow along, with me.
+22:14, The first chat, first input of, like, asking for thumbs up and thumbs down is now completed.
+22:23, It just… if you look at this, for example, it just kind| to shows the thumbs up and thumbs down. I don't know where the thumbs up and thumbs down are actually going, so let me see. I had to generate button at the end, which is… okay… on AI response. Okay, where are…
+22:41, the…
+22:44, Thumbs up, ETC responses stored. Maybe it is storing it, maybe it's not, let's see. But the other thing is now they are giving us a way to kind| to chase the model.
+22:55, So let say if they really are doing that, so help me brainstorm, startup ideas. If I go here…
+23:09, Alright, so it has given something, and then as, like, if I change it to, let's say, Haiku.
+23:15, And then, is there a regenerate button somewhere?
+23:19, What does it say? Added a region over to the AI message. Okay.
+23:25, Oh, there is a regenerate. So you can see there is a regenerate button, and which says that you can regenerate the same response instead of using Sonnet.
+23:34, with the Haiku. So let's see how the response kind| to comes. Like, there's so many, user interface enhancements that you guys can make.
+23:42, So, which I'm like, okay, it says, looks like it moved from the 3.5 Sonnet to Haiku. This is probably not how I would have designed. I would have designed, like, in a way where it just kind| to put the first set of chart messages, and if I can change the model at any point, go back and forth.
+23:58, A little bit. But, I guess, this is a fine, a fine approach as well, but go back and change it to whatever you want.
+24:08, And let's see what it says about the thumbs up and the thumbs down. It says the thumbs up and down feedback is stored in the chat entity message area. Each message has a feedback field that stores up, down… okay.
+24:19, Got it. So this is actually storing it in the chat message, which can be further used to kind| to, like, analyze what is working and not working, and things like that.
+24:30, Alright, good luck. I hope to kind| to see the names of your models that you bring, and actually, hopefully do a little bit more than what we did here today. Good luck.

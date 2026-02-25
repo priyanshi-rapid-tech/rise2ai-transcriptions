@@ -1,0 +1,102 @@
+Video Title: RAG + LLM Chat - Meeting Intelligence
+Duration: 13:50
+
+Transcript:
+
+00:03, Hey guys, welcome. So, today I want to actually talk about, you know, just building the chat system, but what about if we can do it with a rag?
+00:12, Because, that would be great to kind| to see if we are able to kind| to interact with the data a little bit.
+00:19, So the product that I've kind| to selected is, we're just calling it Prism, but it's a meeting intelligence system.
+00:26, Now, the core concept is, like, we want to take a transcript off, there are so many tools, Granola, a bunch of other tools.
+00:35, which are out there, which allows you to kind| to capture the transcript of a particular meeting. And if we have the transcript, can we convert it into an intelligence platform? What we have is, like, a post-game analysis tool for the PMs, is what I'm calling it, like, which is…
+00:50, Is there a way you can drop in the transcript, and it just doesn't summarize, it extracts the commitments and the contentions, right? So you can…
+00:59, Take a look at this, it's like, that there are 3 key features, the commitment grid, a structured table, of every promise made.
+01:07, by whom and when, friction points, and code to verify. Like, when you chat with the transcript, it must provide the exact code to prove that it's answerable.
+01:16, So, what I've done is, you know, just to not, I have meeting recordings, but I don't want to use them, mainly because, privacy reasons, and what I'm gonna do is,
+01:30, I'm just gonna use one of the earning calls from Google, right? So this is the earning calls… Welcome, everyone. …from Google, and there's a tool that I found. You guys can find something else, there are so many different ways to kind| to get the transcript. I'm gonna actually go generate a transcript for that, right? And once I have the transcript.
+01:47, I'm just gonna make a copy of this, here, but this is how we should be able to kind| to generate. So, let me paste this thing. This is the entire prompt.
+01:58, Let me paste this, let's just use Levable, for now, and I, I'm just gonna say no database, use…
+02:06, a local, browser.
+02:09, Storage, no login, ADC.
+02:13, For, yeah. So, okay, I'm just gonna go ahead and, like, let's come review the prompt.
+02:20, A little bit better. One thing you'll see is, like, we're starting to get better with our prompts, because this is super important, just saying that builder is not enough. So let's look at the prompt, what we have.
+02:31, You want to be prescriptive, but at the same time, you know, you want to give the creative freedom, right? So, first of all, we're saying, like, we want to build a Prism app.
+02:42, It is kind| to defining the layout. Create a modern clean with sidebar for past meetings and main content area. Main content area is split into two columns. Left column is inside deck.
+02:54, This is a rich text view of structured analysis, and the right side is the Oracle chat interface, so this is, like, the typical,
+03:03, Copilot, we have given the names and everything else, and it kind| to provides the workflow, right? It says that we should be able to kind| to upload the transcript, or, .text, or anything else.
+03:17, And step two is auto-analyzes it. And step three is the chat window on the right-hand side, what it does, and what's the tone, and technical requirements. Uses the OpenAI Assistant API, or generic rag handler, to manage the file context.
+03:31, And, so you can look through that again, so let's see what it is building. In the meantime, looks like copying text may not be enough, so I'm gonna actually see if I can download this, file somewhere.
+03:48, Okay, let me try another…
+03:51, A website that lets me kind| to do that.
+03:55, Transcript of videos, okay, let's try this one.
+04:01, Let's see if they support us to kind| to download a file. I can always create it.
+04:06, But, I'm just thinking…
+04:09, Too easy to use. Alright, so this lets me download the file, texts without, actually, let's do it with timestamp, so that way it's good. Let's see if this is working. We'll, we'll come back in a minute when this is working. Oh, in the meantime, please go back, pause this video, go back.
+04:29, Crank off your own prompt, put it out, and see what's going on.
+04:35, Right, so here you go, looks like it just completed.
+04:40, And, let's try it out. I don't know if they are using the right API keys or not, like, we'll find out along the way. So, I'm just gonna default to kind| to, like, uploading the transcript.
+04:53, And, so, let's see what's going on.
+05:00, Okay, that is a little strange. I hope, they had more than one person. I don't know if it's a…
+05:06, bug or anything like that, but let's look at things that are working well, right? Like, you can see on the left-hand side, there is a complete chat port, so if I can start a new one here, it kind| to shows up, it allows me to kind| to delete it. This is the executive transport of, like, what's going on.
+05:22, I'm actually able to edit and save it, that's pretty cool.
+05:26, And then there is Oracle, so I can say.
+05:29, How… what was the… what was the… I actually just say… summarize… the revenue…
+05:41, So, let's see if it's able to kind| to actually get to the right revenue. Based on the transcript, our commitment will be on year-over-year comparison, unless we state.
+05:52, So, I guess this is where YouTube, they're making a commitment.
+05:57, also seeing significant higher engagement per user.
+06:02, Just… Tell me their revenue.
+06:11, Looks like it's always resulting into other things, so this is what I'm gonna do at this point.
+06:16, That's when I'm gonna say, hey, the chat… should respond.
+06:27, Questions I ask… And also… What model are you using?
+06:35, used, better model. Lastly, Using, settings.
+06:43, Show me the system prompt.
+06:47, Alright, so, couple of things. I've asked it to kind| to, like, say, like, hey, the chat is actually not working. I've also asked that, what model are you using? So it can tell me, like, maybe it's using a really old model. And then I'm also asking is, like, hey, can you show me the system prompt in the settings? So hopefully.
+07:05, gives us a settings page where you can see. Actually, it's using Gemini 3 Flask Preview by default, which seems like okay. I can't send my internal instructions, well, not your internal, not…
+07:19, Can you share the model? Can you share… The model used by… my app…
+07:30, And also the system prompt.
+07:34, By my app.
+07:39, Alright, so we just wanna… interested in our own app, and let's see what the response comes back. Oh, so they have done some kind| to a mock analysis, so they didn't even bother to use an API or anything else.
+07:52, Well… Can you actually… Add API access.
+07:59, And use open… Router.
+08:04, Actually, let's just do Gemini this time. Gemini API key with, Gemini… to your flash model.
+08:14, Which is cheap and, cheap is easy to use. So, this is where you can see you have to be very careful when you build some of these things, like, sometimes it's just responding with a mock.
+08:24, Data at this point, which is, current sign.
+08:28, Alright, so it's asking me to kind| to add LLM to your app, so it's saying it's like,
+08:34, enable the cloud functionality, because it has to move there, which I'm completely fine with. So, why don't we kind| to go ahead and do that?
+08:43, Now you can see it's actually enabling the AI gateway. It's doing a bunch of things, so I'll let it kind| to finish.
+08:52, You can see, it says that wire up the real AI for Oracle Chat.
+08:57, So please go back and kind| to, like, keep building on your app as well, like, don't, again, request you to kind| to, like, not just watch, but build together.
+09:07, Okay, looks like it's just kind| to finishing up.
+09:10, And, it is using the Gemini 3 Flash.
+09:14, So let's see what we have. I'm just gonna refresh it just in case.
+09:19, Alright, let me upload, the transcript here.
+09:34, Alright, so much better in terms of, like, what it is. I'll invest between $175 billion and $185 billion in capex.
+09:41, it's… these are the commitment green friction points, supply chain constraints, so it actually is giving… even though it was not meant to be kind| to looking at, supposed to be looking more at a meaning, but I can say now, let's ask the question, what is the revenue?
+10:05, Alright, let's see.
+10:06, The full-scale, alpha…
+10:09, That's pretty cool. But one thing I'm noticing is, like, this, you can see that these are not well formatted. So, this is because it's not formatting the markdown thing. So I will say the Oracle chat.
+10:23, is not showing.
+10:25, The rich text.
+10:27, output.
+10:28, And just to be sure, I'm gonna take a quick screenshot so that you can get a sense of what it is showing.
+10:36, Also, the response is too verbose.
+10:41, Just asking that question to see if it can actually fix, fix the system prompt, for you.
+10:48, Right, and right after this, I still don't see a way for me to kind| to see the system prompt. Let me see…
+10:56, I don't see the system prompt, so I'm just gonna also ask… Also, show the model.
+11:06, Model used, and the system prompt.
+11:12, Used in the… Setting page.
+11:17, Right, so I'm just gonna queue it up, so this is something that you can do, where you can just queue up with a few things, so as soon as this kind| to finishes that, it should be able to kind| to build it out. Alright, let me…
+11:30, This time, I'm gonna upload, some other transcript. I have some, conversation with, on Cloud Code that I will just gonna upload. Cloud Code, founder, well, the author.
+11:42, Alright, so let me just take a look at this.
+11:46, I'll just upload it.
+11:54, Alright. The meeting is aimed to discuss the product philosophy, development history and future roadmap of cloud code with its creators. Key decisions centered on maintaining CLI-first approach, prioritizing dual use.
+12:06, Yada yada yada. You can see owner is Boris, which, who's the, like, the, the author of Cloud Code. It says that, continue sending technical direction and exploring long-term period for the model autonomy, and a bunch of other things.
+12:21, But now let me ask a simple question here, by uploading the same file again.
+12:28, Which is the revenue, and I want to see if it has improved in the revenue. The Oracle has improved in the revenue, update itself. So, what is the revenue?
+12:41, Let's see if the response has gotten better.
+12:44, Alphabet has reached a significant… so, okay, first of all, you can see that the format is better. It doesn't show star star400 anymore, annual revenue, total of 400, and it is showing a few things, right? Like, and of course, add the pills and other things.
+12:59, Now let's see if it is actually gonna show me the, the system prompt itself, so let's the preview kind| to, like, settle down.
+13:09, Alright, looks like there is a setting thing here, if I go to the settings.
+13:13, you can see, first of all, like, what is the model that they're using. It actually shows me the system prompt that they're using. It's like, consist of doing this.
+13:23, rule is be short, 3 to 5 sentences, timestamp, yada yada yada, and there's a meeting analysis system problem, right? Which is, they are actually sending and asking for the results to come back in JSON.
+13:36, I definitely recommend you kind| to look at that, but when I come back here, I can see that the format is better, the settings is better, so much, so much enhancement. So, good luck building!
+13:50, So, good luck building!

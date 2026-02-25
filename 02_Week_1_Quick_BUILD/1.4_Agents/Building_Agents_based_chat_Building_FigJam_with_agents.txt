@@ -1,0 +1,145 @@
+Video Title: Building Agents based chat; Building FigJam with agents
+Duration: 18:38
+
+Transcript:
+
+00:02, Alright, let's, build an agent.
+00:05, And we're gonna build a fun one today. What we're gonna do is we're gonna actually build, what I call is, like, the FigJam. If you're not familiar, Fig Jam is a place…
+00:16, For you to kind of just…
+00:18, come out and build out, you know, different things. It has templates and stuff like that, so you can actually, you know, you may want to do something, and, like, it just creates those things.
+00:32, I thought, like, why don't we kind of, like, build a fig jam today?
+00:37, And the reason we need to kind of do this to build, build an agent is because we need a significant amount of data and tools and stuff for us to kind of do, and because of that, what I want to do is, like, build out a FigJam, but we're gonna do a little bit better than that, right? Like, we are going to actually FigJam.
+00:57, from Figma does not have, like, a right-side chart bar. This is also similar to Miro or some of the other boards that you have seen. So we're gonna try to build something better than this, and let's just use localhost for now. Sorry, local storage.
+01:11, But, since this is gonna be a little complicated, what I wanna do is, I wanna go to Gemini.
+01:17, and asked it a question. Let me just put the prompt, and I'll be right back.
+01:23, Alright, so what I've done is actually went to Gemini, and I gave my prompt. And the quick prompt is.
+01:32, Well, the prompt was, give me a prompt to build. So, in this case, I'll just say build.
+01:40, I've asked Gemini to give a prompt for this. Build FigJam equivalent in Lovable, or Google AI Studio.
+01:46, also add an option to have a co-pilot agent on the side. So what I'm trying to do is, like,
+01:53, I want to have a Copilot agent on the right-hand side that can actually chat, so if you look at the FigJam on the right-hand side, I want to have the co-pilot agent.
+02:03, on the side, which can summarize the board, so it can actually read all the content and summarize the board, but also help me create, a group, ETC, a group, create board.
+02:16, Just using the chat. And,
+02:24, functions, right? So, we are able to kind of do that. Not only that, I want the LLM to tool connection to happen via MCP. So, the FigJam board that they're gonna build, I wanted to kind of connect the co-pilot to use, MCP to kind of connect with it, and actual FigJam
+02:44, you know, between the co-pilot and the actual fixed jam interface, right? You can either just use this, or use this detailed prompt that came out of it, because…
+02:54, Right? So, take the quick prompt, and say, give me the prompt, and it kind| to generally provides you a good prompt. So, in this particular case.
+03:01, I'm gonna actually use AI Studio, so… modify…
+03:06, This, for AI Studio, let me say. Modify this for AI Studio.
+03:17, also use, Gemini Flash as model, right? So, this is what I'm gonna say. Let me just kind| to generate this. What I'm doing is I'm also adding an extra, constraint that it must use, the AI, Gemini Flash.
+03:37, Alright, so I'm just gonna copy this.
+03:41, Thing, copy…
+03:48, Give me the…
+03:50, A single prompt. I don't know what it is doing, so I'm just kind| to asking you to kind| to give me a single prompt. Don't give me a bunch of other things.
+04:04, Alright, so let me just take this…
+04:08, First of all, I'm just gonna crease it out for you guys here.
+04:16, Alright.
+04:19, And then also, let me make sure that I didn't miss anything. Okay, good. Now I'm gonna go to AI Studio.
+04:26, from Google,
+04:30, let's actually use… I'd highly recommend that you use the 3 Pro, just because it's so much better, and their output… this is a complex app, and I don't want you guys to kind| to build with, like, a basic, basic app itself.
+04:44, This is gonna take a few minutes, so I'm just gonna pause. You guys should be copying and pasting the prompts now.
+04:51, Then, trying it out. Try it on AI Studio, please.
+04:55, Alright, still going on.
+04:57, One of the things you will see is, like, the advanced editor, like AI Studio or Replit, which we'll use in the future quite a bit. They do fix errors as well, right? Like, so if you see any errors.
+05:10, It will actually… it's analyzing one error, so it can, it can loop through and, like, fix those things, so definitely better than V0 and others, which I've not seen doing that good of a job. Replit and AI Studios are really good.
+05:26, Okay, still going on.
+05:27, Still going on, it's, showing me some kind of, error, so let me…
+05:36, Actually, see what's going on.
+05:39, I'm just gonna take a… okay, recent data, recent data…
+05:48, It's common to see errors like this, so if that happens.
+05:53, I'm seeing this error. One thing, one tip is, like, always check your console log.
+05:59, Because, it should provide more information. So, you can see that what I do is, like, I, I actually took…
+06:07, the error from the console, so console.log will generally have a little bit more detail on what's going on. I took a screenshot of this, and I provided that.
+06:16, But let's take a look, right? It says Canvas Mind Beta. It has some kind| to a co-pilot, it's Gemini 1.5 Flash, probably not the best model, I should have, you know, asked it to kind| to upgrade it, but let's see if it fixes the error.
+06:30, you know, I'm gonna ask it to kind| to upgrade my model anyways, so I'm gonna say, while it is doing, it does not have a queue, but…
+06:38, Can you also upgrade?
+06:41, the model for Copilot.
+06:45, To, flash… Gemini 3.
+06:51, you know, flash.
+06:53, Okay? Once it is done, I can just ask it to kind| to do it, but let's see what happened.
+07:00, Alright, looks like the whole thing.
+07:03, Hidden loan, getting blank.
+07:07, screen now, and then I will say fail to load app, try reloading it. Let me try to reload it.
+07:15, And, there you go. So let's see what happens.
+07:18, You know, when things stop to kind| to work, this is where you start to kind| to look at the logs as well.
+07:23, You can see that it is time to pin the React to 18.2.
+07:27, Which means that it's just not using the right versions. A lot of times, if it's not clear, you can copy-paste into ChatGPD and some of the other things. But, what I've seen is, just pay attention, just be aware.
+07:41, Don't completely assume magic, right? Like, so, being aware really goes a long way of what's going on, what your app is building.
+07:51, And I won't even build, like, a super fancy app, unless you are aware of what's going on, because it's easier to build it, extremely hard to debug it or maintain it that way. So just be aware. So, take small steps, and start moving towards larger apps.
+08:08, Alright, looks like the error persists.
+08:11, In this particular case, I'm just gonna say… Error… Persist.
+08:20, Can you try a new approach?
+08:25, Right, so just kind| to giving a little bit of a guide there.
+08:28, To see what happens. Alright, this is where…
+08:32, What I do is, when it says working, you can expand this and start to see what is the approach that it is taking. So, to resolve the personal blank screen.
+08:43, I'm adjusting the architecture to use more stable words in combination with this environment, so it's just trying to kind| to move the libraries. And at this point, if this does not, work, I'm just going to ask it to kind| to, instead of using TLDRAW, can it use something completely different?
+09:01, Right? Still not working.
+09:04, Still the same.
+09:07, Let me actually just, try to refresh the whole page.
+09:12, Well, sometimes you never know.
+09:14, So still the same.
+09:18, I think I'm still getting the same error.
+09:21, Try a new library.
+09:24, Aura.
+09:26, Redo the entire… thing.
+09:31, So, this is, again, it's a pretty heavy ask. Generally, to kind| to build such product, I will slowly first build the fig jam, I will see if things are working, then I'll build the MCP server, then I'll build the canvas, and I think we'll try to kind| to chew too much, but maybe okay, let's see.
+09:51, Alright, so I'm just gonna say, don't be stuck to TLDRAW or other choices, the error is still there, because I've tried it a couple of times and, still, fails. If not, maybe we are better off kind| to starting out with a new prompt, but I wanted to kind| to show this to you guys as well, right? I don't want to just show…
+10:10, things when you succeed, because you will face this kind| to a challenge. And just know that this is just grunt work at this point.
+10:18, While it is doing that, I'm gonna go back to my Gemini and say, hey, can you remove a specific
+10:27, Code implementation.
+10:31, from the prompt… Let the model… Decide… Just give me… the business… And feature requirement.
+10:51, In the master prompt.
+10:55, Right, so… so this way, I'm just kind| to, like, asking it to not tell me, like, I think one of the challenges that I saw here was…
+11:03, What it has done is it has given me, like, literally, like, all the definitions of what are the TSX files and TLDRAW,
+11:11, It is asking you to kind| to use all of these things, which may or may not be the latest or the greatest at this point. So, what should happen now is it is probably giving me, alright, only the business prompt, so I'm just going to copy this, paste it over as,
+11:32, Please scaffold the project, okay? So let me just take that and add that as, like, approach 2.
+11:41, And, no tech specified.
+11:47, I'm gonna still open another AI Studio, use it for Gemini 3 Pro, and kick off another build, just to kind| to see. If we continue to kind| to have error at this point, we may have to kind| to throw it away, and then, let's figure it out.
+12:06, So, alright, so let's see what's happening.
+12:09, Alright, still having errors. So, at this point, I would say, if you have not made a ton of progress, if you have made a progress, I would… I would ask you to kind| to restore and go back. So, for example, like, you can see, I can go back here…
+12:22, To the first one, where it had actually shown me, some of the product. So I can go back to…
+12:32, Where do I see the restore buttons?
+12:37, restore, so I can go back to the previous prompts, or whatever at any point, and then just kind| to start from there. Looks like there was another restore point, maybe.
+12:49, Somewhere here… We have to kind| to see when is the rest of previous prompts.
+12:56, Okay, so… let's just… so you can restore, basically. The idea is, if you kind| to make a mistake where you're not able to kind| to… you try multiple times, it's not working, go back to the last known build. In this particular case, the last known build was never there, so let's see what it comes up with.
+13:16, in the new prompt, where we have removed the technology aspect of it, right? Like, there is no specific technology being specified here. Let's kind| to look through the prompt a little bit of what it has actually specified.
+13:30, Which is, Expanded Approach 2.
+13:35, Your Chief Product Officer goal is to design a fully functional web-based collaborative whiteboarding tool.
+13:41, Similar to FigJam or Miro, it has given the target audience, it has given the Canvas, co-pilot experience, like, what does it want the co-pilot to be? It's given that we want MCP, and within the MCP, it wants these tools, like the reboot, create elements, group elements. So these are the name of the tools, so that's great. I think I'm okay with, kind| to, like, having…
+13:59, to know this, at this level, what their MCP is doing, and then it has certain user stories. So let's wait for it to kind| to finish. Oh, there you go. It's finished. I don't know if it's any good, but let's try it out.
+14:11, Right, so… you know, I can see that I can already move it around. It says, hello 1,
+14:19, I can do… Hello to…
+14:23, Perfect. How about if I say.
+14:26, Let me just kind| to copy, copy certain text over here.
+14:33, And then let's see if the summarization works. So summarize…
+14:37, the board. This is more of a listing. Okay, there is an error. So it says that there is some kind| to an error.
+14:48, Error found in console.
+14:52, And in chat.
+14:54, Chat error.
+14:57, I'm just gonna copy this, and it says, this is the chat error.
+15:01, And then I'm gonna take a screenshot so that it kind| to knows what's going on here.
+15:06, And paste it there. So, a little bit better, hopefully debugging. Let's see what happens.
+15:12, One of the things is, like, if I get curious, I generally come and expand the working.
+15:17, Piece here, just to see what else they have to kind| to say. Right now, there is not much, but sometimes, there's a ton of information here.
+15:29, Okay, well, let's see if it's kind| to fixed. No console letter for now. So I'm just gonna just create one and say…
+15:39, Which is, Vibe… Recording is cool.
+15:46, And then have another board which says that, agents will…
+15:52, take over, and I'm gonna ask you to say summarize…
+16:00, the bowl. So let's see if it actually is able to kind| to go pull the information. So what you can see is it is using the…
+16:07, tool executing read boards, like, two items are open on the board, a yellow sticky note with the text vibe coding is cool, and the white shape, text with agent will take over. This is pretty cool. Like, guys, if you don't understand what's going on here.
+16:20, Like, we literally had an agent, kind| to like the… call the MCP tool, which is executing reboot.
+16:28, And then we'll say, create… 3 more cards.
+16:35, that displays…
+16:39, The steps to vibe.
+16:44, Number A is… vibe.
+16:49, B is billed.
+16:51, And C is launch.
+16:53, Right? So, let's see what's going on here. There you go. It actually literally created the board for me.
+17:02, So, you can see, as you're building an Agentic tool, and I would love for you guys to kind| to try out and do more things with this, is like, are you able to kind| to build out in such a way that now you can, the difference between chat and agentic is.
+17:15, Agentic is able to take action on your behalf, so what it means is that, as am I asking you to kind| to change this, I can say change… I don't know if it supports that, but change colors, to pink.
+17:27, Right? And this will depend upon, like, what are the tools that we actually, I can only change these colors yellow, okay, actually change…
+17:38, That makes sense, colors to, green.
+17:46, All of them.
+17:49, change to green. I'm just doing it for simplicity, but you can see…
+17:55, it is actually going and trying, trying to kind| to do it. Let's go see if this actual, the color changing works or not.
+18:04, I'm not able to kind| to see if it works, so we may have to maybe literally make it work first. There might be some bugs and issues.
+18:12, But you can see the difference between a chat and an agent, right? The chat can only read things, maybe summarize and everything else. An agent will actually go ahead and create things for you. So if you have a very complicated diagram.
+18:24, that you want to create, you can just go ahead and use it. Have fun building it, and hopefully you also got to see that not everything is just hunky-dory, so sometimes you have to take the hard path to get to the right outcome, and you have to think creatively around it. Good luck.

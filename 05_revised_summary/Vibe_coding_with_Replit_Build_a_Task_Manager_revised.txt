@@ -1,0 +1,34 @@
+# Lesson Summary: Vibe Coding with Replit
+
+### What are we building?
+We're diving into **Replit**, a professional-grade "Full-Stack" AI coding platform. We'll be building a **Task Manager** from scratch—first by creating the visual layout in **Design Mode**, and then adding features like editing, categories, and search. This project shows how Replit manages everything from your first prompt to a live, secure website.
+
+### Quick thoughts before you start
+*   Why should you start in "Design Mode" (Front-end) before converting to a "Full App" (Back-end)?
+*   How does having a "Debug" button that actually reads your error logs make you a faster developer?
+
+### Expert Vocabulary
+*   **Design Mode vs. App Mode:** Design mode is for rapid visual prototyping (HTML/CSS), while App mode enables the "brain" of your app (databases, servers, and scripts).
+*   **Rollback:** A "time machine" feature that lets you undo a mistake and return your project to a previous state where it was working perfectly.
+*   **Secrets Management:** A secure way to store passwords and API keys (in a `.env` file) so they aren't exposed in your code.
+*   **Console & Debugger:** Replit's built-in tools that detect errors and offer to fix them automatically using AI.
+
+### Key Takeaways
+1. **The Professional Path.** Replit is more than just a chat window; it's a complete development environment used by professional engineers. It manages the entire lifecycle: code, database, security, and hosting.
+2. **Persistence Options.** While we started with "Local Storage" for the Task Manager (to keep it simple), Replit has built-in Postgres databases for when you're ready to store data for thousands of users.
+3. **Automated Security.** When you publish an app, Replit automatically scans it for risks. This ensures you aren't accidentally leaving a "backdoor" open in your software.
+4. **Git-Powered Versioning.** Every prompt you send creates a "checkpoint." If a new feature breaks your app, you can simply "Rollback" to the last version that worked.
+
+### Reflection Questions
+*   If your app has a "Runtime Error," would you rather fix it by reading the code or by clicking the "Debug with Replit" button?
+*   What is the difference between a "Static" website and a "Functional" application?
+
+### Your Action Item
+Open your Replit account. 
+1. Use the prompt: "Build a Task Manager in Design Mode. Use local storage to track tasks, categories, and urgency."
+2. Add a few tasks, then use the AI to "Add an edit button to each task."
+3. Once you're happy, try out the **Rollback** feature to see how you can move between different versions of your project.
+4. Finally, hit **Publish** to see the 5-stage deployment process in action!
+
+### In short...
+Replit is the most "enterprise-ready" tool in the vibe coding toolkit. It provides the perfect balance between AI-driven simplicity and professional-grade engineering control.

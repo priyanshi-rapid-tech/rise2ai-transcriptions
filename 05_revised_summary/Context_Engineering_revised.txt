@@ -1,0 +1,30 @@
+# Lesson Summary: Context Engineering (The Next Frontier)
+
+### What are we building?
+We're moving beyond simple **Prompt Engineering** to **Context Engineering**. This isn't just about writing a better question; it's about building a system that provides the AI with the perfect, personalized information (memory and data) "just in time" to create a superior response.
+
+### Quick thoughts before you start
+*   If LLMs are "stateless" (meaning they forget everything after every question), how do they seem to "remember" our preferences in a long chat?
+*   Why is "dumping" all of your emails or data into a giant 10-million-token context window actually a bad idea for your app's accuracy?
+
+### Expert Vocabulary
+*   **Statelessness:** The core nature of LLMs—they have no built-in memory. Every "turn" in a chat requires the entire previous context to be re-sent to the model.
+*   **Context Engineering:** The practice of carefully selecting, compressing, and providing only the most relevant data to an AI at the exact moment it's needed.
+*   **Context Rot:** A phenomenon where a long conversation slowly loses its original intent as the "thread" grows too large and cluttered.
+*   **Needle in a Haystack:** The technical challenge where an AI struggles to find one specific fact hidden inside a massive amount of data (large context window).
+
+### Key Takeaways
+1. **Memory is the Moat.** Anyone can write a prompt, but the developer who builds a system to handle **Long-Term Memory** (knowing a user's habits over months) creates a product that is impossible to copy.
+2. **More tokens ≠ Better results.** Just because a model *can* read 10 million words doesn't mean it should. Overstuffing leads to lower accuracy, higher costs, and slower responses.
+3. **Structured Context over Raw Dumps.** Don't just give the AI raw data. Categorize it into **Short-term** (current chat), **Mid-term** (summarized intent), and **Long-term** (permanent user facts).
+4. **Isolate for Accuracy.** Not every part of an app needs all the data. An agent booking a flight needs your seat preference, but doesn't need to know you are a vegan (unless it's booking a meal).
+
+### Reflection Questions
+*   Think of your favorite AI assistant. How much "Long-Term" memory does it actually have about you, and how would it feel if it knew your preferences 10x better?
+*   Why is "Context Engineering" more like "Curation" than "Programming"?
+
+### Your Action Item
+Open ChatGPT or Claude and look at your longest chat thread. Ask the AI: "Summarize the key preferences you've learned about me in this thread so far." See if it accurately identifies your "Mid-term" and "Long-term" interests or if it has "Context Rot."
+
+### In short...
+The winner of the AI race won't be the person with the best prompt, but the one who builds the smartest system for managing and delivering the right context at the right time.

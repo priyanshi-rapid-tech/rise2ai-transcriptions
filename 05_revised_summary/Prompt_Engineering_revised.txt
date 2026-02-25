@@ -1,0 +1,39 @@
+# Lesson Summary: Prompt Engineering & The CPOS Framework
+
+### What are we building?
+We're mastering the art of **Prompt Engineering**, the most critical skill for controlling and directing any Large Language Model. We'll learn how to move beyond simple "Ask a Question" commands and instead build structured prompts that ensure the AI behaves exactly like a professional tool.
+
+### Quick thoughts before you start
+*   If a prompt is the *only* way to control an LLM, why do we often get generic or "bad" answers when we don't provide enough details?
+*   Why does giving an AI a specific "Role" (like a Pirate or a CEO) change the way it thinks and solves problems?
+
+### Expert Vocabulary
+*   **System Prompt (Message):** The "boss" instruction that sets the AI's permanent rules and behavior for a whole session. It has the highest privilege.
+*   **User Prompt (Message):** The specific question or task at hand (e.g., "Write me a song").
+*   **CPOS Framework:** A four-part strategy for building perfect prompts: **Context** (Who am I?), **Purpose** (Why am I asking?), **Output** (How do I want it?), and **Safety** (What are the rules?).
+*   **In-Context Learning:** The ability of an AI to learn a brand-new skill or "personality" purely from the information you provide in the prompt itself.
+
+### Key Takeaways
+1. **Be Precision-Focused.** An AI's output is only as good as its input. If you ask for a "Trip Plan" without saying if it's for business or a honeymoon, you'll get a generic, useless result.
+2. **Follow the Hierarchy.** System prompts trump user prompts. If your system prompt says "Never speak French," the AI will refuse even if the user begs it to translate a word—this is how you build "branded" guardrails.
+3. **Use the CPOS Strategy.** 
+    *   **Context:** Tell the AI it's a "Senior Product Manager."
+    *   **Purpose:** Explain you need to "Summarize a report for the CEO."
+    *   **Output:** Request "3 bullet points and a 1-sentence conclusion."
+    *   **Safety:** Add "Double-check the data and never mention the secret project name."
+4. **Tone is a Choice.** You are a "Translator" the moment you prompt: "Translate from English to German." You are a "Coder" the moment you prompt: "Write this in Python." The prompt *defines* the AI's entire purpose.
+
+### Reflection Questions
+*   How would you use "Safety" constraints to make sure a medical chatbot never gives dangerous medical advice?
+*   Why is "Context" more important than just the "Command" itself?
+
+### Your Action Item
+Go to Google AI Studio. Try to rewrite a boring Slack message using CPOS. 
+*   **Context:** You are a professional diplomat. 
+*   **Purpose:** Ask your boss for a vacation day. 
+*   **Output:** 50 words max, professional and polite. 
+*   **Safety:** Do not use the word "please." 
+Check if the AI can follow every single rule.
+
+### In short...
+Prompt engineering isn't just about asking questions; it's about providing the "DNA" that determines how an AI thinks, acts, and speaks.

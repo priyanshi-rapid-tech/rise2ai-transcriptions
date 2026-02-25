@@ -1,0 +1,42 @@
+Video Title: VibePRD - Module 1: The Shell (A+B)
+Duration: 06:58 (Approx)
+
+Transcript:
+
+00:01, Alright, hey everyone, welcome!
+00:04, to the day one of YPRD. So, as talked in the intro, I'm just gonna go through and start building. In this case, if I come back to the day one, our goal here is to kind of build a split-screen interface, chat on the left, document preview on the right.
+00:22, And it won't do anything else, so this is not gonna be a working product, but just a design.
+00:27, And day one, we just want to focus on the design. In the white coding, you always build the container first, so that we want to, like, get the look and feel right. A convincing UI gives something to react to. So, this is just…
+00:41, just the first part of it, and I think you can see some of the screenshots here, like, this is kind of what I'm expecting, or, maybe even kind of look at, like, if you guys prefer something else, choose something else. I'm just gonna go with the simple thing.
+00:57, Either I could have copied, by going here and exporting, To, like, copy to Clickboard.
+01:04, Or, I will, in this case, I'll just let Replit choose. So what I'm gonna do is come back to the YPRD, day one, and go to the checkpoint A, and I'm gonna copy the entire blue text over here, which is the system prompt.
+01:20, come back to Replit, start a new design, which it defaults starts, and I'll put it in the design mode, right? So I don't need the app. So the difference between the design and the app is the app actually builds the backend and stuff as well.
+01:32, which we are not ready to build yet. So I'm just gonna paste it here, and then let it go. While that is building, let's kind of look through what we are actually asking it to build.
+01:43, They're saying, build a modern builder application.
+01:46, Split-screen interface, just the UI, no backend logic yet. Left panel chat, I'm asking it to kind of build a left panel chat, a chat interface similar to ChatGPD. It should have scrollable messages, history area, and a text input box pinned to the bottom.
+02:03, Messages from me.
+02:05, should appear on the right-hand side in the blue bubble. Messages from the AI should appear on the left-hand side as a gray bubble. Include a small new chat button at the top of the panel. So you can see, I'm kind of, like, constraining it significantly by saying exactly what I look like, my vision of it, but I'm not saying that, you know, going into super detail, and some of this you can just leave and, like, let the chat be creative.
+02:30, But some of it, it would be nice to kind of just say that.
+02:33, On the right panel, what we're calling is a document preview, so I'm giving it a name.
+02:38, A clean document viewing area that can display formatted text with headings, bullet points, and the sections. For now, fill it with the sample PRD so it looks realistic. The sample PRD should have the sections, problem statement.
+02:52, Target users, requirements, success metrics, non-goals, and open questions. Field lead section with plausible sample content, without fictional small grocery list app, alright? So, I'm just saying that, hey, build a small grocery… sorry, smart grocery list app, has used that.
+03:09, For the header, a simple top navigation bar with the app named YPRD on the left, and a placeholder on the right circle on the right. Visual style is minimalistic, and feel free to even change any of this for the capstone.
+03:22, Today, may I request you to kind of just follow it as is, so that, you know, you learn. And of course, you are free to kind of start two projects in parallel, and one of them just follow along and do what I do. And the second one, you can actually be a little bit more creative. Alright, so it looks like Replit just finished.
+03:41, I'm gonna collapse the left-hand sidebar here.
+03:44, And you can see that it has done a pretty good job. It has given a… on the right-hand side is the response from me and others. If I type here anything, nothing is going to happen, because I have not really asked it to kind of build anything. This is design mode only.
+03:59, It shows a grocery store, problem statement, and everything else. I was like, okay, I think this kind of works for me.
+04:06, What you want to look for is, here's the checklist. Does it look like a real product? Show it to someone with the context. If they think it's real app, you have succeeded. If the chat panel on the left with the input box on the bottom, right? So all of these things. Once that is done, I'm going to copy the next 04:26, checkpoint B, and paste it there, which is, and we'll talk about, like, what that, checkpoint B really is.
+04:37, So, at this point, if you have not started, please go back, pause this video, go back, and do this. Don't wait for me to kind of do the whole thing, and then come back.
+04:46, Now what we're gonna do is, we're still staying with the UX, and we are gonna add two things to the existing UI. Do not rewrite or restructure anything that's already working, right? Like, so I'm asking it to not change things.
+04:59, I want to show an interview progress indicator.
+05:03, Which says that at the top of the left panel, below the new chat, add a horizontal step tracker showing 6 steps. Problem, user, jobs to be done, metrics, long goals, risks. These are the things, you can see, look at the screenshot.
+05:18, You can see that this is the… this is the strip that I'm kind of talking about, and 05:25, At the same time, I want to have a generate PRD button, add a prominent button level, generate PRD, which is also visible here, but may or may not be exactly in the same spot, because we're not giving… Stitch also has… actually, I didn't give the generate PRD aspect to the stitch.
+05:41, So, in this particular case, you can see that, this has successfully generated, user, jobs to be done, metrics, non-goals, stuff.
+05:50, And I can actually increase the size. I have a plus sign here, which is not working. None of this is working, but there's a generic PRD. That's it, actually, right? Like, so this is… the next 20 minutes, you need to kind of go back and, like, play around with it, do stuff.
+06:07, And be able to kind of get to a checkpoint B, and make sure that this is working, right?
+06:13, In summary, what you just learned is you can describe a user experience in plain English.
+06:19, And what appeared was a working interface. I could have made some changes to that, which I'm not gonna do now, we have talked about another, we can change color code, we can change appearances.
+06:29, No HTML, no CSS, no framework.
+06:32, We used context barrier, knowing what to build, instead of a syntax barrier, knowing how to code, right? Like, we… it's just by knowing what we want to build, we have built it. That, ladies and gentlemen, is Vibe coding.
+06:47, Alright, so with this, I'm super excited to kind of jump into Day 2 and see where we're going to continue. So please don't touch your projects when you go from day one to day two.
+06:58, If you are, do more experimentation, create two different projects. Make sure you get the paid account with Riplet. A free account is not gonna get you too far. Alright, I'll see you guys on day two.

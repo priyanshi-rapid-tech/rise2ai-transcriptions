@@ -1,0 +1,30 @@
+# Lesson Summary: Build an "Eat-Out Helper" Capstone Project
+
+### What are we building?
+We're building a **Smart Dining Companion** that helps users decide what to order from any restaurant menu. The app allows you to upload photos of physical menus, paste URLs, or scan QR codes, and then uses AI to recommend dishes based on your group's dietary needs and size.
+
+### Quick thoughts before you start
+*   Why should you use an "AI Thinking Mode" (like ChatGPT-o1) to help write your app's prompt instead of just typing a basic request?
+*   What is the best way to handle app errors when you're "vibe coding" but the AI gets stuck in a loop of broken code?
+
+### Expert Vocabulary
+*   **Prompt Enhancement:** Using a high-level AI to turn a simple idea into a detailed technical project plan before sending it to a builder like V0 or Lovable.
+*   **Context Engineering:** Identifying and providing the exact data the AI needs—like a menu photo or specific dietary rules—to ensure its recommendations are accurate.
+*   **Iterative Debugging:** The process of seeing a bug, capturing the error from the console, and feeding it back into the AI to "auto-fix" the problem.
+*   **Predefined Prompts (Chips):** Clickable buttons like "Find Vegetarian" or "Order for Kids" that save the user from having to type long questions themselves.
+
+### Key Takeaways
+1. **Minimize the "Job to be Done."** A great app doesn't just show a menu; it does the hard work of counting people, calculating costs, and suggesting the "exact words" to use when ordering.
+2. **Design for Mobile First.** A dining helper is only useful if it works beautifully on a phone in a restaurant. Focus on big buttons and easy photo uploads.
+3. **Bypass complexity with prompt tuning.** If an AI-built interface is too confusing, tell it to "Make it ChatGPT-like." Using familiar layouts makes your app easier for everyone to use.
+4. **Vibing requires persistence.** Don't give up if the first version is buggy. Use features like "**Fix with V0**" and move through 10-20 versions to polish the final product.
+
+### Reflection Questions
+*   How would you add a "Memory" feature so the app automatically remembers your food allergies for the next restaurant you visit?
+*   What other "everyday tasks" (like grocery shopping or gift buying) could be solved using this same photo-upload and AI-chat pattern?
+
+### Your Action Item
+Go to V0 or Lovable. Start with a "Detailed Prompt" for an **Eat-Out Helper**. Upload an image of a menu (you can find one on Google). Use a predefined chip to ask for a "Lunch order for 4 people with one vegetarian." Verify the total price matches the menu.
+
+### In short...
+By combining image uploads with smart, goal-oriented prompting, you can build a personal assistant that solves the "what should we eat?" problem in minutes.

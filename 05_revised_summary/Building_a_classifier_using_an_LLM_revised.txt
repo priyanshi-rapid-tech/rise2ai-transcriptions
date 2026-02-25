@@ -1,0 +1,30 @@
+# Lesson Summary: Building a Classifier with LLMs
+
+### What are we building?
+We're building a **Spam Detector** using an LLM as a classifier. Instead of using complex data science tools to categorise data, we use natural language prompts to turn a text input into a specific category (like "Spam" or "Ham").
+
+### Quick thoughts before you start
+*   Why were machine learning classifiers so difficult and expensive to build before generative AI came along?
+*   How can you transform a messy text response from an AI into a structured piece of data that a computer can actually use?
+
+### Expert Vocabulary
+*   **Zero-Shot Classification:** The ability of an LLM to categorize data without being given any prior examples in the prompt.
+*   **Structured Output (JSON):** Forcing the AI to respond in a code-friendly format (JSON) so the result can be easily plugged into a larger software system.
+*   **Spam vs. Ham:** The standard industry terminology for classifying messages (Spam being unwanted junk and Ham being legitimate content).
+*   **System Prompting:** Setting a high-level "rule" for the AI (e.g., "Act as an SMS classifier") to narrow its focus and improve accuracy.
+
+### Key Takeaways
+1. **Prompts replace training.** You no longer need to train a model with thousands of data points; one clear system prompt can build a highly accurate classifier in seconds.
+2. **Structure is mandatory for scale.** If your classifier needs to talk to other software, use "Structured Output" to ensure it returns clean JSON instead of chatty sentences.
+3. **Playgrounds are your workshop.** Use tools like Google AI Studio or OpenAI Playground to test your classifier's logic before exporting the actual code (Python/REST) for deployment.
+4. **Think before you act.** For higher-stakes classification, enable "Thinking Mode" to allow the model to reason through its decision before committing to a category.
+
+### Reflection Questions
+*   How would you calculate the "cost-per-message" for your classifier to decide if it's cheaper to use a small model (Flash) or a large one (Pro)?
+*   If your classifier starts making mistakes, how would you go about adding specific examples (Few-Shot) to the prompt to fix them?
+
+### Your Action Item
+Go to Google AI Studio. Use the system prompt: "Act as an SMS classifier. Respond only in JSON with the keys 'category' and 'reason'." Test it with two messages: one friendly and one asking for "Free Bitcoin." Confirm if the JSON output is correct.
+
+### In short...
+LLMs have turned complex machine learning "classification" into a simple task that anyone can build, test, and deploy using natural language.

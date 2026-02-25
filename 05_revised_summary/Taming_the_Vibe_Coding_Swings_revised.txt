@@ -1,0 +1,31 @@
+# Lesson Summary: Taming the Vibe Coding Swings
+
+### What are we building?
+We're learning how to maintain stability in our AI-built projects. "Vibe coding" is fast and intuitive, but it can also be fragile—like a Jenga tower where one small change can cause the whole app to collapse. We'll explore strategies to move from "unstable vibes" to "reliable engineering."
+
+### Quick thoughts before you start
+*   Why does an AI built website sometimes "break" even when you haven't touched the code for weeks?
+*   How do you keep an AI focused when it starts acting like a "confused intern" instead of a "genius engineer"?
+
+### Expert Vocabulary
+*   **Context Rot:** A problem where long chat sessions get cluttered with old information, causing the AI to lose focus, make mistakes, or "hallucinate" fake code.
+*   **Atomic Prompts:** Building your app one small "brick" at a time (e.g., first the login, then the profile, then the database) instead of asking for the whole app at once.
+*   **Spec.md:** A markdown file that documents the "soul" of your app—its colors, features, and folder structure—so the AI always has a "source of truth" to follow.
+*   **Human Compiler:** Your role as the supervisor who reads every prompt and verifies every AI action, ensuring no "bad vibes" bypass your quality checks.
+
+### Key Takeaways
+1. **Build Brick by Brick.** Don't ask the AI to "Build a second Facebook." Instead, ask for one specific function at a time and verify it works before moving to the next.
+2. **Modularize to Isolate.** Keep your project organized into folders (e.g., `/billing`, `/user-management`). This prevents a bug in the payment system from accidentally breaking the entire user interface.
+3. **Guard your Context.** Long conversations lead to "rot." If you finished the UI and are starting on the database, it's often better to start a fresh chat thread with your `spec.md` to keep the AI sharp.
+4. **Be the Quality Controller.** Use "Strict Linters" and security checklists. Even if the code "looks" right, ask the AI: "Are there any security vulnerabilities or performance issues in this latest update?"
+5. **Document the "Vibe."** Save your project requirements as a `spec.md` file in your code. This allows you to "rebuild" the project in any other AI tool exactly the same way.
+
+### Reflection Questions
+*   If your AI assistant suddenly forgets a key feature you talked about 3 hours ago, how would you use your `spec.md` to remind it?
+*   How is "Vibe Coding" different from "Traditional Engineering," and why do we still need both?
+
+### Your Action Item
+Ask your current AI project: "Based on everything we've built, generate a `spec.md` file that summarizes the tech stack, design system, and core features." Save this file in your project folder. The next time the AI gets confused, tell it to "Read `spec.md` and stay on track."
+
+### In short...
+Vibe coding is the engine, but engineering is the steering wheel. To build professional-grade apps, you must supervise your AI like a senior architect supervising a junior developer.

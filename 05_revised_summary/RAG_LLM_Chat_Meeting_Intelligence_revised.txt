@@ -1,0 +1,30 @@
+# Lesson Summary: Prism — Meeting Intelligence with RAG
+
+### What are we building?
+We're building **Prism**, a "Meeting Intelligence" platform that turns raw transcripts into professional insights. Instead of just summarizing, our app uses **RAG (Retrieval-Augmented Generation)** to extract specific commitments, friction points, and revenue figures, and allows you to chat directly with your call data with zero "hallucinations."
+
+### Quick thoughts before you start
+*   Why is a formal "Commitment Grid" (who promised what and when) more useful for a product manager than a long summary of a meeting?
+*   What is the difference between an AI "guessing" an answer and an AI performing "RAG" to prove its answer using the transcript?
+
+### Expert Vocabulary
+*   **RAG (Retrieval-Augmented Generation):** A process where an AI first "retrieves" specific facts from a document (like your transcript) and then uses those facts to generate a 100% accurate answer.
+*   **Transcript Parsing:** Automatically breaking down a long block of text into speakers, timestamps, and key topics.
+*   **Commitment Grid:** A structured list or table extracted from a conversation that clearly shows every deadline or promise made by the participants.
+*   **Oracle Chat:** A specialized chat interface designed to answer questions *only* based on the uploaded data, refusing to "make things up" beyond the transcript.
+
+### Key Takeaways
+1. **Analyze, don't just Summarize.** A generic summary is often too vague. Build your app to look for "Friction Points" and "Next Steps" to provide real business value.
+2. **Beware of "Mocks."** Sometimes AI builders will create a "fake" (mock) version of an app that doesn't actually connect to the AI. Always verify by asking, "What model are you actually using?" and "Show me your system prompt."
+3. **Format for Readability.** Raw AI text can be messy. Ensure your app uses **Rich Text (Markdown)** so that bold headings, bullet points, and tables are easy for humans to read.
+4. **Context verification.** A great intelligence tool should always provide "proof." Ask your AI to include the exact timestamp or quote from the transcript to verify its findings.
+
+### Reflection Questions
+*   How would this tool change your team's productivity if every Zoom meeting automatically resulted in a "Commitment Grid" being sent to everyone's email?
+*   If you were analyzing an earnings call, why would you want the AI to be "brief and punchy" rather than "verbose and long"?
+
+### Your Action Item
+Find a public transcript of a tech talk or earnings call (or use the one provided in the lesson). Upload it to V0 or Lovable using the prompt: "Build Prism: A meeting intelligence app. Extract a table of all commitments and an Oracle chat to answer specific data questions like revenue."
+
+### In short...
+RAG transforms an AI from a creative writer into a precise data researcher, allowing you to unlock the hidden intelligence trapped inside your company's meetings.

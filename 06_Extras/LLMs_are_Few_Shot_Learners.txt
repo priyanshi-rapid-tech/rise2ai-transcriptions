@@ -1,0 +1,46 @@
+Video Title: LLM’s are Few Shot Learners
+Duration: 07:44
+
+Transcript:
+
+00:01, Alright, so let's talk about, how language models are…
+00:07, multi… few-shot learners. So this was a paper that was released by OpenAI, which I've linked here. It's a very important paper| to, like, how do you get models to kind| to perform better?
+00:19, by, being, you know, getting to a multi-shot. So, first| to all, what is a zero-shot, one-shot, and few-shot learner?
+00:28, When you provide
+00:31, no examples| to how the models respond to a prompt, that is called zero-shot. In this particular case, if you see the example, is we are asking the model to translate it from English to French.
+00:45, However, we are not giving any examples| to what a good translation looks like.
+00:50, This is called zero short because we are providing zero examples| to how it should be done. We are just providing the prompt, or we are providing the command as to what has to be done.
+01:00, The one shot would be where you would provide one example| to how it should be done. In this particular case, if you, look at, like, again, we are saying converted English to French.
+01:10, But we have provided one example| to what it looks like, to go from English to French. She order to… I'm gonna butcher it completely, but Luther des Amer.
+01:21, And, then you can see that when you provide other prompts, like cheese, examples like cheese and others, it can easily convert.
+01:29, But what if we actually can provide, you know, multiple examples| to it? For example, a few different examples| to it, then it's called the few-shot learner.
+01:40, It turns out that models, the LLMs, are actually a very good few-shot learner.
+01:48, let's, in this particular example, if you look at it, we, you know, when OpenAI, in this case, looked at, a graph.
+01:56, of different size parameters, like models, and what they saw was, like, with zero shot, what is the percentage| to accuracy? You can see that
+02:05, With Jirot, if the models perform a particular accuracy, which is, you know, 10, 20, whatever you can see on the left-hand side, just by providing one example.
+02:15, The quality or the accuracy| to the models improved significantly.
+02:19, And as you provided… ended up providing more number| to examples, the accuracy continued to kind| to improve. And what it means is that if, just by giving a prompt.
+02:28, your probability| to the output is gonna be, that it's gonna be great is less than if you provide examples. However, you have to be careful here, right? Because you cannot provide examples, that, that you may think.
+02:42, is great, but at the same time, it's not the true representation| to what your example should be, right? So, you have to be careful that if… let's take an example. If you have a customer support case.
+02:54, And if you have a few examples| to what would be a good response to a customer question that is asked.
+03:02, You want to provide multiple examples| to what the good examples would be. What it does, it allows us to kind| to capture what the tone is, what is the length is, how the format was, and everything else because| to the example.
+03:14, However.
+03:16, If you only have examples| to returns, for example, like, where, you know, if you're an e-commerce site and you only have examples| to the returns, that may affect how it responds to somebody else asking for inquiry about buying a product, or some other, kind| to, just inquiring when the order is gonna arrive.
+03:35, So you have to be careful in what kind| to examples, you provide. Here is just another benchmark that was seen, that, you know, as the parameters were… they kept increasing the parameters, and irrespective| to that, few short learner, which is the orange.
+03:51, kept doing better than the zero sort learner and others. So, of course, larger size models did see the improvement, even with the Groshart, but few sort learner is so much better.
+04:04, So, let me show you that, the zero-shot, one-shot, and multi-shot, or a few-shot, in a couple examples. So, what we'll do is we'll start multiple chat threads, and see how the responses actually vary based on, based on our prompt.
+04:20, Again, I'm not following the CPUS framework, just to kind| to keep it simple, but let's say we want to rewrite the message in a polite email, and we wanted to kind| to see if this can be done. Let's do that.
+04:34, So, let's do that using Google AI Studio.
+04:39, What we're gonna do is, let's say we build… we are building a email writer, right? So, if I can say, my system instruction with zero sort, this is zero sort, is that you are a helpful assistant that rewrites sort commands as polite, professional emails. So, I haven't given any examples here, but I…
+04:55, I've specified, I'm gonna remove the thinking mod here, is, like, I've, reminded that please write something into, a polite email, and what if my command is, like, send the report now, and hit run?
+05:10, And you can see that it has written a good email, subject request for report submission. Dear recipient, I hope this email finds you well. Yada yada. Right? However, let's try, if we wanted to kind| to do it with a one-shot prompt.
+05:24, instead| to letting the LLM decide what suit the email and what is professional and what is polite is, what if I actually provided an example here, right? So, not only did I… I kept the same exact prompt, but I provided an example, fixed the bug immediately.
+05:40, If that's the prompt, that's the question that I have, I want to say, hey, can you please take a look at this issue when you get a chance, and thank you. So you can see it's much shorter, it does not have, hello, or dear, sir, and all| to those things.
+05:53, But it provides a clear example| to what it should be. What I want to do is take the exact same example now. Let's start a new, new thread.
+06:03, And you can see the prompt is there with the example. This is one-shot prompting, and I say, send the report now.
+06:13, You can see, I hope this finds you well. Could you please send over the report when you have a moment? I would really appreciate it. So you can see, hey, you can send, please take a look at this, da-da-da, thanks, and it kind| to follows that. However, if I wanted to kind| to have a few shot, in this particular case, I will not only just provide one example, I will provide multiple examples.
+06:33, here.
+06:34, And, for this example, if I, again, start a new thread, because this is multi-shot at this point, when I say send the report now, you can see that,
+06:47, it's much better, and it has even provided, hey, can you please send the report when you get a chance? Thanks. So, you can see that it has much closer to the output that we wanted. It understood that we don't even want hello, sir, or, like, any| to the other aspects| to it. So…
+07:05, Coming back to it, right, what we have seen is the zero-shot learner is okay, but if you really want to get to a much more controlled environment where you want the models to kind| to behave the way you want to, zero-shot, one-shot, and few-shot learner is a great example| to it.
+07:24, So, this can also be used for any other aspects, so I encourage you guys to kind| to go back and try some| to the examples, take some real-life scenarios, and figure out what would be your zero-shot instruction would be, and how would you enhance it with the one-shot, or how do you enhance it with multiple shots. I'd love to kind| to hear more about that, so share that back with me. Thank you.

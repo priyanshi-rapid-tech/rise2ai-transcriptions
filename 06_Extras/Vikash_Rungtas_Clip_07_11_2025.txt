@@ -1,0 +1,31 @@
+Video Title: Vikash Rungta's Clip 07/11/2025
+Duration: 05:27
+
+Transcript:
+
+00:00, Hey, folks, this is Vikash here. Just want to send a quick note on
+00:07, what's happening with the AI product management landscape. And why? Why, I'm even kind| to thinking about doing this. Course.
+00:16, you'll learn a lot more about this in the event that's happening tomorrow. But here's the thing
+00:24, with AI product management. There is so much buzzword out there, right the folks, especially if you go on Linkedin and some| to the other places. There is an announcement being made every single day.
+00:35, And these announcements are not just basic announcement that make incremental changes. A lot| to this on a week over week basis. The industry is moving at a very fast pace.
+00:46, And if you are a product manager thinking about, or a startup founder or executive who's thinking about building some| to these products
+00:54, you are left kind| to like chasing this different concepts, trying to understand why each| to the product actually matters. And what is the new announcement that actually can change the way you build your products.
+01:08, And what I realized in the 2 plus years that I've been working, you know, since the 1st models came out
+01:16, on the generative AI side is, you really have to kind| to go back to the 1st principles and understand the fundamentals| to why the generative AI models do the way they do it, how they enable it!
+01:27, If you just kind| to keep focusing on the announcement that's coming out every day, you will never be able to catch up.
+01:34, So the approach that I want to take in this course, and that I have been kind| to taking at a couple| to places that I teach this right like, I teach this at Stanford concerning studies which has been very popular, and also at Meta. I have taught, like over 1,200 product managers and Tpms who have taken this course like about how do you kind| to build with generative AI?
+01:55, And the approach is, we start with what we call is the inside out, where we start with the very simplistic aspect| to what is a neuron and what is a machine learning model
+02:05, and very quickly try to kind| to come out| to that and say, like, if this is neuron and like, this is how it works. We get a little technical, but it does not get into the aspect where you, if you have built products before you should be able to kind| to follow along. And why machine learning models even work
+02:22, from there is a machine learning model the same thing as an Llm. Broadly, maybe. Yes. But there are some key characteristics. What make an Llm. Possible? And how do you actually go about controlling an Llm. Because Llms are so powerful that with a prompt, you're able to kind| to control it. And how do you go about controlling in a way that allows you to kind| to launch the product
+02:45, from there, we kind| to go about figuring out, how do you kind| to eliminate hallucination? How do you kind| to go about building a data strategy? How do you go about building a team that allows you to kind| to like build in this fast paced world.
+02:57, Look, here's the reality like, for for decades products have been built with only 2 components, which is a database, and Appen says that if you have not.
+03:10, if you have not looked at this new engine beyond the database and the app engine, which is the Llm. Or the intelligence layer. And you don't know how to kind| to control that
+03:21, you are gonna not be able to kind| to build products that you can ship more broadly
+03:28, right? What it also means
+03:30, is that just because you're able to launch a Chatbot in a few hours or a few days does not mean that that product can be shipped. The reality is almost nobody in the world has shipped successful generative AI products. And there is a reason for that. The number one reason is, it's really really easy to kind| to build a generative AI product. And maybe we'll build a couple| to them in the course.
+03:55, But it's extremely hard to kind| to control them. Extremely hard to kind| to ship them for various reasons. Your job as a startup founder, product, manager, executive, is
+04:06, to identify what is the way to kind| to get this to the market that drives business outcomes for your product.
+04:13, Your engineers are not coming to you. Asking you to kind| to understand is like, how do I write that prompt? They're not asking you like, how do you build a basic generative AI system?
+04:21, They will figure it out. And you will do that. You, as the business leader, have to figure out, how do you kind| to take this understanding and drive an outcome for the business? Towards that you have to understand a few things you have to understand the technology. You will have to understand why Llms work. You have to understand. How do you kind| to control it? And you have to understand the power| to these things, because without that you will not be able to kind| to communicate with their
+04:47, communicate with your technologist as well as you have to communicate that sometimes to the leadership on the top who don't understand the fact that these models are extremely easy to kind| to build with, and you know, even more extremely hard to actually kind| to ship
+05:05, which is controlling them in a way that drives business outcome. So I look forward to kind| to talking to you all tomorrow and get a little bit more in the details.

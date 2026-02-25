@@ -1,0 +1,34 @@
+# Lesson Summary: What is Vibe Coding?
+
+### What are we building?
+We're defining a new way of creating software: **Vibe Coding**. Coined by Andrej Karpathy (formerly of OpenAI and Tesla) in early 2025, it describes a shift from writing every line of code manually to building by "Intent." You describe what you want in English, and the AI handles the complex programming (syntax). Your new job is not to *write* code, but to *review and iterate* on what the AI produces.
+
+### Quick thoughts before you start
+*   If "English is the new code," how does your ability to be clear and specific change your value as a Product Manager?
+*   What does it mean for a piece of software to "Vibe"? How do you know if it's right without reading the code?
+
+### Expert Vocabulary
+*   **Vibe Coding:** Building software by describing behaviors and intents rather than writing programming syntax.
+*   **Vibe Check:** The process of running the AI-generated app and manually testing it to see if it feels right and carries out the intended goal.
+*   **Level 2: Vibe Engineering:** Moving beyond simple "toy apps" (like calculators) to build real, complex software with databases, authentication, and security.
+*   **The Vibe Stack:** Professional-grade tools used for Level 2 coding, such as **Anti-Gravity**, **Cursor**, or **Cloud Core**.
+
+### Key Takeaways
+1. **The Shift from Write to Review.** In the past, you spent 90% of your time writing. In Vibe Coding, you spend 90% of your time reviewing the AI's work, testing features, and asking for small edits.
+2. **Clarity is Your Superpower.** Since the AI is doing the "heavy lifting" of coding, your most important skill is **Clarity**. You must be able to articulate exactly what the user needs and, even more importantly, what the app *shouldn't* do.
+3. **Start Slow to Ship Fast.** Don't try to build a billion-dollar startup in your first prompt. Start with one feature, verify it works (the Vibe Check), and then add the next layer. "Boiling the ocean" results in broken code.
+4. **The Rise of the Product Engineer.** The line between PMs and Engineers is blurring. PMs can now prototype and build internal tools, while Engineers spend more time thinking about product strategy.
+
+### Reflection Questions
+*   Karpathy says we mostly "Write English now." How does this change the way you would design a product spec?
+*   Why is "System Thinking" (understanding how different parts of an app connect) more important than knowing how to write a Python function?
+
+### Your Action Item
+1. Think of a simple "Toy App" (e.g., a Tip Calculator or a daily focus timer).
+2. Go to a tool like **Replit** or **V0**.
+3. Use a "Vibe Prompt": "I want to build a simple tip calculator that looks like a high-end restaurant menu. I want to input the bill and choose 10%, 15%, or 20% for the tip."
+4. Run your **Vibe Check**. Did it get the colors right? Does the math work?
+5. Iterate: "That's great, but can you make the font more elegant and add a 'Split bill' feature?"
+
+### In short...
+Vibe coding turns your words into working software. By mastering the "Vibe Loop" (Prompt -> Generate -> Check -> Iterate), you can build and ship ideas faster than ever before.

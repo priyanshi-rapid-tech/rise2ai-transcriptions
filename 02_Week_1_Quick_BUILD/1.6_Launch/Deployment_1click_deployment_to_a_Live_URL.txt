@@ -1,0 +1,26 @@
+Video Title: Deployment: 1-click deployment to a Live URL
+Duration: 03:48
+
+Transcript:
+
+00:01, Right, guys, so let's think about how can we deploy. So, as you build something, and we'll look at a couple of different ones to kind| to deploy.
+00:11, As soon as you have built something, generally on the top right, but it could be somewhere else as well.
+00:16, You'll find a Publish button.
+00:18, And, I'll just kind| to go ahead and hit publish. And what you're able to kind| to do there is, like, either provide a URL different upon who can see it and who cannot see it. Well, what different vendors provide, you may either see allowing… most of them allow some kind| to a customization of the URL.
+00:37, Or you can just leave it empty, and it will figure out by itself. There should be some kind| to privacy setting, and some of them, you know, only allow public sites and not private.
+00:46, unless you are a paid user, right? So the private option is also there, where, you know, if you are building something for your internal team, only your team can get access. In this case, you can see it says workplace, or it's kind| to logged.
+00:58, Because I'm not a workplace user.
+01:01, And then, it has, some of the other information, like what the icon will look like, I can change the icon, in this particular case to something else, or I can change the title, to something else, from livable to others, and description. This goes into the metadata stuff. Not everybody provides this information.
+01:18, Because, like, depending upon where it is. But if you want to change it, and if it's not provided in the publish, you can just go back to the prompt and say, I would like to change my fab icon. So, for example, I can say, can you change my fab?
+01:34, icon to a heart, right? And, so it will go figure it out, and just vibe it out, right? You don't have to specify exactly. While it's doing this, I'm gonna come back and, like, look at, something else. In this case, it's actually generated. Same thing for V0, right? We build this thing.
+01:52, I'm gonna just hit publish here, and you can see there's a visibility aspect of it, and do you want to show V0 branding or not? And you can just hit Publish.
+02:03, Here, what it does is, when you're actually doing the publish, it actually goes out and, like, builds out the entire publishing, pipeline for you. Same thing here, I think now it has changed. So, let me actually take a look at this. Well…
+02:21, I think let's publish and see if the 5 icon has actually changed or not.
+02:27, I'm just gonna go ahead and publish this.
+02:29, And over here, you can see in V0, it has… it's still building, so it kind| to goes through a lot of building, and it may have some analytics and everything else, but I have the URL, so I can actually go there, and it says that, still kind| to, like, deploying and building, all of those things, so let it finish.
+02:47, I'm sorry to kind| to go back and forth. In this case, Levi will actually ship this product, so let me go ahead and…
+02:54, put it out, and see, okay, this whole URL is kind| to working. I can see the fab icon is moved from Lavibul to some kind| to other heart. There's a lot of hearts here. I'm actually go ahead and, come back here, and I'm gonna, you know, you can…
+03:13, or you can add a custom domain. So there would be a different video on, like, how do you kind| to, like, connect a custom domain, and how do you kind| to, like, get that, but I can put it to Roomtas.com or something else. Same thing over here.
+03:25, you can see, the deployment is ready, because it has published, so once I go to this URL, the whole thing is now ready. I'm actually go ahead and gonna delete this project, because I just don't want my private information. You guys can have it, but, like, I don't want the private information to be public.
+03:43, But, there you go. There's your one-click deployment.
+03:47, Good luck.

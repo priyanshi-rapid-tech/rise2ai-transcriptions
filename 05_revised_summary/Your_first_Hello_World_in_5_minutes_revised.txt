@@ -1,0 +1,33 @@
+# Lesson Summary: Your First "Hello World" in 5 Minutes
+
+### What are we building?
+We're breaking the "Fear of Coding" by shipping two functional products in under 5 minutes. First, we'll build a **Personal Profile Page** that looks professional and custom-made. Second, we'll build a **Sales Dashboard** that can analyze complex data and turn it into beautiful charts. The goal of this lesson is "The Unblock"—the moment you realize you can be a builder, not just a spectator.
+
+### Quick thoughts before you start
+*   How does uploading your LinkedIn PDF change the way the AI builds your website compared to just typing your name?
+*   Why is it better to ship a "simple" working product today than a "perfect" one next month?
+
+### Expert Vocabulary
+*   **The "Hello World":** A traditional first step in programming where you build the simplest possible thing to prove you can do it. In vibe coding, this is shipping a live URL.
+*   **Context Loading:** Providing the AI with background files (like a resume PDF or a dataset URL) to ensure the output is personalized and accurate.
+*   **CSV (Comma Separated Values):** A simple way data is stored in spreadsheets. AI can read these files and instantly turn them into interactive dashboards.
+*   **Dashboarding:** The act of taking raw data and turning it into a visual control center with graphs, tables, and filters.
+
+### Key Takeaways
+1. **Context is Everything.** The best way to get a great result is to feed the AI a file. Instead of typing your history, upload your LinkedIn PDF. The AI treats that file as its "Source of Truth."
+2. **The 5-Minute Prototype.** You don't need a month-long project to prove you're a builder. Use tools like **Lovable** for visual pages and **V0** for data analysis.
+3. **From Static to Smart.** You aren't just building a "picture" of a website. By using a Kaggle dataset, you're building a "Smart" tool that can filter data, calculate sales, and visualize trends—tasks that used to require a professional data scientist.
+4. **Iterate to Polish.** Your first version won't be perfect. Don't worry about it! Use simple follow-up prompts like "Change this to an AI theme" or "Use fall colors" to refine the look in seconds.
+
+### Reflection Questions
+*   How does it feel to see a working dashboard created from just one URL in less than 60 seconds?
+*   Vikas warns about "Safety and Security." Why should you be careful about what files you upload before hitting the **Publish** button?
+
+### Your Action Item
+1. Go to your LinkedIn profile and "Save to PDF."
+2. Open **Lovable.dev**, upload that PDF, and say: "Build me a professional profile page using this resume."
+3. Once it's built, try one style change (e.g., "Make it look dark-mode and techy").
+4. **The Unblock:** Click the **Publish** button. You are now officially a builder with a live URL!
+
+### In short...
+You are no longer "studying" how to build; you are a person who ships products. Spend the next 5 minutes proving that to yourself.

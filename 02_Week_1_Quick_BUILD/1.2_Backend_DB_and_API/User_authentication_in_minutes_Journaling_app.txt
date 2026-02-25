@@ -1,0 +1,52 @@
+Video Title: User authentication in minutes - Journaling app
+Duration: 07:22
+
+Transcript:
+
+00:00, Alright, so today, I want to actually go ahead and build an app with authentication. This is… this is super important, because everything… time you build something, you want to allow people to kind| to authenticate to your app, so you can…
+00:15, You can keep your data secure, give them a more personalized experience, charge them money for that.
+00:21, And, in this case, I'm gonna keep a very simple app, right, which says that, build an app.
+00:32, The app that I would like to build is a journaling app.
+00:37, Using,
+00:39, local storage, just, so that I'm trying to avoid the database, overall, using a local storage.
+00:48, But provide authentication.
+00:54, In this particular case, use Replit.
+00:57, auth, we'll talk about what that is in just a second, and go in the build mode, and just say start. There are a couple of things that I've done here. One is, just to kind| to keep it simple, a journaling app is where you can just journal what you're doing on a daily basis, or as often as you want.
+01:14, I've asked you to kind| to use local storage, which is generally what you'll not do, but to kind| to just avoid setting up the database and everything else, I've just done that. But I've also used… asked you to kind| to use Replit Auth.
+01:26, Which is, to provide authentication, the simplest way would be
+01:32, To use username and password, but a lot of people don't, you know, there's a lot of, you may have challenges, kind| to, like, doing that. Mainly because, you have to store the password, and there's a lot of risk around in terms of safety and security.
+01:47, So, Replit provides a built-in authentication. What it means is that it will actually give you things like continue with Google, continue with X, so this is also called SSO, single sign-on.
+01:58, There are some risks to using Replit Auth as well, it's like, to make it easier for you, where it becomes almost a single click, they actually use Replit's name, so your user will be creating an account with Replit, and it also authenticates you. So just know that this is not the ideal scenario, but it's valid.
+02:16, You can also use something like clerk.
+02:19, dot com, or Superbase, what they have is, like, they have user authentication as a service. What it means is that
+02:26, they provide you all of the signal sign-on, right? So, ultimately, when you get a login, your users will be able to kind| to see Google, GitHub, and you can choose which ones you want to actually do. So if you go into Clerk, for example, and if you see what's going on, you will be able to see
+02:46, that they have configurations, like, what are the SSO settings that you want? If you want to add, a particular user type, like login or not, do you want multi-factor authentication? Things like if you want to actually get
+03:02, SMS verification code, email verification code, all of those things can happen.
+03:07, If there are specific restriction on type of users, that can also happen here. You can ask them for their phone number, do you want to sign up if phone is allowed or not? So, there are so many different things that comes with authentication. And generally, I discourage you guys to kind| to build your own authentication system from scratch.
+03:26, Start with something simple as Replit. Maybe move on to Clerk. Superbase also has this. So if you go to Superbase, they also provide authentication as a service, right? Like, so they provide you… these are super cheap.
+03:40, To kind| to build with. They do provide authentication as a service, that is something that you can use. Or you can use Firebase authentication, which this is from Google.
+03:50, So they also provide authentication, in some way or form, in this case, right? But coming back to our app, this is actually, you can see, that it has a logged-out version, right? Like, I'm seeing a landing page, but as soon as I say start journaling.
+04:08, it will want me to kind| to, like, page is still not completed, so let's just wait for it to kind| to complete. Alright, it's completed now. You may have to kind| to publish the page before you can start journaling. The reason for that is a lot of the auth requires URLs.
+04:27, And stuff like that, so we want to be able to kind| to come back and take a look at that, right? We have talked about how to kind| to publish it, but just hitting it publish really kind| to goes and, deploys the whole thing, and…
+04:42, So it just goes through provision, security scan build bundle. While it is doing that, let's just take a look.
+04:49, There's a sign-in button. The good thing is I don't see anything till I sign in. So, for example, even if you're building an app where you say, hey, every data store is local, like it does here, for billing purposes, or for other purposes, if multiple people are using the computer, they may want to actually just create sign-in.
+05:07, So, alright, going back to the Publish tab, let's see.
+05:12, What do they have?
+05:16, Oh, one thing they have done is actually, looks like they ended up creating a database, which can happen. So if you go to the database tab here, for the user entries, they have created 3 different tables, users, sessions, and Entries.
+05:30, And then they also have, like, Replit has this development database and the production database, which of each of them can be different.
+05:37, Which is a little bit different than, Lovable, which does not have the development database, from what I know. Alright, at this time, you should be kind| to pausing here, and going back and putting this, prompt.
+05:50, I'll put this into the, Google Docs as well.
+05:55, Alright, so looks like it just got published. I'm gonna click on this, and then as soon as I say sign in.
+06:03, It takes me, to a replicate authentication page. It wants me to kind| to authenticate using the Google thing.
+06:13, And there you go. Now I'm logged in. In case of repeat, my name is Victor over there. I have a sign-out feature, so if I come back here and start journaling again, it'll ask me to kind| to, like, authenticate using SSO. I can add a new entry here, and I say.
+06:31, Hello, this is, Test.
+06:35, Save entry. First of all, this is a nice-looking journaling that I can just use, right?
+06:41, What is the name of, of the restaurant.
+06:50, What, which, went to yesterday.
+06:56, Right.
+06:57, And, the mood can be grateful.
+07:01, And you can see there's just… it has built something like that, but as soon as a login, and if you're not able to kind| to log… you know, without the login.
+07:09, Nothing works, so if I go back here.
+07:16, Alright?
+07:17, So…
+07:19, It's there. So, there you go. There you have authentication. Please try it out, build an app, and just ask us to kind| to have authentication. Have fun.

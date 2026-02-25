@@ -1,0 +1,29 @@
+# Lesson Summary: Building FigJam with AI Agents
+
+### What are we building?
+We're building a collaborative whiteboarding tool (like FigJam or Miro) that features a **Sidekick Co-pilot**. This agent doesn't just chat; it uses **Model Context Protocol (MCP)** to actually read the board's data and build elements directly on the canvas for you.
+
+### Quick thoughts before you start
+*   How can an AI "see" and "summarize" a messy board filled with sticky notes and shapes?
+*   What is the difference between a simple chatbot and an **Agent** that can actually create and edit things on your screen?
+
+### Expert Vocabulary
+*   **MCP (Model Context Protocol):** A standard that allows an AI model to connect with external tools and data, giving it the power to "take action" rather than just providing text answers.
+*   **Agentic UI:** An interface designed to be controlled by an AI agent. In this case, the Co-pilot can execute commands like `create_elements` or `group_elements` to modify the canvas.
+*   **Prompt Scaffolding:** A technique where you provide a broad business requirement (Chief Product Officer view) and let the AI decide the specific technical stack to avoid getting stuck in outdated libraries.
+
+### Key Takeaways
+1. **Agents take action.** While a chatbot can explain a workflow, an agent can actually build the cards, group them, and organize your board while you watch.
+2. **Context is everything.** By connecting your AI to the board's data via MCP, it gains "vision" of your project, allowing it to summarize accurately and offer relevant help.
+3. **Debug with Screenshots.** When an AI builder gets stuck or shows a blank screen, taking a screenshot of the **Console Logs** and feeding it back into the AI is the best way to jumpstart a fix.
+4. **Don't over-specify tech.** If a specific library (like TLDRAW) is causing errors, strip the technical requirements from your prompt and let the AI find a more stable architecture.
+
+### Reflection Questions
+*   How would your workflow change if your "Copilot" could automatically organize your messy brainstorm into a clean project plan?
+*   Why is "First Principles" thinking better than forcing the AI to use a specific coding library when building a complex app?
+
+### Your Action Item
+Go to Google AI Studio. Use a "Business-First" prompt to build a simple whiteboard. Once the UI is up, ask the Co-pilot: "Summarize what is on my board" and then "Create three blue sticky notes with the steps for a product launch."
+
+### In short...
+True AI agents move beyond conversation by using protocols like MCP to interact with your tools, allowing you to build and organize complex projects purely through natural language.

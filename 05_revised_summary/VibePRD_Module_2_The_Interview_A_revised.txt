@@ -1,0 +1,33 @@
+# Lesson Summary: VibePRD Day 2 — Making the Chat Alive (Part A)
+
+### What are we building?
+We're taking our Day 1 "Shell" and giving it a **Brain**. Moving from **Design Mode** to a **Full-Stack App**, we'll make the chat panel functional. Instead of just looking like a chat, it will now actually send your messages to an AI (Claude 3.5 Sonnet) and receive real, world-by-word "streaming" responses.
+
+### Quick thoughts before you start
+*   What is the difference between a "Fake" UI button and a "Live" API connection?
+*   Why should we use "Managed Services" (like Replit AI) instead of manually setting up API keys when we are just getting started?
+
+### Expert Vocabulary
+*   **Full-Stack Application:** An app that has both a "front-end" (what you see) and a "backend" (the invisible logic and database that does the heavy lifting).
+*   **Streaming Responses:** A design choice where the AI prints its answer word-by-word (like ChatGPT) instead of waiting for the whole paragraph to be finished.
+*   **Replit Managed Services:** A feature where Replit handles the AI billing and API keys for you, so you don't have to visit external websites like Anthropic or OpenAI to get "Keys."
+*   **Context Persistence:** The AI's ability to "remember" that you said "Hello" three messages ago, allowing for a real back-and-forth conversation.
+
+### Key Takeaways
+1. **Migrate to a Real App.** You can't have a functional chat in "Design Mode." You must upgrade your project to a full app to enable the backend logic required to talk to an AI.
+2. **Claude as the Engine.** By specifying the "Latest Claude Sonnet" model, you ensure your app is powered by one of the smartest AI brains available today.
+3. **Constrain the Design.** When adding logic, AI sometimes tries to "help" by changing your layout. Use the command: "Do not change the layout or progress bar" to keep your Day 1 work safe.
+4. **Verify the Memory.** A "working" chat isn't just one that replies; it's one that remembers. Always test your app by saying "Hello," then asking: "What was the very first thing I said to you?"
+
+### Reflection Questions
+*   If you forgot to ask for "Streaming," how would the user experience change when they hit the "Send" button?
+*   Why is "Replit Managed Services" a safer choice for beginners than managing their own API keys?
+
+### Your Action Item
+In Replit, use the **Checkpoint A** prompt. 
+1. Approve the upgrade to a **Full-Stack App**. 
+2. Approve the **Replit Managed AI** permissions. 
+3. Type "Hi, I'm building a new game app" and then follow up with "What am I building?" to make sure the AI remembers the context.
+
+### In short...
+Day 2 is where the magic happens. By wiring your UI to a real AI brain, you've moved from "drawing a picture" to "building a tool."

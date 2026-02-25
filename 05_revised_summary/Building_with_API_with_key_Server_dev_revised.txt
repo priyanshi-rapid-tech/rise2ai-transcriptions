@@ -1,0 +1,30 @@
+# Lesson Summary: Building a News Dashboard with Serper.dev
+
+### What are we building?
+We're building a custom **News Portal** that pulls live Google Search results directly into our app using the **Serper.dev API**. This project demonstrates how to integrate external search capabilities without needing a backend server or a database.
+
+### Quick thoughts before you start
+*   How can you transform a raw, technical JSON list from a search engine into a beautiful, readable dashboard?
+*   What is the fastest way to get your AI builder to write better code when you're feeling stuck on a prompt?
+
+### Expert Vocabulary
+*   **Serper.dev:** A low-cost Google Search API that allows you to fetch search results, answer boxes, and knowledge graphs programmatically.
+*   **Prompt Enhancer:** A built-in feature in some AI tools (like V0) that takes a short request and automatically expands it into a detailed technical requirement.
+*   **Local Persistence (API Keys):** Storing a secret key in the user's browser (Local Storage) so the app works on refresh but doesn't require a complex login system or a database.
+*   **JSON Parsing Error:** A common issue where the data coming from an API (like a date format) doesn't match what the app expects, requiring a small fix in the code.
+
+### Key Takeaways
+1. **API search is a "Superpower."** Using an API like Serper lets you build your own alternative to Google search, customized exactly for the topics you care about.
+2. **Use the "Enhance" button.** If your first prompt results in a basic app, use the tool's built-in enhancer to automatically add professional features like loading states and clean UI layouts.
+3. **Debug with Screenshots.** If you see an error like "Invalid Date," take a screenshot of the dashboard and send it back to the AI. It can "see" the visual error and fix the underlying logic.
+4. **No-Server Architecture.** You can build fully functional tools that call professional APIs solely through front-end code, making deployment fast and nearly free.
+
+### Reflection Questions
+*   How would you customize this portal to only show news from the last 24 hours to ensure you're getting the most recent updates?
+*   What other "Google-like" features (like images or shopping) would you add to your dashboard to make it more useful?
+
+### Your Action Item
+Sign up for a free trial at Serper.dev and get your API key. Go to V0, use the prompt: "Build a news dashboard using the Serper.dev API," and use the **Enhance** button before hitting enter. Enter your key and search for "Agentic AI."
+
+### In short...
+You don't need a massive engineering team to build a search tool; with a simple API key and a detailed prompt, you can create a custom window into the world's news.

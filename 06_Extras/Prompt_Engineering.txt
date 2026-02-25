@@ -1,0 +1,88 @@
+Video Title: Prompt Engineering
+Duration: 14:38
+
+Transcript:
+
+00:01, Welcome, everyone. So today, I want to talk about prompt engineering.
+00:06, Prompt engineering is probably,
+00:11, one| to the most important topics that you need to kind| to learn about when it comes to LLM.
+00:16, Mainly because, generative engine
+00:20, are supposed to generate outcome based on the prompt that you kind| to, like, produce. Just like when you talk to a human.
+00:27, What you do is you actually give them a prompt when you, you know, you talk to them through a dialogue or a prompt that you provide to them, and all the outcome that the human provides
+00:37, Comes out| to that, as an output| to the prompt.
+00:41, In a very similar way to an LLM, whatever input that you provide as a prompt results in the outcome that it drives. Let me show you.
+00:51, When it comes to an LLM, One LLM can act
+00:57, and behave like multiple| to, multiple things, based on just the prompt that we provide. In this particular case.
+01:05, The prompt that we are providing is, can decide how the LLM behaves.
+01:11, For example, we can just ask it to translate some things, like, translate English to German, and with a single prompt, we are able to kind| to convert the LLM into a translator.
+01:22, You can also say, things like, the, you know, the things like categorize this input, which can make it a categorization, or classify an input. So, for example, an SMS or an email classifier, or a spam classifier, or a fraud detection classifier.
+01:42, All| to that happens just based on a single prompt, right? So, all it takes…
+01:49, to control an LLM is a prompt, and not only that all it takes, but this is all you can do, right? Like, if you remember the slide where we talk about an LLM has only one input and one output, which is the prompt and the output, which is the input token and the output token. That means that the prompt
+02:08, it not only… the LLM is very powerful with the prompt.
+02:12, It is also true that prompt is the only way to kind| to control the way LLMs behave outside| to the parameters that we talked about, or, like, the parameters| to things like temperature, top P, top K, that we have covered in a previous video.
+02:29, So, in general, you could just have a single prompt coming in, but to make it easier for us to kind| to develop products and tools, we have started to kind| to think about prompts into different blocks, hierarchy.
+02:47, In a very typical way, the LLM still receives a single prompt.
+02:51, However, we have divided it into what we call a system message, or a user message, or a system prompt and a user prompt.
+02:58, System prompt really defines what the model should behave like, right? Like, what is the… what do we want the model to kind| to behave as?
+03:06, Now, in case| to a user prompt is, what is the question in hand?
+03:12, So, let's take a look at what it means using Google AI Studio. So, if I go to Google AI Studio, AIstudio.google.com, and we click on the chat, you can choose a model like Gemini Flash Latest and System Instruction.
+03:28, This is, again, you would see something that is covered differently, like, different places. We cover, this by different names. This is also system prompt or system message. System prompt is probably the most, commonly, way, but there are different terms that, folks use.
+03:46, So, as you can imagine, what we are giving to the LLM is two things, system message and a user message. In this particular case, whatever you provide here is what goes into the model as a system prompt.
+04:00, So, if I say, I want…
+04:03, You to speak, respond like a… respond.
+04:08, like a pirate, becomes the system instruction. That means it says that irrespective| to what question that the user asks.
+04:15, always the response has to be following the system prompt. In this case, I've asked it to kind| to respond like a pirate, so if I ask a question like, write a song for GenAI,
+04:28, Product managers?
+04:30, It will respond in such a way that the system prompt and the user prompt are together sent as an output. So in this particular case, you can see that the song that it has written has followed the system prompt itself.
+04:46, So coming back to this, what it means is,
+04:52, Apologies, I didn't, I ended up showing that into a different window, so let me just kind| to repeat that here. So I'm just gonna go to Google AI Studio, and as soon as I go to the Google AI Studio, what you will see is I can write a system prompt. You can see there's a… I'm selecting the default model.
+05:10, And I'm gonna say, write, respond.
+05:15, to all messages.
+05:17, As a pirate, And this becomes, this prompt, and if I say something like, write, haiku.
+05:29, Actually, short poem.
+05:33, And then you should see that it should respond in a way that the pirate will respond. So system prompt and user prompt are given together. In this particular case, what you're seeing
+05:45, is when the user is giving an input, that will generally go to the user message, and the system prompt will be given. And together, you concatenate the system prompt and the user prompt and send it out.
+05:56, There is, some form| to hierarchy that is to be followed, for this. It turns out that, different prompts, will have different level| to,
+06:12, privileges. As you can imagine that sometimes users may try to kind| to trick the LLM to kind| to behave differently from your product. So, system message is given the highest privilege, right, which is whatever you say in the system is given the highest privilege.
+06:29, And the user message is given a little bit| to a mid-term medium privilege, which means that follow and respond to the user messages, but always, if there is a contradiction between the user message and the system message, user message is always given the preference.
+06:45, And then there comes the model output. Since the way the models work.
+06:50, is whatever input that we have provided, those outputs are fed back, to the model. So that's why the, sorry, as the input.
+06:59, So that's why the model output will have lower privileges. And we haven't covered tool outputs yet, but over time, as we kind| to get to the tools, as we get to the tools, they are even lower privilege in many ways.
+07:12, So.
+07:13, Let's, kind| to think about, like, again, just looking at this diagram. And, so whatever is the input token is broken down into system prompt and the user prompt. That is mostly for
+07:25, helping the developers or the product builders in a way| to simplifying. The LLMs actually does not know the difference between a system prompt and the user prompt.
+07:35, However, there are circuitry, or, like, there are systems outside| to LLM, which kind| to ensures that the amount| to privilege that is given to the system, as well as the user prompts, are different, and the output is only one.
+07:49, So…
+07:50, How do we… to build with an LLM, there are two fundamental ways to kind| to build it. One| to them is what we call is in-context learning, and the other is called the fine-tuning model.
+08:03, In-context learning is where everything that the model needs to learn comes from the input prompt itself, and there is no other way to kind| to do it.
+08:14, Or, the only other way we can tell model outside| to the input prompt is what we call a fine-tuning model that we'll cover in the later parts| to the class.
+08:25, Right? So, let's look at exactly how these prompts are. Generally, in the prompts, whatever we provide, for example, you may say, it's like, in summary or tier, yeah, can you tier, can you explain it to a 5 years old concept? Those are all called prompts.
+08:44, But here's the challenge, like, since humans are not, it turns out that humans are not great at prompting, and sometimes the way you kind| to prompt can, will have a significant impact on, what is… what is the response that the models are providing.
+09:04, So… What is generally seen?
+09:09, Is, there is a challenge, like, if you just,
+09:13, you know, if you just mix up all the tasks| to everything that you want the model to do, and just kind| to provide it to the model, the LLMs can go, haywire, because they may not understand what you're trying to do.
+09:25, Right? This is why prompt engineering as a subject, really starts to kind| to, like, come up, because, if you can… if there is a way to kind| to structure the prompts or provide a better response, that really, really helps, LLM, kind| to get better.
+09:42, One way| to kind| to doing this, this is my proposal| to, you know, how you should write prompt, but there is… there are multiple different ways to kind| to do it. But let's look at one way that I have defined, but you're welcome to kind| to look at other ways as well.
+09:59, Any prompt that we have.
+10:01, We should look at providing four major areas| to information. One is, we should start with
+10:09, providing a context| to, like, what we want the models to do, right? This is where we define the role, we define the problem, like, the environment, and everything else. Like, what is the context? Why are we even asking the question?
+10:22, The second is to define the purpose, like, what is the purpose that we want to get output? Like, what is the reason for the prompt? What is the… is there a goal that we have, a particular insight or action that we want to try to drive? The reason it's important to kind| to provide as much context to the prompts as po… to the LLMs as possible is…
+10:39, Sometimes, if your purpose is different, the LLMs may approach the problem completely differently, right? Like, for example.
+10:48, If you say that, my, you know, if you're, if you're building a travel website, and, let's say the product is, build me a travel itinerary, for, you know, travel itinerary is the prompt that you're trying to give. And a simple prompt may look like, build me a travel itinerary, for New York.
+11:08, However, if the purpose is not clear, like, if you haven't defined if the itinerary is for a business trip, for a personal trip, for a particular meeting, or maybe attending a particular conference or an event.
+11:20, or just relaxation, or for different purposes, like visa. The type| to itinerary the model will propose is gonna be completely different.
+11:29, This also applies to any other… this is just a simple example| to travel itinerary, but we can look at many more other examples| to this. For example, if you're trying to summarize a document.
+11:42, Your promise is summarize this document, but if you don't know what's the purpose| to this summarization, the model may just choose whatever it expects that to be. But if I can provide that, I want to summarize it so that I can make a tweet about this document.
+11:59, Then model understands what a tweet is, what the goal is.
+12:02, However, if you say that I want to summarize it so that I can send the summary to the leadership, or I can summarize it such that I can quickly grasp the content that is there, that is going to completely change the way your prompts would be.
+12:18, It's also important to kind| to define an output, like, what is the format that you want? Is it… the simplest could be is, like, do you want a text output or a JSON output?
+12:28, But maybe you want to say, if you are a customer support agent, you want to say, be very formal, or follow the tone| to my company, and if your brand tone is defined, that would be important.
+12:41, Right, so what would be the format, tone, and other important… do you want a short response? Do you want a long response? Do you want an email output? Do you want a tweet as an output? Do you want it as a document output? Those things matter.
+12:53, And lastly, safety, right? Safety is where it's not just about, like, making it, safe from, like, you know, scam and spam, but it also could be…
+13:06, safety around, for example, you may say that, never mention my competitor's name, because that is your brand policy, and you don't want to mention that. Or, you may say that the output should be safe for work.
+13:20, Or it should be kid-friendly, right? So, that kind| to safety issue can also be there. Or you may ask it to kind| to double-check the responses before it kind| to provides that information.
+13:30, I'm not gonna completely go through this expanded version| to it, but there's a blog post that is linked here, as well as, you can look at some| to the things, like, within the context, there's a role, problem, and environment, is something that you can define.
+13:44, As well as, the… how do you define the purpose, output, and safety. Look through the blog post as well, it has a lot| to different information.
+13:54, But you don't have to necessarily follow just the CPOS framework, that is just something that I have, I have proposed. This is an example| to, other framework, which is, which follows the 3C.
+14:08, Which says that there's a clarity, have clarity on what you're trying to do, give it a role, you are an expert physicist, for example, or you are, you are a scientist, you are a marketer, or you are, you are a travel itinerary provider.
+14:25, And then provide the context and constraints. So, choose any one| to the frameworks that you like, but make sure that your prompt has a lot| to these details provided in one form or the other.

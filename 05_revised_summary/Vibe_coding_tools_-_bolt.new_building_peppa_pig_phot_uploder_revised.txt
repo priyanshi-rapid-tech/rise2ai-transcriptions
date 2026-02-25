@@ -1,0 +1,33 @@
+# Lesson Summary: Vibe Coding with Bolt.new
+
+### What are we building?
+We're exploring **Bolt.new**, a powerful browser-based AI builder. To demonstrate its features, we're building a **Peppa Pig Photo Album** app—a simple, fun tool that allows users to upload photos, add captions, and store them securely. This project highlights how Bolt handles layouts, databases, and even security checks.
+
+### Quick thoughts before you start
+*   Why would a developer choose Bolt.new over a simpler tool if they want to build an app with a functional database?
+*   How does a "Security Scan" help a beginner build professional-grade software that is safe for others to use?
+
+### Expert Vocabulary
+*   **Bolt.new:** A full-stack AI development environment that lets you build, preview, and deploy apps entirely in your browser.
+*   **Security Analysis:** An automatic check that Bolt runs to find "holes" or risks in your code before you publish it.
+*   **Responsive Mode:** A built-in feature that lets you see how your app looks on different devices, like an iPhone 17 or a Galaxy S25, without needing the actual phones.
+*   **Token Management:** The way you track your "AI credits." Smart developers use their tokens wisely by writing clear, efficient prompts.
+
+### Key Takeaways
+1. **Full-Stack by Default.** Unlike simple design tools, Bolt.new is built for "real" apps. It handles both the visual front-end and the "server" back-end for things like file storage and databases.
+2. **Built-in Security Guard.** One of Bolt's best features is its automated security scan. If it finds a vulnerability, it will often provide a "Fix with Bolt" button to repair the code automatically.
+3. **Claude Sonnet is the Brain.** Bolt primarily uses the Claude model (from Anthropic), which is widely considered one of the best "AIs for coding" in the world today.
+4. **GitHub for Advanced Users.** If you want to keep your code forever or collaborate with a team, you can link your Bolt project directly to a GitHub account.
+
+### Reflection Questions
+*   If your "Take Photo" button isn't working, what steps would you take to "vibe code" a fix using Bolt's chat window?
+*   How does the "Device Emulator" (phone preview) help you design better apps for kids?
+
+### Your Action Item
+Go to Bolt.new. 
+1. Use the prompt: "Build a Peppa Pig themed photo gallery. I want to be able to upload pictures and add fun captions in pink and yellow colors."
+2. Open the **Responsive Mode** and verify the app looks good on a mobile phone.
+3. Try to **Publish** your app and watch for the **Security Scan** results. If it finds an error, click the "Fix" button!
+
+### In short...
+Bolt.new is a professional-grade workshop in your browser. Whether you're building a fun app for kids or a complex business tool, its built-in security and database features make it a top choice for vibe coding.

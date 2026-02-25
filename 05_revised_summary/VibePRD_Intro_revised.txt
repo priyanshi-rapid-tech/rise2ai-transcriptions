@@ -1,0 +1,30 @@
+# Lesson Summary: VibePRD Intro — Your AI Product Manager
+
+### What are we building?
+We're starting a multi-day journey to build **VibePRD**, an AI-powered Product Manager. This app doesn't just "chat"—it interviews you about your business ideas, critiques your thoughts, and ultimately generates a professional PRD (Product Requirement Document). We'll build this end-to-end on one project over five core sessions.
+
+### Quick thoughts before you start
+*   If an AI acts as your "Chief Product Officer," what questions should it ask you to make sure your product idea is actually worth building?
+*   How can you use "Wireframing" to visualize an app before you write even one line of functional code?
+
+### Expert Vocabulary
+*   **VibePRD:** The project name for our AI Product Manager.
+*   **PRD (Product Requirement Document):** A formal paper that outlines exactly what a product should do, who it's for, and how success will be measured.
+*   **Wirefaming:** Basic visual blueprints of an app's layout. We use tools like **Gemini** or **Google Stitch** to generate these wireframes before coding.
+*   **Checkpoint (A & B):** We break each day's build into two parts. You complete Part A, verify it works, and then move to Part B.
+
+### Key Takeaways
+1. **The Interview is the Product.** VibePRD’s core value is its ability to "Interview" the user. It covers problems, users, jobs-to-be-done, metrics, and risks systematically.
+2. **Built-in Progression.** Don't try to build everything at once. We start with the "Shell" (the UI) and the "Interview" before moving to the "Drafter" (the PRD writer).
+3. **Use Mockups for Clarity.** Use Gemini or Google Stitch to generate "Variations" of your UI. This helps you decide on a "Fun and Modern" look versus a "Clean and Professional" one before you commit to the code.
+4. **Iterative Build.** Each day adds a new "layer" to the same project. By Day 5, you'll have a fully functional tool that you can even use to brainstorm your final Capstone project.
+
+### Reflection Questions
+*   How does being "Interviewed" by an AI help you clarify your own product ideas more than just writing them down alone?
+*   Why is it better to build one project over 5 days than to build 5 different small projects?
+
+### Your Action Item
+Make sure your **Replit** account is ready. Review the **Day 1 Checkpoint** prompts. Use Gemini to generate a quick wireframe for "A chat app with a split screen: Chat on the left, Document on the right." This is the foundation of VibePRD.
+
+### In short...
+VibePRD is the ultimate "meta" project—an AI tool that helps you build even better AI tools. Stick to the 5-day plan, and you'll have a professional-grade AI assistant ready for your own startup ideas.

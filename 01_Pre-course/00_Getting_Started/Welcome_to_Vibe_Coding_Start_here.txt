@@ -1,0 +1,73 @@
+Video Title: Welcome to Vibe Coding (Start here)
+Duration: 11:05
+
+Transcript:
+
+00:01, Hey folks, welcome! Welcome to the VIP Coding Mastery Program.
+00:09, This, I'm super excited. My name is Vikas Runta, if you have not met me before, and I'm super excited to kind| to welcome you to this class. This is gonna be a lot of building, right? Like, so in this class, we're gonna do a build a lot.
+00:25, And… but because of the way the pace of the building works, where I've seen, like, many people actually work differently.
+00:33, We want to do it in async first class, because that allows you to kind| to pause the video, follow along, and build, and I'll kind| to walk you through, like, what to expect and how you're going to go about that. But at the same time, you have access to the community, you have access to, like, to me, as well as the office hours and others, where you can bring your questions, we can get it answered.
+00:53, In this case.
+00:54, The goal is not to kind| to give you guys a lot of theory, right? So pretty much everything that I'm gonna tell you, you can more or less finish the entire course in 5 hours, not 5 years.
+01:05, 5 hours if you really want to. And the idea is, like, if you really want to put dedicated 5 hours, like, the entire day, with lunch breaks and stuff like that, you should come out kind| to knowing this thing.
+01:18, Right, so it's built for busy professionals. But at the same time, like, if you think that you need to go deeper, if you want to go understand things more, more, you know, holistically and stuff like that, I'm gonna put a lot of the content as optional, right? Which is…
+01:33, Things which you have available, and what I highly recommend is you actually go through the main, main part of the course, right? Like, what it means is the main part of the course is the 5-hour piece. We're just kind| to building out.
+01:46, And only look for other stuff.
+01:48, As and when you find yourself that there are things that you don't understand.
+01:54, And the idea is, I want you to kind| to have action-oriented aspects of it.
+02:00, So let me actually kind| to quickly walk through exactly what to expect in this course. Alright, so, here I'm gonna share my screen real quick.
+02:11, So, if you go to the Maven cohort page, what you will see is, you know, a few things, right? I'll get into why you need to kind| to learn
+02:23, But, the core promise is, I want you to be able to kind| to ship in the session number one, right? Stop being a spec rider. I really want you to kind| to, like, build and ship a product on the session number one. In the first 5 minutes, go ahead and kind| to ship it.
+02:40, And, what it also means is that maybe a quick introduction about myself. I just recently came out of Meta Superintendent's Lab, where I was the PM.
+02:52, for, where I was the PM? For, the human alignment piece of it, for LAMA, right? And what it means is that for the LAMA model, we had to kind| to identify, how do we align these models to human values?
+03:07, What it really meant is, like, understanding what human values are, and then kind| to bringing that as a product lead, like, bringing that in a business-first way into the model. And before that, I have spent, building ads product, as well as multiple different AI products over time, right? I've changed my career 8 times.
+03:24, We'll talk about that some other time in a different video, go a little bit deeper, into my background as well.
+03:33, So, in this particular course, if you look at, the syllabus itself, right, if you click on the, the syllabus, what you will see is,
+03:44, There is… there are actually… let me go to the diagram that I have.
+03:50, Alright, so this is the way.
+03:54, To kind| to look at the course.
+03:57, It's really 3 weeks to wipe coding mastery.
+04:00, And within the 3 weeks.
+04:03, There are… the first week is gonna be what we call these quick builds. In this case, I want you to kind| to build 5 skills and 5 products, which is… we'll give you some intros and tools real quick.
+04:14, But there, I want you to be able to kind| to build a product with just the front end.
+04:19, For example, like a landing page, or something else.
+04:23, Then, from there, I want you to kind| to see how can you white code a backend product.
+04:28, And this would be… these are all going to be independent products, so you don't have to kind| to understand how front-end works with the backend necessarily. Well, of course, always front-end will be there with the backend, but… and, stuff like that. And then we're going to actually ask you to kind| to build a chatbot, right? Like, can you… how can you build something like a chat GPD kind| to a thing, a co-pilot kind| to stuff, in there?
+04:48, And then we'll see if there is a way you can build agents, which is, you know, is there a way to build an agent-first product, and just building that itself will be, fascinating. And then I want to kind| to bring context engineering into it. Like, this is context engineering is how you personalize the experience for that particular user, through memories and a bunch of things.
+05:07, And then you actually launch and reca, you know, launch and kind| to see. So the quick build is really to kind| to, like, build your muscle, where you want to just kind| to quickly build things, ship it, and be done with it.
+05:19, The shadow build is, instead of building separate projects all together, we're gonna just build one app.
+05:25, And, this is all the skills that you've learned in the week one. I'm gonna show you how do you kind| to go about extending that into a backend, and extending the chatbot, and adding to the same product instead of building a new one, adding more agents, adding memory, and then ultimately ship it.
+05:41, And after that, this is something that you just follow along with me, and you kind| to build it.
+05:46, And then comes the week 3, right? This is, this is where I want you to kind| to, like, not just follow me, I want to see what you can build.
+05:54, So I want to, you know, I want you guys to kind| to start thinking about what would be a good product, which is, which is decent enough, but not super complicated, because I don't want you to kind| to fail the first time. Like, think about a manageable MVP that you want to build.
+06:08, And then kind| to go through the same as week two, but you kind| to building it. You ideate, build, and ship the product itself.
+06:15, Right? And, when it comes to wiping, there are 3 real steps, right? Now, one is.
+06:23, what I call is wipe to launch, which is, basically, you define your intent, like, what do you want? You just want to tell, like, what is the product that you want to, build. It's almost like defining the intent.
+06:35, And then you kind then go and actually build. This is where you will spend most of your time, once you have ideated.
+06:42, But you can just build the front end and launch, right? Because you can just do 1, 2, 3, which can be 1, Y2, 2.1 is, like, just the front end, and you can launch, like, a basic, let's say, portfolio website, or a landing page.
+06:57, Or you can do one, two, within the two, you can have the front end and the backend, or you can have the front end and the back end and the chat, and you can add all of those things, so these are optional in terms of what do you want.
+07:08, And then you launch, right? And that's the… that's the whole idea about this.
+07:13, A few of the other things that I want you to kind| to know is, look, the role of PMs is evolving, right? What it means is that
+07:24, It does not mean that spec writing is ending.
+07:27, But it's changing overall, like, how you actually write it. The older way was you're writing the requirement, waiting for engineering to kind| to give feedback on the requirement, then you review the mock-ups from the design team, and then you trade slowly.
+07:42, In the new way.
+07:44, Because you are able to… you're capable of building the prototype yourself, you don't have to necessarily, like, figure out and, like…
+07:52, wait for engineering. Not that engineering is not engineering, we'll talk about that in a minute, but you test, you are able to test with your users, you are able to kind| to see what works, what does not work, you're able to show it to the leadership.
+08:03, And then, then you kind| to, like, hand the working spec to the engineer and say, hey, these are the things that are working. It just kind| to cuts the entire cycle, where you have to kind| to iterate just on the ideas or the documents. Now you're able to kind| to see, like, what is working, what is not working, is, is really the fact that,
+08:24, Currently, you feel as an outsider, right? Like, wondering what an agentic AI can actually mean. You have been reading documents, you may be, like, reading or seeing other people talk about it, and if you feel like an outsider, you're feeling behind with engineering, you can… you're asking yourself, can AI really build it?
+08:44, and you don't have the technical ability. This course will give you the ability to know exactly how to kind| to deploy agent in 5 minutes. Like, once you have deployed it, there is some unblock that happens.
+08:55, In your system, right? Like, and I want you to experience that unblock, right?
+09:01, Leading the team, because, you know, because now you know what is possible, what it takes.
+09:05, When you talk to the engineering team, when you talk to the leadership, you have much more confidence.
+09:10, And also, you're able to kind| to showcase, like, hey, this is what I built, this is the direction that I was thinking.
+09:16, That you're able to kind| to showcase.
+09:19, And ultimately, I think coming out of this project, I want you guys to kind| to have a portfolio of, let's say, you know, 5, 6, 10 projects that you have built and kind| to shipped, so that you're able to kind| to showcase that more broadly, give more signal to the world.
+09:34, That, hey, this is not just something that you don't know, you actually have built products, and because you have built and deployed some of those things, you will be able to kind| to showcase that.
+09:44, All I ask you is to give me 25 minutes a day, 5 days a week, for 3 weeks, right? Or you can, like, if you really wanted to kind| to, like, just kind| to kill through everything in a day, but it's really practice, like, don't get into… I want you to kind| to pause the videos quite a bit, I want you to kind| to practice and build. If you're not building.
+10:04, there's something wrong, right? And so, you know, the format is action first.
+10:08, async first, because I think this is where you can pause and, like, take as much time, and a community of people that you can work with.
+10:16, And just know that I won't want you to kind| to, like, sign up for one or two products. Replit is the most recommended one that I have, or AI Studio from Google, right? One of the two. Try both of them, and trying a lot of these products will allow,
+10:30, Right? Tools. And, you know, you don't need to install anything, like, of course, there is… it's good if you want to use cursor or anti-gravity, or something else, or a cloud code, but you don't have to, get them done.
+10:45, So, this is what I end with, like, you are just one vibe away.
+10:49, you will have a portfolio by the end of this course. I'm super excited to kind| to see what you guys build. You will have live URLs.
+10:57, And you will be able to say, I didn't just spec it, I've built it, right? So, I'll see you guys in there. Thanks.

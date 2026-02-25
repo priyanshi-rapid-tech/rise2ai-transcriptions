@@ -1,0 +1,112 @@
+Video Title: VibePRD: Module4: The Reviewer (A&B)
+Duration: 18:16 (Approx)
+
+Transcript:
+
+00:01: Alright, hey everyone, welcome back to Module 4, The Reviewer. So, so far, what we have done
+00:08: Is we actually looked at,
+00:13: We build the shell, then we build the interview module, and then we kind of build the drafter where the PRD is drafted. It allows you to kind of be edited. Now we want to actually get LLMs to kind of review it. So maybe we can use one type of model to kind of, like, generate it, and another model to kind of review it.
+00:32: And so this, review, feedback loop, and inline patching is something that we want to look at. So if you go to Module 4 in your canonical doc, let me just kind of find it…
+00:45: So, what you will see is the reviewer, right? So, I review my PRD button, right? And so, when clicked, a third AI agent, the CPU reviewer, reads the entire PRD and produces a structured critique, right? So, we want to get some kind of a scorecard.
+01:01: Which shows what it looks like. So if I look at the screenshot of what it could look like…
+01:07: Could be something like this. It doesn't have to be, like, I don't know if it's gonna be like this or not, but you can see there's a damage, a problem, clarity, user specificity.
+01:16: And it can just, rate it and just provide us a little bit of, understanding. And then this also could provide things like, you know, fix it, you know? This gap is accessible to… so is there a way to… for us to kind of fix it? So let's go back and look at one… one at a time.
+01:34: And, a list of spare gaps, and then fix a button for each gap that patches the PRD directly, right? Like, so maybe we can just use AI to fix some of those things, because now with that, if we understood what the problem is.
+01:46: Here's the difference between chatbot and an agent again. The chatbot generates new content from a prompt, interviewer, the drafter. The agent takes action on existing content. The reviewer reads what's already written, analyzes it, and changes it.
+02:01: This distinction matters quite a bit, because most valuable AI products aren't just generators. They analyze, they have the loop, they have the, what we call the React loop, which is, you know, it kind of goes through things, reviews it.
+02:16: And, it analyzes it. So, with that, I'm gonna copy the checkpoint A output here.
+02:25: And then we'll come back and review what exactly it does.
+02:31: Right, and copy the blue.
+02:33: And paste it over here.
+02:37: There you go. Now let's go back and review what's going on here.
+02:42: So, first of all, we are saying, hey, add a review my PRD button at the top of the right panel, next to the Generate PRD button, so we want another button. Give it an outline style, white background, blue border to visually distribute it from the generate, so we just don't want the same kind of a button.
+02:59: When clicked, take the current PRD content from the right panel.
+03:03: including any manual edits the user has made, send it to AI with a third system prompt. So we want to bring in a different system prompt, the reviewer agent, this is different from both the interviewer and the drafter, right? Like, so this agent is going to be very much, you know, just different, it just…
+03:21: After it has generated, we're gonna send it with a different prompt. This is, in many ways, it's also an eval kind of a thing. We can have automatically evaluated it and put it into a loop in some form, which says that
+03:34: generated if the quality is not good enough, go back and keep generating it, aspect of it. So, I'm kind of just introducing that aspect of it, where you're evaluating it in many ways.
+03:47: Display the review results in a model or slide over panel. Do not replace the PRD. The review should appear alongside on top of it.
+03:55: One thing that you can also do is you can actually take the screenshot, if you have generated from Stitch, Figma, from Gemini, or anywhere else, and also provide that specific guidance on what it should look like. So our loading state while reviewing.
+04:09: Now the reviewer system prompt use this exactly. We're given that you are a veteran chief product officer who has reviewed thousands of PRDs.
+04:18: You are constructive but rigorous. Your job is to review the PRD and find specific weakness. Output your review in exact JSON format, so we have provided what the JSON format should look like. This is important because as you build
+04:34: harness…
+04:35: to kind of show the output of the model, you don't want the JSON to change, and you don't have to manually code it up, just ask ChatGPT or somebody else to generate the JSON for you. So let me take a look at this, and I can just tell you. So…
+04:53: If I just take this… And I can go to, let's say, ChatGPD, And I can say,
+05:04: while it didn't work for the…
+05:08: Okay, let me just refresh this. What is that? For the PRD review, scorecard.
+05:21: propose a JSON structure.
+05:25: And…
+05:26: So, what it can do is, like, once you have identified, you don't have to have the screenshot, you can actually, provide, like, these are the things that I want to, review the PRD in, in case the dimensions have problem clarity, user specificity, yada yada yada. And you can say that it actually provides that PRD ID, review version, and, like, it provides.
+05:47: the gaps.
+05:49: like, what are the gaps and the scores and everything else. So you don't have to use your specificity. You can see there is problem clarity. So you just copy this JSON, alright? Humans are not very good at JSON, so don't have to kind of, like, direct… don't try to type it out directly, for this.
+06:09: Alright, so we got that. And then we say, actually, let's take a look at, like, what are the things that we are saying. We are seeing problem clarity, user specificity, you, I don't know why the user specificity is twice. Metrics, non-goals, and risk. If that's the case, we should just kind of get rid of that,
+06:29: Also, we're setting up some rules, like, we're asking it to be specific, the metric section is weak, is useless feedback, the success metric increases engagement.
+06:39: And has no target numbers. Timeframe or measurement method is useful.
+06:44: score honestly, right? So we're asking you to not just be nice to us.
+06:48: 5 minutes, and it's good to just say, because we don't know, their measure of what a good is versus our. So if you can give any kind of multi-shot reasoning or, sorry, examples, that always help. What is a good 5? What is a good 2?
+07:04: 5 minutes, I would greenlight this for engineering. Most first draft PRDs score 2 to 3 dimensions, given all fours and 5s helps nobody.
+07:13: What I would say is try to give a specific example, right? Over time, we say, like, this is a great PRD versus not a great PRD, and those are some of the ways to improve this as well.
+07:24: Focus on gaps in thinking, not gaps in writing.
+07:28: Every gap must include a specific fix, actual text that could be inserted into the PRD. So once you identify the gap, it should also propose what it should fix. The section field must exactly match one of the PRD section headings.
+07:41: Limit 5 gaps maximum. Prioritize the most impactful one. If the PRD is genuinely strong, say so. Don't manufacture criticism.
+07:50: It passed the JSON response and display it in a clean review card.
+07:54: Which is the scorecard is a visual table with color-coded, it is given red, yellow, and green. Each gap of the expandable card showing the problem, as suggested fix. Do not change the chart or the drafter and all of that.
+08:08: Alright, so I'm gonna come back and just, since it's completed, we're gonna repeat the same thing. I'm just gonna come back once the PRD is generated, but you can see on the top right, there's a Review My PRD button is starting to kind of show up, which is super cool.
+08:24: So, I'll be right back after the PRD is generated.
+08:28: Alright, that has worked, so now I'm just generating the PRD. By the way, you can see how useful the demo mode has been. It's just easier for you to kind then debug. So a lot of these things you have to think about, like, can you preload the whole thing, and can you do certain things, especially in the development mode?
+08:45: Okay, now the PRD is generated, I will just say review my PRD.
+08:50: And, it just has a spinner. I don't know if it has to hide it. Maybe that is a prop that we can provide and say, like, hey, we don't have to hide it, but at the same time, show this. But I'm kind of curious to see what comes up.
+09:06: Alright, it's reviewing the PRD.
+09:11: Okay, so now a scorecard has appeared.
+09:15: And I think there's a…
+09:18: kill mark here, but let's look at the scorecard. I don't know where the PRD is anymore, but it says problem clarity is 4, problem is quantified 15 to 20, user specificity, requirement quality, metrics, miserability, so it has given a store, it has given a color code, it is given a reason, and it has given an overall score.
+09:37: And then it also has recommendation, like, what would make it better. The core differentiator is smart suggestions, so it's to add
+09:45: two must-have requirements, suggest an algorithm, which is recency, so it has provided some kind of, you know, for success metric and everything else, it has provided certain things. This is where having a strong system prompt, understanding, like, visual will really help, otherwise
+10:01: We're gonna generate generic PRDs, and we're gonna review it. That's where most of your times would really go.
+10:06: in building out the system prompts and everything else. Gonna try to close this and see what happens. Alright, I think that went away. I guess if I do this review, this PRD, it's doing this again.
+10:19: Which probably is not the great pattern, so I would try to fix that, but for now, I'm gonna just move on. Alright, so let's look at validate checkpoint A. It generates a PRD first, that works.
+10:31: Does the review appear on the… without destroying the PRD? Yeah, yes, it does, but it kind of, like, hides it. Does the scorecard show all five diamonds? Yes. Are the scores honest? This is something I think you really have to kind of, like, sit down and kind of understand.
+10:46: Are the gaps specific? That is also something that you have to understand. If not, I think you should continue
+10:52: To fix it.
+10:54: Alright, let's move on to checkpoint number P. And in this case, what we will do is, like, with this, I wanna have a button which is similar to the screenshot here, which just says fix it.
+11:08: And, it allows us to kind of directly fix the PRD without having to, you know, having me to kind of go through the whole thing.
+11:17: So, what I'm gonna do is,
+11:22: for the fix-it, let me just copy this, and while that is running, I am gonna go ahead and explain what's going on there.
+11:33: Right, this is running now. So, we're saying, add a fix-it button to each gap card in the review panel.
+11:40: When clicked to fix it, it should find the matching section in the PRD using the section field from the review, apply the suggested speak directly to the PRD in the right panel, either replacing weak text or adding the missing context.
+11:53: content. Mark the gap as fixed in the review panel. After any fix is applied, show a subtle review. Sign, do not change anything else. I think one thing maybe I would say is.
+12:09: Allow away.
+12:10: To go back and forth, Between the… the review panel, and PRD,
+12:21: So, this is missing, so I'm just gonna run this prompt right after it has… is done with the previous one, so I can just copy that and paste it over here, and put it in the queue. Actually, Replit allows you to kind of put this in the queue.
+12:37: Alright, let's wait for both of them to complete, and I'll be right back. Go back and start implementing it. Thank you.
+12:44: Alright, so it's still going on, so, let's just wait for this to finish.
+12:50: Alright, so looks like it just completed, so let me kind of run the demo again. I'm going to generate the PRD, and review the PRD, and be right back.
+13:03: Okay, now it's generating, and right after that, I'm gonna do review, okay?
+13:10: It'll be the PRD. I've asked you to kind of create two different,
+13:14: tabs, so that we are able to switch back and forth between them. But let's see, does it have the fix it button or not?
+13:24: Okay, so…
+13:27: Right? First of all, I'm able to kind of see the PRD, or I can go back to the review, so that's good.
+13:34: And, if I expand any of this… okay, so for each of the requirements, there's a Fix It button. If I press the Fix It, it says Fixed.
+13:44: And, you know, it can go back, apply the fixer to review PRD again to see the updated scores. So we are able to kind of do that if I do this.
+13:54: Review my PRD, again. So, let's see if some of the scores are, getting better.
+14:01: So, I think, broadly, of course, the quality of, like, how well this product works or not will depend upon the model, your system prompt, and others, and that is something that you need to kind of, like, continue to kind of work on.
+14:15: But, overall, looks like this is cranking out well. And, you know, it again has some kind of effects, maybe the numbers have gone up. Actually, let's look at the metrics measurability.
+14:30: And, success, no…
+14:35: Scope, okay. So, maybe I can take this fix, and let's see, if it actually fixes.
+14:42: some of those things. Again, to see the updated score, so if I go here and I say review my PRD,
+14:52: What I can say is the… the harness works, the plumbing works.
+14:59: whether the actual system prompt is doing appropriately or not, that is something that we have to kind of spend a lot of time, on. And this is where you should be spending bulk of your time, so it looks like the quality of the metrics is not improved. In this particular case, I can say.
+15:16: When I say, fix it, it does not really fix the PRD.
+15:24: Can you also show the diff of… What you fixed.
+15:32: Right.
+15:33: So, I can… I'll just copy this over as well. So, I'll put this as another item here, which is, can you also show
+15:43: So we can see a diff of what it has fixed as well, right? So, now, if I look at it, I think this is something that you can continue to kind of work on, but I can say the click fix-it is one of the gaps. Does the PRD, has the right panel actually changed? Is the correct solution updated? Does the gap card show as fixed?
+16:00: Yeah, I think it shows as fixed, but I don't know if it's actually fixing it. Click review my PRD again, fixing 2-3 gaps, till the scores improve. That didn't happen. If not, the reviewer might be reading the original PRD instead of updated one.
+16:14: Tell the agent, the reviewer seems to be reviewing the old PRD. Make sure it reads the current content from the right panel, including any changes from Fixit.
+16:23: Which is exactly what we kind of did. And there is some more experimentation for you to do.
+16:29: Right? And this is a feedback loop, right? That makes, you know, it's really the feedback loop of, like, fixing it, and at some point, you can automate that invoices. You can keep fixing it till the score has improved.
+16:41: to a certain degree, and sometimes that may mean that you may not be able to kind of fix it automatically. What you may have to do is ask new questions. Like, maybe you have some uncertainty, and those patterns also have to be brought in.
+16:55: Well, what I hope you learned today is you now have three AI agents in one product, right? The interviewer, AI agent, the drafter, and the reviewer. And reviewer is the most interesting because
+17:08: it's an agent that acts on existing content rather than generating from scratch, right? It takes, kind of like, things that you're able to review, it uses a JSON format to generate, it has a fix-it approach to it, and it directly modifies the document.
+17:23: This analyze suggest patch pattern is mostly what AI products that people actually pay for, right? This is the automated fixing off and some of the other aspects of it, right? The reviewer is really the key aspect, because anybody can generate questions, or, like, you can do a custom GPD and generate it.
+17:41: But this iteration of regenerate this section, or maybe you can even… instead of regenerate, we could have said, like, just like ChatGPD, you can say, like, hey, in this section, what would you like to kind of improve?
+17:53: And those things are really what, people, pay for. Alright, good luck. I think I'd love to kind of see more improved version of this as well, right? Like, so I look forward to kind of seeing what you guys build. Good luck.

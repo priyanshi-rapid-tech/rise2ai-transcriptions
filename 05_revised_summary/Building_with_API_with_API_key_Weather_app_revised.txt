@@ -1,0 +1,30 @@
+# Lesson Summary: Building with API Keys
+
+### What are we building?
+We're building a **Weather Forecast App** that uses professional data from OpenWeatherMap. This session focuses on the security side of development: how to use an **API Key** to authenticate your app and how to store that key safely without leaking it to the public.
+
+### Quick thoughts before you start
+*   Why do companies like Google or Stripe give you a "Secret Key" instead of just letting you use their data for free?
+*   If you accidentally put your API key directly into your code and upload it, why is that a major security risk?
+
+### Expert Vocabulary
+*   **API Key:** An alphanumeric "password" that identifies your app to a provider. It handles authentication, billing, and usage limits.
+*   **Environment Variables (Secrets):** A secure storage area in your development environment for sensitive data (like keys) so they aren't written directly in the code files.
+*   **Rate Limiting:** A restriction set by an API provider that limits how many times your app can ask for data in a minute or a day.
+*   **200 OK / 401 Unauthorized:** Common HTTP status codes. "200" means it worked; "401" means your API key is invalid or missing.
+
+### Key Takeaways
+1. **Keys are fingerprints.** They allow the API producer (like OpenWeather) to know exactly who is making the request, allowing them to bill you or stop "bad actors."
+2. **Never "Hard-Code" Secrets.** Always use the builder's "Secrets" or "Environment Variables" tab. This keeps your keys private and separate from your actual application logic.
+3. **Debug with Status Codes.** If your app isn't working, check the **Console**. An "Invalid API Key" error is often just a simple copy-paste mistake or an unactivated account.
+4. **Docs are the manual.** Different APIs require different data formats. Always provide the API Documentation URL to your AI builder to ensure it uses the correct integration path.
+
+### Reflection Questions
+*   How would you handle a situation where your app becomes so popular that you hit your "Rate Limit" and the app stops working?
+*   What is the difference between a "Secret Key" that stays on your server and a "Client Key" that lives in the user's browser?
+
+### Your Action Item
+Sign up for a free account on OpenWeatherMap or newsapi.org. Generate an API key. Go to V0 or Replit, open the "Secrets" or "Environment Variables" tab, and add your key. Then prompt: "Build a weather app using the key in my environment variables."
+
+### In short...
+API keys are the professional way to connect your apps to the world's most powerful data sources, provided you keep them hidden and secure.

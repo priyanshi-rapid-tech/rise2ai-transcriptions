@@ -1,0 +1,54 @@
+Video Title: Persistence without database - Task Manager
+Duration: 08:33
+
+Transcript:
+
+00:02, Hey, everyone. So, today I want to kind| to, like, take a step up and get into building apps with some kind| to a persistence.
+00:13, Or an API connection with outside.
+00:16, When it comes to persistent, I think, first, what it really means is that your app actually can store information for you. So if you add something, let's say a task, it is stored, it's no more a read-only app.
+00:29, it becomes the read and write app, read, write, edit, kind| to a CRUD functionality.
+00:35, One of the important aspects there is needing to have a database.
+00:40, But before we move on to the database.
+00:43, First thing what we're gonna do is actually not use a database, but use what we call this, browser local storage.
+00:50, So your browser actually comes up with, like, a local storage, which is only accessible to that particular browser.
+00:57, instance that you're running, and if you clear the cache, or if you, like, you know, clear the cookies and others, all the storage will be gone. So it's kind| to dangerous that way. But in many ways, I actually like it because it stays local.
+01:11, I don't store it somewhere else, and from time to time, it can actually mean privacy for your users as well, right? Like, so this is a design pattern you should look.
+01:19, A great example for this is, like, if you're wanting people to kind| to store their API keys, maybe you never send it to the server, you always keep it in the browser. Or, there are certain privacy-sensitive information, let's say they're uploading their W-2 and stuff like that, can also be stored locally in the local browser storage.
+01:37, So, let's start with, kind| to, the local browser storage and see what we have.
+01:43, And what I've done is actually, build out…
+01:47, a few prompts for you guys, right? Like, so I have… I'm gonna go through one or two of them, but then you're also welcome to kind| to try out other ones as you need. So, if you go to the canonical doc, there would be a layer for persistence tab.
+02:05, And there, we are using the local browser, or the stuff. So, let's take a look at that. There are two different types of prompts. There's a quick prompt, which is if you just want to share something quick and be done, but a little bit more detailed prompt as well, right? Which is what I slowly want you guys to kind| to move towards, rather than saying, like, a very basic prompt.
+02:24, Right, so in this case, the key aspect is to somehow let the prompt know that they can only use browser local storage only, right? So you can, you can see that this is important. So, let's say…
+02:39, I want to build, like, a simple, daily task planner app, right? Which is… I'm gonna take the detail prompt.
+02:47, And let's just go to something like V0. We can choose any one, but I'm just gonna show it into a few different ones. And let it kind| to build out this, which is build a daily focused planner using a browser local storage, add, edit, delete tasks.
+03:03, marked task complete, persistent task across refresh, no backend, no APIs, right? So we are being very clear as to what functionality it can use.
+03:13, Alright, we'll come back to this in a minute.
+03:16, You can see it's cranking away. Go back, pause the video. I want you guys to kind| to copy this prompt and actually put it out, right? Like, so please go ahead and, like, play it out with you. You can use V0. I recommend you try different tools as well, but I think, pull up any one of them that you may have access to.
+03:34, While it is doing that, let me show you some of the other examples. Like, what you can do is, like, you can build a resume draft builder, like, build a resume editor.
+03:42, That autosaves content locally in the browser. It kind| to builds the resume. It has sections for summary, experience, skills.
+03:50, There is an expense scratch pad that you can build.
+03:53, Which is build a simple expense tracker that stores, everything locally. Actually, this is… this might be a good one. Why don't you kind| to fire it up into Google AI Studio, which is… it allows you to kind| to track and build out your expenses, as you kind| to do it.
+04:10, Alright, while it is doing, I think the V0 is ready. So, let's see what it says. Okay, add your first task to get started. So, I'll say…
+04:20, Read a book, on AI.
+04:24, Engineering, right? So I can say that.
+04:29, pick up… Kids?
+04:35, Before, leaving work, before leaving.
+04:40, I don't know. And you can see that it has actually built, and it is not using any kind| to database stuff. I'm able to kind| to edit it, do anything, and if I refresh this page…
+04:52, the data persists, right? Like, this is… so this is super cool, like, you can actually build multiple apps like this, which allows you to do things
+05:01, which you don't need to kind| to store database, you don't have to spend maintaining a database, you don't need… these are the things is you just want to build a scratch pad. Actually, maybe I will ask you to kind| to say, can you build it…
+05:14, like… Google Keep.
+05:17, Type of interface, because wouldn't it be cool if I can move this around a little bit, and let's see what it does, right? Like, so I can just change the layouts, based on that.
+05:28, In the same time, let me just kind| to go and see at AI Studio, so it looks like it has actually built an app.
+05:36, Because I think I said an app, it has built more of a mobile layout, you can see if I were to kind| to add an expense, so I can say, something like 20 bucks.
+05:51, I'm seeing some kind| to an issue in terms of the font, so I have to kind| to select it to kind| to see. Categories, transportation, so the font, definitely there's an issue. But if I… you can say if I log it, it starts to show what's happening. Looks like it also has,
+06:06, AI scratchpad, which is pretty cool, like, so looks like it just went ahead and built that, so I can say, spent $1.20.
+06:15, for lunch today at Pizza Hut. And it should actually go ahead and add that automatically, so it's using AI functionality. This is a pretty cool
+06:27, idea. I think building with AI Studio, they tried to include that. You can see lunch at Pizza Hut is starting to show up. The edits are not there, but you can see a lot of cool things that it has built, right? So you are, at this point, you can launch this, you can use this locally.
+06:44, You can actually might be able to use it only also on the web, mobile, but just know that you're not able to kind| to, like, the data does not move with you, so if you lose that, the whole thing kind| to goes away. It has the get AI spending, data stuff, which may or may not be working. We're not debugging AI yet, but this is pretty cool to kind| to see.
+07:03, And, looks like this is still cranking away, going back to the daily focus, thing. So let's see, oh, there you go.
+07:12, So you can see that it has now, created, change the…
+07:21, design of the note ticker. I'm just gonna take another…
+07:25, app and do it, right? So, which is pretty good. I can change the color of this to, something else, and there you go, you got your Google, keep color interface. If you want to be able to kind| to move that around and stuff like that, go ahead and try it. Definitely want you guys to kind| to, try building it, and…
+07:46, One thing to kind| to keep into account here is make sure that you build some of these tools that you use on a day-to-day basis, because that's when you start to kind| to experience what are the problems, what are not.
+07:59, Please post what you build onto the channels, as well. Alright, have fun, and kind| to go build this, you know, these are a couple other ones. So there's a resume draft builder, there's an interview prep notes.
+08:13, it can actually take notes for you, build an interval prep notes app that works offline, right? Like, actually, I want to actually go build all of this, guys, right? Like, so I want you guys to kind| to see what it is you're doing. You're building a reading list manager, so a lot of the lists can be built. All right, I'll see you guys in the next, call.

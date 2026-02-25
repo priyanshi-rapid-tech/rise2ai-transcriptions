@@ -1,0 +1,48 @@
+Video Title: Hosting your v0 app on a custom domain
+Duration: 07:54
+
+Transcript:
+
+00:01, Hey, guys. So what I want to do now is today we want to look at how do you actually host your domain name from somewhere else like V. 0, or anything else, and configure that on Cloudflare not to do this. What I've done is, we have already configured, so that cloudflare already has my domain. In this case, roomtas.com.
+00:24, and but it does not have. You know, we haven't really connected it to V 0 or anything else. If you don't know how to configure the cloudflare with Godaddy and others, look at my previous video, or if you have bought a domain at cloudflare. Then you can skip that previous video completely and come directly to this at this point. If I go to Dns, it has some settings, but those are not appropriate. What I'm going to do is I'm going to go to V 0 dot dev
+00:50, and build my landing page right? So I'm gonna say.
+00:55, something like no? Hello!
+01:01, Actually, why don't I start with Openai? Because that's what I always like to do, and what I'm going to do is, change it to O. 3,
+01:11, and ask it to kind| to build me a domain, a simple landing page. Build me a
+01:19, simple landing page bar.
+01:22, Let me take my Linkedin, URL,
+01:27, and then I'm gonna just say
+01:29, that here's a Linkedin URL for me. Lukash keep it extremely simple.
+01:43, Keep it extremely simple. And link to my linkedin as well as
+01:55, as my substack, which is
+02:02, Go here.
+02:04, Just gonna bring my sub stack here. I'll put it in to build this page.
+02:13, Please give a prompt I can use on V, 0 dot dev.
+02:24, Okay, so what it will do is it will give me the prompt.
+02:28, And then I'm just going to go and punch it in to V 0.
+02:41, Alright. So hopefully, this kind| to gets built quickly.
+02:49, and once this is built. What we're going to do is I'm going to go deploy this and start pointing to roomtas.com.
+03:04, There you go.
+03:06, Perfect. So I'm gonna hit deploy here.
+03:09, And it says, deploy to production. I'm gonna I'm I'm good with that. So it's gonna deploy that website into production.
+03:18, which is basically is taking that and putting into a server.
+03:21, and it should take 30 to 30 to 60 seconds to kind| to do that.
+03:30, So there was some warning, but hopefully it can still deploy
+03:36, and it has somehow figured out like, I'm AI educator. I'm more| to a product builder than anything else. But I'll just go with that for now.
+03:51, Okay, so
+03:53, 37 seconds. Let's let's just hope that okay, deployment completed 42 seconds. So this one, I can see this website that it has been like, V, 0 dot something, something app. I actually don't want that. What I want is like, I want to add a domain here. So this is where I'm going to add a domain
+04:12, and say, actually, not this. So v on vercel. So actually, let's just do view on vercel that allows us to kind| to configure a domain. So at this point, if I click on view on vercel, it shows me all| to these things. And then I'm going to try to find a domain name somewhere here, and let me just try to see where that is
+04:49, assign custom domain. So you can see there is an assigned custom domain here. I can. I will hit, manage over here so that will take me to where the Custom domain is managed. I'm gonna add a domain. And I'm just gonna say, roomtas.com is what I want. So I want this to be my homepage. And it's asking me to kind| to like, do that. So and I'm connecting this to the production. And I'm gonna hit. Save
+05:20, this point. It should give me some instructions on how to do this
+05:25, right? So it's asking me to put the a name as
+05:29, as this particular address, so I will take this address and a name which is at.
+05:35, and go to my cloudflare, and I will find I'll actually just addict some| to these things, because I don't need any| to this
+05:46, things here, I'll delete this 4 records.
+05:53, Now, this is because I already had that I'm going to add a record. And again, it's an a name the required name was at. And the IP address was this, okay, let me show you guys again.
+06:05, This is, see, this is a name it's an at. And this is the IP address. So I'm just gonna go back and kind| to do that. I'll remove the proxy standard. This is important because it's kind| to like interferes.
+06:16, and then I'll hit save. So at this point, what it has done is like it has taken that. And then if I go to roomtas.com. Sometimes it takes a little bit time to kind| to like launch, but sometimes it can be like very quick.
+06:34, so I'll have to come back in a few hours at times to kind| to do this just because this is not there. I wanna quickly add the the domain for the C name as well.
+06:47, And let's see, actually, this is A. W. So I'm gonna add a new record this time instead| to a name, I'm going to take like a C name. And some| to this is not gonna be
+07:01, very easy for you to kind| to understand. Totally understand that. Just follow the instructions. This is a 1 time thing you never have to kind| to. Come back and do this again. But if I just do this here
+07:13, let's see. See if I actually come back and refresh this page. It should now take me to roomtaz.com directly, and, voila! It's like it does not work yet, but I think if you give it a couple hours it should come back and work hopefully. You guys tried you should be able to kind| to see this. So that's it. We would have just deployed your 1st domain.
+07:35, and it should be that straightforward thank you so much. And oh, there you go. Actually, before we close out, you can see if I now go to roomtas.com. It is already pointing to that particular page. And now I have to,| to course, check everything is correct or not, and the site is deployed. Thank you.

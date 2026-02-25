@@ -1,0 +1,33 @@
+# Lesson Summary: VibePRD Day 2 — The Professional Interview (Part B)
+
+### What are we building?
+We're transforming our generic chatbot into a **Veteran Product Management Coach**. Instead of just saying "How can I help you?", the AI will now lead a structured 6-step interview to help you define a high-quality product idea. It will push back on lazy answers, avoid annoying filler text like "That's a great idea," and follow a strict professional workflow.
+
+### Quick thoughts before you start
+*   Why is it more helpful to have an AI that asks you "tough" questions than one that just agrees with everything you say?
+*   How do you stop an AI from asking 5 questions at once and overwhelming the user?
+
+### Expert Vocabulary
+*   **System Persona:** Giving the AI a specific job title (e.g., "Veteran PM Coach") and personality to ensure its tone and advice are consistent.
+*   **Prompt Separation:** The engineering practice of moving your long text prompts out of your main code and into a dedicated file (like `prompts.py`) to keep things organized.
+*   **Iterative Coaching:** A design pattern where the AI only moves to the next step (e.g., from "Problem" to "Users") once it is satisfied with your previous answer.
+*   **Completion Payload:** The raw data (found in Replit Logs) that shows exactly what was sent to the AI, including your instructions and your previous chat history.
+
+### Key Takeaways
+1. **The AI is an Investigator.** Your prompt should instruct the AI to be an "Investigator," not just a bot. It should look for evidence (like user research) and clear requirements before it agrees to write a single word of your PRD.
+2. **One Question at a Time.** To create a premium user experience, force the AI to only ask one question per "turn." This makes the interview feel like a real conversation with a human coach.
+3. **No Fluff allowed.** Professional tools should get straight to the point. By commanding the AI to "Avoid conversational fillers," you make the app feel faster and more professional.
+4. **Debug the Conversation, Not the Code.** If the AI is being too "nice" or "lazy," you don't fix the Python code; you adjust the **System Prompt**. Use the **Replit Logs** to see if your prompt is being sent correctly.
+
+### Reflection Questions
+*   If you gave a vague answer like "I want to build a fitness app" and the AI *didn't* push back, how would that hurt the final PRD?
+*   How does referencing the "Step Number" (e.g., Step 1: Problem) help the user feel more in control of the process?
+
+### Your Action Item
+In Replit, use the **Checkpoint B** prompt. 
+1. Replace the "Helpful Assistant" prompt with the "Veteran PM Coach" prompt. 
+2. Test the app by giving a lazy answer like "It's for food." Verify that the AI pushes back and asks for more detail.
+3. Look at your **Logs** tab and find the "Veteran Product Management Coach" text to see exactly what the AI brain is "seeing."
+
+### In short...
+A great AI app is defined by how it "behaves" under pressure. By building a strict, interview-based system prompt, you've created a specialized tool that creates more value than a generic chat window.

@@ -1,0 +1,33 @@
+# Lesson Summary: VibePRD Day 4 — The Reviewer Agent
+
+### What are we building?
+We're adding a third powerful agent to our app: **The Reviewer**. This agent acts like a Veteran Chief Product Officer (CPO) who critiques your PRD. It doesn't just give feedback; it generates a **JSON Scorecard** with ratings (Red/Yellow/Green) and provides a "Fix It" button that automatically patches and improves the document based on its analysis.
+
+### Quick thoughts before you start
+*   What is the difference between an AI that "Generates" a document and an AI that "Analyzes" one?
+*   How can a "Feedback Loop" (Review -> Fix -> Re-review) lead to a much better product than just a single prompt?
+
+### Expert Vocabulary
+*   **Reviewer Persona:** An AI agent instructed to be constructive but rigorous, scoring a document on clarity, metrics, and risk.
+*   **JSON Scorecard:** A structured data format that allows the app to show a beautiful, color-coded table of scores (e.g., Problem Clarity: 4/5).
+*   **The "Fix It" Pattern:** A workflow where the AI identifies a gap and then, with one click, writes the specific code or text to fix that gap directly in the document.
+*   **Analyze-Suggest-Patch:** The advanced three-step process where an agent reads existing content, finds a problem, and applies a subtle fix without rewriting the entire file.
+
+### Key Takeaways
+1. **Agents Act, Chatbots Talk.** While Day 2 was about chatting, Day 4 is about taking action. The Reviewer reads what you and the Drafter have written, finds the weak spots, and offers to fix them for you.
+2. **Score Honestly.** A "nice" AI that gives everyone 5/5 stars is useless. Instruct your Reviewer to be tough—most first drafts should score 2 or 3 in some categories to encourage improvement.
+3. **Automated Patching.** By clicking "Fix It," the AI finds the exact section (like "Metrics") and replaces the "weak" text with a "strong" suggestion based on its CPO knowledge.
+4. **Visibility and Tabs.** Since the Reviewer panel can be large, we use a "Split View" or "Tabbed Navigation" so the user can easily flip back and forth between their Scorecard and their PRD.
+
+### Reflection Questions
+*   Why is the "Analyze-Suggest-Patch" pattern more valuable to a professional than just asking the AI to "rewrite the whole thing"?
+*   How does the "Verify the Diff" (seeing what was changed) help a user feel more in control of their PRD?
+
+### Your Action Item
+In Replit, use the **Module 4 Checkpoint A** prompt to add the "Review My PRD" button. 
+1. Generate a PRD, then run the Review. Does the Scorecard appear? 
+2. Use **Checkpoint B** to add the "Fix It" buttons. 
+3. Apply a fix to the "Success Metrics" section and verify that the Scorecard updates when you re-review the document.
+
+### In short...
+Day 4 moves your app into the "Elite AI" category. By building a feedback loop that critiques and repairs its own work, you've created a tool that truly collaborates with the user.

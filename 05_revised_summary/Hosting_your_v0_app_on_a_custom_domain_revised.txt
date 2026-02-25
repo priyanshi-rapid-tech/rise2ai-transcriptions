@@ -1,0 +1,35 @@
+# Lesson Summary: Hosting Your V0 App on a Custom Domain
+
+### What are we building?
+We're taking the final step in professionalizing our AI products: **Custom Domain Hosting**. We'll show you how to take a landing page built in **V0.app** and "wire" it to a professional domain name (like `yourname.com`) using **Cloudflare**. This transforms your project from a temporary demo into a permanent, branded home on the internet.
+
+### Quick thoughts before you start
+*   How does having a custom `.com` URL change the way a recruiter or a customer looks at your work compared to a `vercel.app` link?
+*   Why is it important to "Disable the Proxy" in Cloudflare when you are first connecting your domain to Vercel?
+
+### Expert Vocabulary
+*   **Production Deployment:** Moving your app to a permanent server that is ready for the public to visit.
+*   **A Record (Address Record):** A DNS setting that maps your domain name to the specific IP address of the server where your app lives.
+*   **CNAME Record (Canonical Name Record):** A DNS setting that allows you to point one domain (like `www.yourname.com`) to another domain address (like Vercel's servers).
+*   **Vercel Dashboard:** The "Control Center" behind V0 where you manage the technical settings, domains, and analytics for your app.
+
+### Key Takeaways
+1. **The Handshake.** Connecting a domain is like a "Handshake" between your domain manager (Cloudflare) and your app host (Vercel). You must provide proof to Cloudflare that Vercel is allowed to host your site.
+2. **The "At" (@) Symbol.** In DNS settings, the `@` symbol represents your "Root" domain (e.g., `google.com` without the `www`). Following Vercel's instructions to add an **A Record** for `@` is how you set up your main homepage.
+3. **One-Time Setup.** The good news is that once you've successfully wired your first domain, you never have to do it again for that project. From that point on, any updates you make in V0 will automatically appear on your custom domain.
+4. **Proxy Settings.** When first connecting to Vercel, it is recommended to turn off the "Orange Cloud" (Proxy) in Cloudflare. This ensures that Vercel can verify your SSL certificate and security settings without any interference.
+
+### Reflection Questions
+*   How does using an AI like O3 or Gemini to "write the prompt for V0" help you build a better-looking landing page?
+*   Why do some developers prefer to keep their "www" version of the site separate from their root domain?
+
+### Your Action Item
+1. Build a simple personal landing page in **V0.app**.
+2. Click **Deploy** and then **"View on Vercel."**
+3. In the Vercel Settings, go to **Domains** and add your custom domain name.
+4. Copy the **A Record** (IP address) provided by Vercel.
+5. Go to your **Cloudflare DNS** dashboard and add that A Record (use `@` for the name).
+6. Wait for the logic to "Propagate." Refresh your custom domain and see your Vibe Coding project live!
+
+### In short...
+You are now more than just a coder; you are a webmaster. By connecting your custom domain, you've taken the final step in the Vibe-to-Launch workflow. Congratulations!

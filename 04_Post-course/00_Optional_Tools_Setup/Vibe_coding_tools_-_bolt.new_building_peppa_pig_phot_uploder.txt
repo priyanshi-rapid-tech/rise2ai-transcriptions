@@ -1,0 +1,50 @@
+Video Title: Vibe coding tools - bolt.new; building peppa pig phot uploder
+Duration: 07:54
+
+Transcript:
+
+00:00, Alright, let's talk about VIP coding with bold.new. This is another one of the products, they're currently on the V2. Once you have created the account, what you can do is,
+00:14, you know, you can just come out and type in a prompt, very similar to everything else. They do allow you to kind| to choose, what version that you want to use. Do you want to use Sonnet versus, like, V1 Agent, which is, Legacy or Codex and others.
+00:32, The models and the performance will keep changing. Of course, you want better performance, you're willing to pay more money, you should go with the higher model. And of course, it will depend upon your plan, what kind| to plan you have, your free plan, your paid plan, how much more you're willing to pay. That would help do that. And it also looks like they have some options around databases and stuff like that.
+00:53, Or you can attach a file, as well as you can enhance a prompt.
+00:57, Okay, so I'm gonna build something simple here. Let us build…
+01:07, Hit gain that allows Meat show.
+01:14, My… Pictures… that I take… For… A topic.
+01:27, Use peppers.
+01:30, Colors.
+01:32, Alright, so…
+01:34, In this case, I'm asking it to kind| to actually allow me to take some, you know, upload some pictures.
+01:40, And showcase that, for Peppa Pig. Again, Peppa Pig, if you don't know, well, you probably, you know, you didn't have kids recently, or younger kids recently, but it's, it's one of the characters that kids really, really love.
+01:56, So let's see what's going on. While this is compiling, it's the same kind| to thing. On the left-hand side, you would have the chatbot, which is kind| to going and thinking through all| to these things. You still have the publish button, so where you can go publish it. This is the code button. You can see it started to kind| to generate a bunch| to code, source files and everything else.
+02:16, If you have, like, a database, this is where you will use the database. They also have, this is where authentication and server functions and all the things, if you wanna, for file storage.
+02:26, A bunch| to things, right? Like, so you can start to see various things. It also allows you to kind| to choose what is the agent that you want to use. We are using Claude in this case, right? And which is the recommended, but just know that every few weeks or every few months, this can change.
+02:45, And is the project, visible publicly or not? This is not the same as publishing the website. This just means that, you know, who can see your project, like, the prompts and everything else. So definitely, keep it private, if you don't know if you want to make it public.
+03:03, Right? And, it also shows how many tokens you can use, and how many tokens you will be allowed.
+03:13, what is your plans and everything else. I think that should be pretty straightforward for folks to kind| to figure it out, right? So, in the meantime, if I go back here, again, you can see that they have a very similar select functionality, which we'll come back to.
+03:30, Similar to Avivable, which allows you to kind| to select a particular component and change colors and, things like that. Alright, let's wait for a minute and come back when this is ready.
+03:47, Alright, you can see a few things here. I built a Peppa Pig photo album. Here's what you can do. Take the shared photos. Kids can either snap new photos with their camera or upload existing pictures. Each photo can have fun captions, and it says that photo will be stored in the database.
+04:04, So if I go here, it kind| to shows Peppa Pig, but it's not exactly Peppa. I think they might be doing this because, they're doing it, you know, for copyright reasons or whatnot. And, it has two things, right? It allows me to kind| to take a photo, let's see if the camera actually,
+04:24, Choose the photos, okay.
+04:26, Choose the photos.
+04:28, And I can upload it, so let me see if I can find a photo here.
+04:38, It's my daughter.
+04:43, That's really niche.
+04:46, Okay, let's see.
+04:54, Alright, let's just take this slide here.
+04:59, And…
+05:02, Alright, so it is uploaded the photo here, and you can see that it kind| to works. Again, we'll get into, like, getting these things to work and others, but,
+05:13, You can actually add captions here. The take photo, for whatever reason, is not actually opening the camera, so you can… ideally, we will go back and,
+05:25, see that, and you can see that I have actually used the entire… all the tokens, and then also my database is configured to kind| to store the pictures and everything else. To hit publish,
+05:37, You can see that, actually, this is something that many| to the providers have started to do, which is a good thing, which is they've started to kind| to run some kind| to a security analysis, and like.
+05:49, They can see, what kind| to security errors that you have, and you can actually… if you feel that this is important, and I'm out| to tokens, so I may or may not be able to kind| to do it, but I can just say, ask Bold to fix it.
+06:03, Right? And of course, this is where it's asking me, Alright, so…
+06:11, Now, you can actually, you know, if you had the security.
+06:15, thing enabled, we could have just kind| to, like, fixed it. But at this point, the project is launched. If I go here, you know, in this particular case, because it is using the database, and we'll talk about why.
+06:28, this will persist across this thing, various aspects| to it. So, you know, I'm just gonna go ahead and derate my picture, I don't need another picture on the platform. And there is a maiden bold.
+06:41, That setting should be here somewhere, that we can just go ahead and disable it. Again, Bolt also does support support, like connecting the project to the GitHub, so if you connect to your GitHub, and we'll talk about that, like, how to do that in one| to the future things.
+06:56, If you're an advanced user, you should be kind| to, like, connecting your projects to the GitHub and pushing it in. But irrespective, even if you don't do that, Bold should be able to kind| to, keep track| to that.
+07:11, One thing that I also want to call out is that reload preview is important, because sometimes when you refresh, if things don't, like, refresh automatically, you should kind| to go ahead and do that.
+07:20, And they also have this responsive mode, which allows you to kind| to just test.
+07:24, how it looks like on a browser, like a mobile phone, or something| to that, right? So you can choose the type| to phone that you have, from iPhone 17,
+07:33, To iPad, to iPhone 16 Pro, Android, I'm sure they have Android Galaxy 25 here. So there, these are also things that you can try, or you can just actually, if you knew what… what it should be, you can just go ahead and, build it out, all together.
+07:52, Alright, good luck, and I'll see you guys in the next one.

@@ -1,0 +1,43 @@
+Video Title: Building with Databases - Personal CRM
+Duration: 06:02
+
+Transcript:
+
+00:00, Alright, so we built something with, without the database, now let's try to kind| to build with the database.
+00:08, So, in this particular case, maybe we build a personal CRM. So, there are a bunch of, again, there are 5 different examples here. I'm just gonna start with building a personal CRM.
+00:19, And then I'm gonna actually ask it to… Create a database…
+00:29, Store this information.
+00:32, Right, so let me actually just go ahead and,
+00:36, create this… these are really short prompts. In this case, I'm going to use Lovable. And let me just kind| to hit go, and I'll talk to you guys, about it. The reason I'm using Lovable for databases is you have to figure out not everybody supports database very easily. What I've seen is Replit.
+00:54, And Lavebul are pretty good, where they have built-in databases, and you can see it's actually asking me, enable cloud, built-in backend, adds LLM to your app, so it says that, hey, do you want me to kind| to allow
+01:07, And this is because it's kind| to… it's kind| to kicking off an entire backend for you. Just know that there is cost associated with it, because every time you use a database, there would be cost associated with that. At some point, you may want to use Superbase, right? Like, Superbase is another example of, like, it's a hosted database.
+01:26, or some of the other, there are multiple other databases, so you can also say that, hey, I want you to kind| to use SuperBase, but it just, I would say, highly recommend that just kind| to stay with the lovable.
+01:37, or a Replit environment for now. If you have to get a paid, access, I would say Replit is the right place to kind| to get the paid access for now, because just how complete, their, system is.
+01:50, All right. While it does that, let's kind| to look at some of the other examples, right? Like, so, first of all, we could have used for all the local browser persistence.
+01:59, All of these, aspects, you can just say, add a database instead of saying no back-end, no API. Expense scratch pad, if you want to just store, just say that, build a database for that, right? Like, and…
+02:10, And say that, but the examples that I also have is persist with databases, is a habit tracker, for example. You want to build a habit tracker, feedback collection tool, personal CRM, pretty much everything that you do, right? Databases really mean that you are able to kind| to persist
+02:27, this information back. I'm gonna pause this real quick and come back in a couple of minutes.
+02:35, So, you can see it's kind| to building some kind| to authentication flow with the database itself, and it will build the contacts in the UI.
+02:45, Okay, so looks like it's just kind| to finishing up.
+02:48, And, looks like because it's, it has database, it's also have put some kind| to an email password sign-up, login, confirmation, contacts, and interaction, and, it's ready to use. Well, I don't know what password,
+03:05, what passwords to kind| to use, so I'm just gonna go ahead and sign up.
+03:10, And then if I sign up here, and let me just use, hello VKR…
+03:15, And then I'm just gonna give a basic password here.
+03:20, Which said,
+03:23, work, but looks like it's asking me to kind| to confirm my email address, let me see. Okay, so looks like I did get an email to confirm, which is kind| to getting into the authentication piece, but okay, let me just go ahead and go ahead and verify this. Looks like it is confirmed.
+03:41, And at this point, I should be able to kind| to just log in.
+03:45, Here.
+03:46, And, let's see…
+03:48, Alright, it is able to kind| to log in. So you can see that it has built the login. Let's not get into the login piece yet, but it can see that there are multiple, you know, it has contacts, so let me just kind| to add a contact here, which is, just gonna add my name here.
+04:05, And, let me… add, one of my email addresses. I'm not gonna add my…
+04:14, And you can see how you can have some, TBD…
+04:19, PM, and I can have notes like,
+04:23, met at an event, right? So, at this point, it is starting to kind| to give me…
+04:30, give me the complete CRM that I'm able to build. And then, it shows interaction. Once I go here, it also shows me an interaction, so I can see that I want to interact, I want to log a call, email.
+04:43, meeting or not, right? So you can see that you are able to build an entire CRM. This is a functional CRM with login and prompts.
+04:51, with half a line of prompt, right? Like, which is not much of a prompt, and you can see that databases are happening. One thing to kind| to see here is, like, how do I go about,
+05:02, Seeing what the database tables actually look like. So, for that, if you go to the plus sign, and it would be different in different places, and if you go to cloud here, in Lavable, you will see, actually, the database, what it looks like. It looks like it has two tables in the database, the contacts and the interactions. Let's just go to the contacts.
+05:21, You can see it has things like ID, user ID, first name, last name, email, phone, company. So it actually is creating all the columns, right? And, you can see there's also interactions over here.
+05:33, And if you go to interactions, it has user ID, contact ID, a bunch of things. So you can see the database is much easier to kind| to manage.
+05:42, But you're able to kind| to use something else as well, right? Like, so you can also have SQL, so you can interact with this from the SQL, and there you go. I highly encourage you guys to kind| to build some of the other ones as well, right? So, like, issue tracker or something, something simple, and see how the database is able to kind| to build out.
+06:01, Good luck!

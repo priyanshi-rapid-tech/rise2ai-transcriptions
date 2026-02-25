@@ -1,0 +1,30 @@
+# Lesson Summary: Building with APIs (No API Key Required)
+
+### What are we building?
+We're building an **Earthquake Explorer** that connects to real-world data from the USGS (U.S. Geological Survey). We'll learn how to fetch live information from a public API without needing any passwords or API keys.
+
+### Quick thoughts before you start
+*   How do two different computer systems talk to each other without a human clicking buttons?
+*   What is the difference between a "GET" request and a "POST" request when you're working with data?
+
+### Expert Vocabulary
+*   **API (Application Programming Interface):** A set of rules and URLs that allow one piece of software to "talk" to another to exchange data.
+*   **Endpoint:** A specific URL provided by an API (like the USGS earthquake link) that responds with the data you're looking for.
+*   **JSON (JavaScript Object Notation):** The most common "language" that APIs use to send data back and forth. It looks like a clean, organized list of information.
+*   **Client-Side Fetch:** When your app gets data directly from the user's browser rather than passing it through a separate backend server.
+
+### Key Takeaways
+1. **APIs are the web's connective tissue.** They allow you to pull in professional data—like weather, stock prices, or earthquakes—directly into your own custom app.
+2. **"GET" is for reading.** Most simple data apps use GET requests because you're simply asking a server to "get" and send you information.
+3. **No-Key APIs are the best starting point.** Many government and educational organizations provide free, public APIs (like USGS, NASA, or RandomUser) that let you start building immediately without any setup.
+4. **Always provide the documentation URL.** When prompting an AI to use an API, give it the specific endpoint or documentation link to ensure it uses the correct version of the data.
+
+### Reflection Questions
+*   How does pulling in live government data make your "Earthquake Explorer" feel more professional than an app with fake "test" data?
+*   If you wanted to add a map to your explorer, would you still be able to do that for free, or would that require a paid API key?
+
+### Your Action Item
+Go to V0 or Lovable. Use the prompt: "Build an Earthquake Explorer using the USGS Public API. Show all earthquakes from the last 7 days. Include a filter for magnitude. No API key needed." Verify that real locations start appearing in your list.
+
+### In short...
+You don't need expensive tools or keys to build powerful data apps; public APIs allow you to tap into professional, live data streams in seconds.

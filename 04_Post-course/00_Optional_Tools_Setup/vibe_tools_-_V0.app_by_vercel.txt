@@ -1,0 +1,90 @@
+Video Title: vibe tools - V0.app by vercel
+Duration: 15:10
+
+Transcript:
+
+00:01, Hey everyone, so let's look at how the VIP coding tool v0 works. This is a tool by Vercel, so we're gonna walk through that and see how V0 works, and what are some| to the setups that you need to become aware| to that.
+00:17, Alright, so start out, you can go to v0.app.
+00:21, Again, this is from Vercel, so if you just go to Vercel, this is the company that has introduced V0, and you can see, they have, you know, they provide a lot| to different things. But if you go to v0.app.
+00:37, Right on the home screen, you'll see a few things, and you know, once you have created your account and everything else, you can see, you know, I have a profile here, I have some credit, $57, I think they have free plans, as well as the paid plans.
+00:50, But the thing to kind| to, like, know is, first| to all, you can just check out some| to the inspirations, over here, right? So if I'm just opening up…
+00:58, the inspiration, over here. And, what you can see is,
+01:07, what you can see is, oh, we're… okay, so let me see if I can just say, browse all.
+01:15, Right, so you can see some| to the templates, like, see what are some| to the things people have been kind| to building. It's from the community. So, for example, if you want to just see, like, blocks and portfolios, like, how people have created blocks and portfolio, you should be able to kind| to go in there and, take a look.
+01:35, So, for example, if I like this particular blog, I can go here, and if it seems interesting, I can actually just go ahead and open in V0 and, like, start to fork it away, which is… start to kind| to use it. So, use this for inspiration, but for most| to you.
+01:53, Right? Like, once you have the inspiration and everything else, you start out with this box. This is a very typical thing that you will see in pretty much all the
+02:03, builders, and then you will… you don't have to worry about it, but you can just, you know, look at what kind| to model that you're using. So pretty much everybody will tell you what model to use.
+02:13, In this case, V0 is not telling you which models they have, but they just tell you that, hey, it's powered by Cloud Haiku, the Mini, the Pro is powered by Cloud Sonnet, and Max is powered by Cloud Opus, right? And if you kind| to like…
+02:27, In the world| to programming, Opus… so Opus is probably the highest model. So, the higher the model, the cost is going to be much higher. It says $1.2 plus per 1 million token. This is $150 per 1 million token.
+02:40, input and output rates are different, and the .50. So typically, I think it's okay to kind| to leave that at V0 Pro for most cases. What I've seen is, like, for the first prompt, maybe a good idea to use V0 Max, because
+02:55, you want to build the right foundations, right? Like, once you build the right foundations, you want to make sure that you're using the right prompt and everything else. So, I'm not going to focus on building, but I'm just going to focus on the tools here. For the building, please go back to some| to the other videos, like, what's the best practices around building and whatnot.
+03:12, But let us just build something simple here, and which will say, build me a game.
+03:20, A game| to, Tic-tac-toe.
+03:27, that, that I can play right now.
+03:33, Right? And as soon as you say that, right, like, so whatever is your,
+03:38, product is. Whatever you have to kind| to say, you will see that the product will generally kind| to, like, start out, and they will split up between the left screen and the right screen. Left-hand side, most| to them, sometimes it may be on the right-hand side, but left-hand side becomes the agent or the chat.
+03:55, And the right-hand side becomes the display or the preview| to what's going on, right? And it produces a lot| to thoughts, right? Like, you can see that it has produced the thoughts. Like, I will build a TikTok game and, like, understood the codebase, it has figured it out. And you can see it has started to provide you a preview.
+04:14, Within the preview, there are generally two options. For V0, it's, preview and the code, but it's true for pretty much any product, that she will see the preview| to the code, so it looks like it has done building, so I guess I can just keep playing and, see if it lets me win.
+04:33, And if it does not, then I can just say new game. So let me just try to kind| to, win here, and then you can say the winner is X. And if I have to kind| to make a change here, I can just say, hey.
+04:47, Can you use, USA flag colors.
+04:56, To celebrate,
+05:01, Independence Day.
+05:05, Right? So, what is good about this is, like, I don't really have to kind| to specify what exactly are the colors, what does it… does this really mean? It gives the model a little bit| to a flexibility to kind| to go ahead and do it. This will just kind| to go ahead and kind| to think about what is the best flat colors and everything else.
+05:24, And it will update it.
+05:26, Now, what you will see is on the top, currently, I only have the version 1, and you can see version 2 is in the progress. So, as you kind| to make progress, the good news is you're able to kind| to go back and forth within the tool to, like, the different versions and whatnot.
+05:40, So in this particular case, looks like it is using the red and blue a little bit, and the winner is O, but you can see that it is starting to use that color. May, I don't think this is the best colors that I was thinking about, but you can see how that works.
+05:57, Now, behind the scene, what's happening is, you're still able to kind| to see the code.
+06:02, Right.
+06:02, And because you're able to see the code, you can see what are the files that it has actually used. And you can see it has used, like, a page.tcs. Sometimes these files will be a lot| to different files.
+06:16, And all| to those files will be visible here, if you are using a little bit more complex project. And if you click on the preview.
+06:24, It will actually allow you to kind| to do that, and if you collapse this.
+06:28, Right? So what happens is the window would actually collapse away, and then you are able to kind| kmind| to see a bigger screen. You generally will also have, in V0, for example, there is this option| to open a new tab.
+06:43, So what it does is, like, just kind| to gives you a URL that you can just see the entire product, in a full-screen mode. It's a good way to kind| to find out if, how does the website actually look. They also have,
+06:57, you know, different ways. So, first| to all, you can see the version 1 and 2 is there, so if I want to go back to the older version, I can click here, and I can go back to the version 1, right? So what it has done is, like, because it is actually using version control or checkpoints, is what they call it, many| to them.
+07:13, it allows you to kind| to go back and forth, and if I want to go back to the latest, I can just click on back to the latest, or if I want to go to a different version.
+07:20, I can do that. And if I went to version 1,
+07:23, I can say that I want to restore. For example, if I had made a mistake, if it's something that I've done, I just, like, I did it, but I don't want to keep these changes.
+07:32, I can just easily do restore.
+07:34, What this does is it, it really allows you, to, kind| to creates a version 3,
+07:42, But it really allows you to kind| to go back, and it actually creates a new version. Based on that, you're able to kind| to see, and you're able to kind| to go back and forth and, like, figure out if you have lost track| to, things, what has happened.
+07:56, Right
+07:56, And what you can also do is, you know, it has already taken a default name. If I really wanted to, I can change the name. There is a privacy option that you need to worry about. Like, the option here is, should this project be private or public?
+08:13, So, I guess, anybody on the web should be able to kind| to find it, so that way it will become, like, part| to the search engine, or, like, some| to the other aspects. But to kind| to really publish this game, or app, or whatever website that you have built.
+08:30, product that you build, you have to hit publish. Why? I think publish to production is important because the… you know, there is both server-side and client-side code. There's a lot| to compiler… let me hit publish here, and I'll explain to you what's going on.
+08:45, I'm setting the visibility to public, first| to all, so it means that anybody in the web should be able to kind| to access that, which should be, generally my, need, except for sometimes if you want to keep it private. In that case, you have the option to kind| to choose a password-protected, kind| to a thing.
+09:04, But, you can also see that
+09:07, It is actually building quite a bit.
+09:10, And what does this building really do? Well, it actually compiles the site.
+09:14, And makes it, available. It also provides you some kind| to analytics over here, like how many people have actually visited this website, and whatnot.
+09:27, And it allows you to kind| to set a customized domain name, right? So you, by default, it has taken a TikTok-toe, game, 8, click. What if I don't like it? What if I'm, like,
+09:40, Tick giver…
+09:44, USA, right? So, if I'm just trying to choose a name, it will still be using v0-versal.app.
+09:52, And, voila, right? Like, that is the domain now that has become available, so you can see it has updated the domain to that. It also allows you to connect, like, a custom domain. We'll talk about that later towards the end| to the course, but…
+10:07, just know that if you want to use XYZ.com, or if I wanted to use rooontas.com, or if I want to use TicTac-toe, not runtas.com, which is the domain that I have, I should be able to… this is the place for me to kind| to do it, and this also has a place to, like, if I can connect to a GitHub repository, and I actually push it up.
+10:26, Right, so, this is something that we will also discuss later, as to how to kind| to… it's a little bit advanced, but if you want to have, like, a good version control, which is not just controlled by Vercel, because Vercel allows you to, kind| to, do version control, which is a great start, but once you start to get to the advanced versions.
+10:42, you may want to connect to a GitHub, repository or something like that.
+10:48, At this point, it has been published, so I'm happy to kind| to, you know, we can just share it with folks, so I can just go ahead and click on this.
+11:00, And at this point, it should be available to all| to you. If you guys want to try it out, it's v0.tick. It asksgamer-usa.versal.app. Again, very simple app, not focus, was not on the app, but on the tool itself.
+11:12, The other thing this tool also provides is console.
+11:17, Right? So if there is any kind| to an error that is happening, or if things are going, bad, you can actually output a lot| to things on the console. So let's actually try to kind| to, ask it to kind| to add a lot| to the console outputs. So, I want you to output…
+11:34, to console.
+11:35, a lot| to details on what is going on. What happens is, that way, you can actually, sometimes if you're getting error and you're not able to kind| to debug and bring it back here.
+11:47, You can actually just print out, so this is behind the scene, users generally never see it, and there are different best practices when to enable console or not.
+11:57, But early on, you may want to just ask it to kind| to enable a lot| to these outputs onto a console, right? Why? Because this allows you to kind| to debug and, fix it, basically fix things.
+12:11, as you need to, right? So, let's just wait for a sec to see if, as soon as the compile is completed, we'll try to reload this, and let's see if the files are still there. We have the page.json, and this particular file.
+12:28, Alright, it says that I've added comprehensive console log, throughout your TikTok game, so it has refreshed. So now you can see, it actually is showing a lot| to different things, right? Like, what's going on? So if I click on something, it should add more, and if I click on something, it should add more.
+12:45, Now, if I'm having trouble, I can just copy the logs from the console.
+12:50, Again, you get the console by clicking on the thing right next to the latest. There could be different places as the updates happen. But as I do it, I can actually copy the whole thing, I can clear it up, because I was like, okay, I think so far there's no problem, but I want to click on the next one.
+13:05, You can see a bunch| to console logs have been created. I can paste it here as, like, can you review
+13:11, To see if there is no… Error in console.
+13:18, Right? And what I've generally seen is errors are… when the error happens, you can take a screenshot, post it back into the V0, or any other tools that you're using, and that's a great way to kind| to look at it, but in this case.
+13:33, Looks like I've reviewed the console looks, and there's no errors. Anything is… everything is working perfectly. Let me see if I can actually try to introduce an error. So, what if I can actually…
+13:44, type something, which is what is going on? And what if now, if I try to, save the changes, and now if I reload this.
+13:57, Great. So now what we have done is we have introduced a bug. Again, this is not, you know, for whatever reason, if there's a bug, generally v0 will give you something like this. So, there are two things that you can do. You can actually, clear the console.
+14:12, And let's see what happens if I refresh it. It may show some errors, in case this case is not showing, but there's a runtime error, so I can actually say fix with V0.
+14:23, And what this would do is, like, it will really…
+14:27, go and actually take a look at the code, and you can see that the random keys that I typed, is probably gonna be removed, at this point, so let's take a look.
+14:39, Maybe it has already removed by now.
+14:42, By the time you click there. I found the error, there are two invalid lines| to code, voila. And it has actually go ahead and fixed it. So now you know how to fix an error on V0, and introduce an error. So once you're ready, you can just hit publish again, and it says Publish Changes this time.
+15:01, Which is, which is what it should be. So the V0 branding, I have turned it off. I don't know if it comes, turned off by default or not.
+15:10, Highly encourage you guys to kind| to do the same thing. Alright, happy V-zeroing, and I'll see you guys in the next one.

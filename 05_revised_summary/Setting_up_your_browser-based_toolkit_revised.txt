@@ -1,0 +1,30 @@
+# Lesson Summary: Setting Up Your AI Builder Toolkit
+
+### What are we building?
+We're exploring the **AI Toolkit** used for vibe coding. This isn't about learning one single language; it's about setting up the right environment—whether in your browser or on your desktop—so you can build and publish apps in seconds using nothing but natural language prompts.
+
+### Quick thoughts before you start
+*   Why choose a browser-based tool like Bolt or V0 over a professional desktop app like Cursor?
+*   How does an AI "Agent" differ from a simple "Chatbot" when it comes to building a website?
+
+### Expert Vocabulary
+*   **Browser-Based IDE:** Online tools like Replit, V0, and Bolt.new that allow you to code, preview, and host your app all in one web tab.
+*   **Cursor:** A popular desktop code editor (a "fork" of VS Code) that has AI baked directly into its core to help you write and debug code files.
+*   **Model Selector:** A menu that lets you choose which AI "brain" to use (e.g., Claude 3.5 Sonnet vs GPT-4).
+*   **Agent Mode:** A setting where the AI doesn't just give you code snippets but actually creates the files, folders, and architecture for your entire project.
+
+### Key Takeaways
+1. **Choose your workspace.** Browser tools (V0, Bolt) are perfect for fast prototyping and one-click publishing. Desktop tools (Cursor) are better for complex projects that need more control.
+2. **Follow the "Split-Screen" workflow.** Almost all AI builders use a two-part screen: the **Builder/Chat** on the left and the **Live Preview** on the right.
+3. **The AI moves from "Thinking" to "Planning."** When you give a prompt, watch how the AI first creates a project plan before it starts writing code. Understanding this plan is the key to catching errors early.
+4. **Publishing is the end goal.** These tools don't just write code; they give you a live URL you can share with your friends or customers instantly.
+
+### Reflection Questions
+*   If you wanted to build a quick calculator app for a friend, which tool would you pick and why?
+*   Why is it helpful to see the AI's "Thinking" process while it builds your website?
+
+### Your Action Item
+Pick one tool: **V0.app**, **Bolt.new**, or **Lovable.dev**. Use the prompt: "Build a simple website that shows the current time in London, Tokyo, and New York. Make the design feel like a luxury watch brand." Practice hitting the "Publish" button to see your live URL.
+
+### In short...
+You no longer need to install complex software to be a developer; the right browser-based toolkit turns your ideas into live apps in minutes.

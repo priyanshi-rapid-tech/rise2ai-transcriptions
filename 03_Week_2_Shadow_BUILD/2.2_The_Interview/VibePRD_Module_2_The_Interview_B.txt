@@ -1,0 +1,156 @@
+Video Title: VibePRD - Module 2: The Interview (B)
+Duration: 20:23 (Approx)
+
+Transcript:
+
+00:01: Alright, welcome back. So, what we just built is, dope.
+00:07: The checkpoint A so far, and we are moving to checkpoint B.
+00:12: In this case, for Module 2, basically what we have is, you know, what we did is, for the interview, we just, you know, made the chat functional, so we added the database and everything else.
+00:27: And you can see that the chat is functional now. Not only that, it remembers,
+00:36: It remembers what I had just stored, so it has access to the history of it, and with those two understanding, let's move on to the checkpoint B, right? In this particular case, let me just first just copy this prompt.
+00:49: It's a pretty long prompt, so let me just copy this.
+00:53: And I'm gonna, publish, you know, paste this prompt.
+00:59: And let it go, and let's look through what the prompt actually does, right? So at this point, what we are trying to do is, we, you know, we started out with a basic system prompt.
+01:10: Which is,
+01:12: Which is basically just says that, you know, you are a helpful AI assistant. If you look at checkpoint A, you're a helpful AI assistant. We'll replace this with the real problem in the next steps, is what we said.
+01:24: But here's the real system prompt. Replace the system prompt with this one. Keep everything else exactly the same, same chat wiring, same streaming, only change the system prompt. So what we are doing is…
+01:36: we are really providing much more detailed instruction on how it should kind of act and behave.
+01:42: So you are a veteran product management coach. You're interviewing a junior PM to extract enough information to draft a high-quality PRD.
+01:51: You're not just a chatbot, you're an investigator, right? Your job is to make sure that the project is well-defined.
+01:58: And we are providing exactly the structure of the interview. The instruction should follow exactly six steps. Do not jump ahead.
+02:06: So, start with the problem statement. Ask what user research or data justifies it. Ask for exactly 3 to 5 must-have user requirements. Ask what is expressly out of scope, right? Like, this non-goals are very important.
+02:22: Success metric. Now what is the goal, right? What is the single most important success metric? And summarize everything you have learned and ask if I should generate the PRD.
+02:32: Rules for coaching. Ask only one question at a time. This is important, right? Often models would ask multiple questions, and it makes people, like, just overwhelmed.
+02:41: If my answer is vague, gently push back and ask for more specificity. This is a very interesting coaching behavior that we are adding.
+02:49: Do not provide your own ideas or feature unless I specifically ask for them. Always reference the current step you're in, for example, Step 1 Problem.
+02:59: Keep your responses concise. Do not use conversational filler, like "That's a great idea" or "I understand." Let's just get to the point.
+03:07: And then we are using a specific pattern here, right? We're using Step 1 Problem. You're giving an idea of what exactly it should look like.
+03:15: So imagine the user provides an idea, "I want to build a fitness app."
+03:20: And then here's a negative example. "Good prompt. That's a great idea. There are many fitness apps. What makes yours different? And what is the main problem?" So it's asking multiple questions, it has the filler, so we want to provide the right behavioral example.
+03:32: And so here's the example, right? "Step 1: Problem. I understand you want to build a fitness app. Can you clearly define the specific problem you're solving for these users? Who exactly is this for?"
+03:45: Alright, so with that, I'm gonna go back and see if the app is reflecting. So the app has refreshed, let me run the demo.
+03:54: And let's see how the behavior has changed.
+03:59: Okay, you are a veteran PM coach. Step 1: Problem. I see the idea of building a smart grocery list app. Can you clearly define the specific problem you're solving for these users? Who is this for?
+04:12: Wow, what a difference. Look at the prompt that we had previously, which was checkpoint A. If I just look at it, what was that like?
+04:22: I understand. I understand you want to build a smart… so it had fillers. It didn't have steps. It didn't provide this coaching behavior. So system prompt makes a life a massive difference.
+04:34: Alright, let me follow along, and I'm just gonna run the demo through all the steps. I'm gonna provide these responses so let's see what happens.
+04:44: Alright, busy households who manually make list from memory.
+04:51: Step 2: Evidence. Okay, do we have evidence? What research or data tells you that households are struggling with this, manually?
+05:01: I interviewed 10 friends, and almost all of them said they forget at least 2 items every week.
+05:09: Step 3: Requirements. Alright, please provide exactly 3 to 5 must-have user requirements for this version 1 of the app.
+05:19: Smart suggestion based on purchase history, manual items addition, cross items off, shared list for different, you know, for multiple accounts. So let's provide that.
+05:31: Non-goals. Step 4. What is expressly out of scope for the fixed version of the app?
+05:39: Out of scope? No delivery integration or payments within the app for now. We just want a smart list.
+05:47: Success metrics. Step 5. What is the single most important success metric for the project?
+05:54: Metric, percentage of weekly lists that were fully completed without forgotten items.
+06:01: Step 6: Summary. Alright, so let's see the summary now.
+06:06: Problem: Household waste time, manual lists, missing 2+ items weekly. Evidence: Friend interview confirms persistent memory gaps. Must-haves: Smart suggestion, manual entry, item crossing, shared lists. Out of scope: Delivery/payment. Success: Fully completed lists. Should I generate the PRD?
+06:26: So let's compare with the summary we had previously. The summary was very generic. "I have enough information. I'll draft it." Now, this summary feels like it has actually listed the bullet points, and then asking me, "Should I generate?" So this behavior is exactly what we wanted.
+06:44: Alright, so now that we have done that, I think, we can actually validate our checkpoint B.
+06:51: Start a new project, follow the interview. Does the AI only ask one question at a time? Yes. Mention the current step? Yes. Push back on vague answers? Let me try to give a vague answer and see if it push backs.
+07:08: Alright, so I'm gonna go ahead and say Step 1, smart…
+07:15: Grocery list.
+07:18: Step 1: Problem. Can you clearly define the problem?
+07:23: It's for grocery shopping.
+07:27: "I understand it's for grocery shopping, however, can you be more specific? What specific struggle do users face when grocery shopping that this app will solve?"
+07:38: See, so now it is pushing back because just simple it's for grocery shopping is a vague answer. So that is exactly what we wanted to build. So, great job on following along.
+07:51: I think at this point, if you hit the summary and once you say "Yes, generate it", it should generate the PRD using the context that we have, which is also a small behavior change that we have provided in the prompt.
+08:06: So, anyway, that's what, we wanted to talk about. So let me hit this prompt again. I'm just gonna run demo.
+08:14: And finish it up.
+08:17: While it's finishing it up, let's talk about why we did what we did, right? Like, first of all, system prompt is everything in terms of behaviors of these AI models.
+08:29: And by providing multi-step, iterative coaching, one question at a time, being faithfully representing what the users are doing, you could build specialized interviewers, right? This is an interviewer for PRD. You could build one for architecture, technical doc, marketing, or anything else.
+08:48: And so I encourage you to kind of play around with this, and see if you are able to build an interesting product out of your capstone project as well.
+08:58: alright. So, I think it's just generating 1… I'm just going to copy over the must-haves.
+09:11: Not scope.
+09:14: And metrics, and let's quickly see the summary.
+09:19: Problem: Busy households, memory issues. Evidence: Interview friends. Must-haves: Smart selection, manual, list crossing, shared account. Out-of-scope: Delivery, payment. Metric: % fully completed weekly lists. Should I generate the PRD?
+09:33: Yes, let's do that.
+09:36: Awesome. So, it's just going to generate the PRD.
+09:41: It's good that it's just going through that.
+09:45: One thing that you might have seen is it's actually not clearing the right-hand panel, it's just appending it to it, so those are small UI-related items that you may want to fixed, right? Like, every time a new PRD is generated, if we just want it to be separate or we want to provide multiple ones.
+10:01: So, that's what we got.
+10:04: Let's, continue. I'll see you guys in the next video as we go to persistence, sharing and shipping. Thanks.
+10:13: Actually, I can also show you some of the things that's changing in the background. If you were to kind of look at… I didn't actually generate this… look at this code here.
+10:24: So if I were to kind of open main.py.
+10:29: You would start to see some of how exactly our system prompt is reflecting, so let me actually go through that.
+10:41: alright, so let's try to look at… or search for the coaching prompt.
+10:52: right?
+10:53: Okay, so if I search for coach.
+11:00: coaching…
+11:02: right.
+11:03: Okay, looks like it didn't find that. Let me re-refresh this.
+11:09: Okay, I see.
+11:15: It's searching for the string coach, which is not what I want.
+11:19: Let me search for PM.
+11:22: okay, anyway. So if you look at the main.py, actually you would start to see some of these things appearing in terms of instructions.
+11:34: Let's look at it, what it found.
+11:38: okay, I don't see it. Let me just open search bar.
+11:43: search…
+11:47: ok.
+11:49: right.
+11:53: and search for veteran…
+11:58: coach.
+12:00: alright.
+12:01: right, so here is where the prompt is, so if I were to look for that… let me look at the code.
+12:11: search…
+12:15: veteran product management coach.
+12:19: right.
+12:21: okay, it didn't find anything? That's really weird.
+12:26: it's not searching through… search through the entire workspace?
+12:31: okay, it found 3 in library/prompts.py. Let me look at prompts.py.
+12:37: Okay, prompts.py under library.
+12:41: prompt…
+12:44: ok.
+12:46: okay, here it is.
+12:51: alright, so this is exactly what we have pasted, so you are a veteran product management coach coaching junior PM to do this, so it has exactly Step 1, Evidence, Scope, Metric, and Summary. So it just made a completely different file for providing all the system prompts.
+13:10: This is a great engineering practice as well, separated out prompts, especially as they get longer.
+13:16: And so if I were to kind of look at, where prompts.py is being used.
+13:25: alright.
+13:28: and searching…
+13:31: ok.
+13:34: okay, so I can see it is used in chat.py which is in component/chat.py.
+13:41: and project list…
+13:44: ok.
+13:48: okay, alright. So if I open chat.py, you would actually see that we are bringing in that particular system prompt, right? Like, the coaching prompt.
+14:00: so if you come up here…
+15:00: and, here you can see the initial messages, right? So the messages is initialized within this constructor, which is coming on… wait, let me come here.
+15:15: search for it.
+15:19: so coach prompt.
+15:21: ok, so coaching prompt.
+15:25: alright, so here we are creating a messages object with a system role, and the content is coming from prompts.coaching_prompt, right?
+15:35: and we find that exactly from the other file. And, same way if I were to look at, the, you know, prompt specifically for generating the summary and everything else, those would also appear in similar fashion, but broadly this is exactly what the code-level manifestation of changing the system prompt is.
+15:58: alright, hope you learned something about engineering part of it as well, looking forward to see you in the next one.
+16:04: wait, one more thing. I wanted to show you some more things that you might explore. Let me re-refresh it.
+16:13: I'm just going to quickly.
+16:16: refresh.
+16:21: run demo, and let's go with the Smart Grocery. I'm going to actually try to push back on it.
+16:35: and metrics, ok.
+16:47: Summary is coming up.
+16:51: right?
+16:52: alright, now if I go to debugger, okay, if you hit on logs.
+17:00: you can start to kind of see some of the calls we are making to models, right?
+17:06: so let's try to look at this particular call here, chat completion, and we try to, search for veteran, ok.
+17:21: okay, here it is.
+17:25: so this is the call we made to the OpenAI model, so you can see model is Claude direct tool, okay, that's fine. Max tokens is 4096, right? And, here's the message, right? Messages content, role system, content: "You are veteran product management coach..."
+17:42: and, look at the next message. "role: user, content: I want to build a smart grocery list app."
+17:48: and content: "research of friends."
+17:51: "must have shared list."
+17:53: role assistant: "summarize everything."
+17:56: right? So this is how exactly the history is being fed to the system. So if you ever wanted to debug whether your model is actually getting enough information or get redundant information, you go to logs and look at completion payload.
+18:14: that is where you would exactly find out whether things are right or wrong.
+18:20: anyway, look more engineering details.
+18:24: which are fun to look at it as well, and help you improve the product down the line.
+18:31: alright, thank you, and let's go to shipping.
+18:37: wait, I keep on finding something else that I want to tell you guys.
+18:42: alright, if you go to database.
+18:46: ok, you hit on database, you hit generic db, then you have this tables. Let's look at the messages table.
+18:55: ok, the content is role system, user assistant, you can even look at it from there, but the most interesting thing is the payload that we provide to OpenAI is summarized into that log, which I think is just a better place for you to look at.
+19:12: okay, so we look at the message content, so we are keeping track of all the interactions we specify with each project. So if I filter by product project ID, you would specifically have the interaction.
+19:26: anyway, this is for future when we have persistence added. Right now, it is not saving it correctly, so that's something that we are gonna fix, for Module 5.
+19:37: alright, so Module 2 is officially, officially completed. Hope you learned about multi-step interview structure.
+19:46: Why the grounding of faithful summary matters. Dealing with vague user input.
+19:51: How prompts translate to backend logic. Payloads and logs.
+19:56: And you learned that most important white coding skill.
+19:59: Which is testing the conversation and not the code, right? What we did was we were not looking at the code at any point, we were just kind of trying to go back and forth.
+20:06: When something feels wrong, you don't debug code, you just adjust the prompt, and we did that through, like, multiple iterations, and I wanted to have that in there, so that you don't get a feeling that it always works, because you may also have to kind of go through this debugging and analysis and all of those things.
+20:23: So, good luck. I think it took a little bit longer than I expected, but, you know, glad to see that we kind of got it to working. It looks like it generated some kind of a PRD, but we're not going to look at it, because this is not what I wanted to kind of look at it at this point. Thanks.

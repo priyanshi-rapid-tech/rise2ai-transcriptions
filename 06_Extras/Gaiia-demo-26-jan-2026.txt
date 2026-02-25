@@ -1,0 +1,146 @@
+Video Title: Gaiia-demo-26-jan-2026
+Duration: 26:11
+
+Transcript:
+
+00:05, Hey guys, hey, this is Vikas Arunta here. I just thought maybe I'll put together a quick video for all of you, to kind| to take a look. First of all, thanks a lot. This was an interesting and fun project. Of course, it killed a lot of my time.
+00:20, But, I did want to kind| to, like, make it happen. I pushed the envelope a little bit more than what was asked. Mainly because I wanted to test some of my own ideas around product, and how it could be developed with AI.
+00:32, So, the system I'm gonna be showing is, built as an agentic system. So what you see over here is, let me just bring it up.
+00:43, So this is a product that is already online. I've sent you the link. It's GA 2026 dot rungtas dot com. If you put slash V5, that's where the current state of the architecture is.
+00:54, And what it allows you to do is, it behaves as a chat agent, right on the top over here. But inside, it can actually follow an orchestrator-based architecture to solve various problems.
+01:07, For Gaia.
+01:10, And, actually, let me just do this.
+01:13, I am going to try to, find a way to… this information. So, let me just log in to my development environment.
+01:29, And while that's loading, let me just quickly give you an overview.
+01:33, So I can do something as simple as, like, for example, just click on a button, which is, basically, as if somebody else were doing it. It's just calling the agents.
+01:43, For example, like, validate connection, so it should actually go ahead and, like, tell us, like, is the connection validated? In this case, it verified that, hey, you know what, Gaia is up and running. Thank you for checking.
+01:54, It looks like everything is in good shape. It gives me a high-level summary overview. I can also do things like, hey, tell me what accounts I have on Gaia.
+02:03, So, it should be pretty fast once it starts loading.
+02:08, Alright, so there you go. So it found currently 73 accounts. It looks like it is missing one more account that I should actually have. It also tells me exactly what is the split between active and suspended accounts. For whatever reason, it is 63 plus 10 is equal to 73.
+02:26, I can also go ahead and, like, go, like, for example, ask very specific information about one particular account ID. Since I have 39 over here as a reference, let me ask that. What is the account ID? What is the detail for account ID 39?
+02:42, And, it tells me that account ID 39 refers to, well, I should probably call it as UID, and, oh, actually, maybe I put 300, 39 instead of UID, that's why it probably did not follow that.
+02:59, But, anyway, these are, like, Gaia system tools, which is basically, it's a tool-based approach where I've exposed some of your APIs into the agents.
+03:09, For, and it is using Opus 4.5. Wait, did I say 4.5? Yes, because 4.5 has a tool usage right in the middle, and it is beautiful to kind| to watch it.
+03:22, Let's try it again. I'm trying to retrieve the account details for UID 39. So it's calling the tool.
+03:29, And, it should get us the result, so there you go.
+03:32, Account ID is 39, name is Gaia test, email is Gaia test, and status is suspended. It also tells me exactly what the account balance is and things like that.
+03:41, Anyway, that was a super, super interesting… oh, wait. So, Gaia test. Let me go back and confirm if Gaia test actually exists over here.
+03:52, Oops.
+03:59, Alright, so Gaia test account, account ID 39.
+04:06, There you go. So account 39 is guy test.
+04:13, I am now going to try and show you how to… add a new note to this, account.
+04:22, Create a note for UID 39, saying Vikas demo note.
+04:31, Let's see if that works.
+04:33, Calling the tool, and it should actually go through and hopefully work.
+04:39, Alright, it was added to ID 39. Let's go back and check.
+04:45, So this is node number 39. Let me refresh it.
+04:48, And, hopefully there will be a note over here.
+04:52, Alright, let's see. There you go. Demo note. Vikas demo note was added.
+05:00, So you can see that entire system from Gaia is now completely available for an agent to kind| to operate. This becomes SUPER super relevant, because when you have an agent, working along with these IDs, you can ask questions like, alright, tell me Gaia's system architecture, so that the agent can tell you how Gaia is organized for the imports.
+05:22, What are the things that it needs? And everything else. So, you can see that… it automatically went ahead and actually did. The mapping has 16 items. It tells me which ones are mandatory, which one are optional, which are strictly allowed in terms of the string, enum, integer, and things like that.
+05:40, It also shows me which areas I've already tested. For example, like, residential creation I have tested.
+05:46, For, and it kind| to shows all of those things. So, anyway, that was super super good, so if I say something like test the list account, account functionality.
+05:59, It can automatically run its tool, and see if it can list the accounts, and see if that's validated, or if there is some sort| to unexpected behavior.
+06:10, There you go. So listing accounts on Gaia appears to be fully functional. It retrieved 73 accounts, totaling 75 account, wait, so Gaia says 75 accounts total.
+06:21, Interesting.
+06:23, So, it retrieved 73 accounts totaling 75 accounts.
+06:26, And I'm not sure if that 10001 is correct or not, but those are the validations that I'm not showing. It says showing 25 accounts totaling Gaia is 75 accounts. Let's see if Gaia actually shows how many accounts do I have total.
+06:42, So, okay, it says at the bottom, it says 25 per page of 75 total, so, right? So that matches, with my overall, Gaia thing. If I go back here, I can actually get, I can go ahead and create a node, right? And,
+06:59, So, it can create a note based on, found. The first one is order tester. Let me add a VIP note to that account, right? Like, so, looks like the VIP note was not added. This is a little bit tricky, because I actually have to provide an ID. So maybe what I can do is…
+07:19, I can just go in over here, and try to see if there is an ID somewhere here. And,
+07:28, Actually.
+07:29, Let me just ask this, Blake.
+07:33, Can you find the ID for Maria Brown, and then create a note saying.
+07:42, Hello. I don't know if it can actually… over time, I would like this agent, to be working in such a way that it can do that. Looks like Maya Brown, as a search, didn't work. Again, I didn't have time to kind| to, like, fix that, but let me actually go back
+07:57, And, look at some of the, like, create accounts would be relatively straightforward, because it does not require an ID.
+08:03, I need the UUID from somewhere, and I'm not sure where to kind| to get that from…
+08:08, the web interface. so let me just skip that. I hope… if you guys really want to see that,
+08:17, send me a chat, I'll be happy to kind| to go back and look at it. Alright, so I would be happy to create a new residential account for John Doe, however, I need one more piece of information. So, realize that I have provided only John Doe, it requires email address, so I'm just gonna say john at example.com.
+08:37, And, optionally, I could have provided this. So, in the future, customers can actually just write it in a piece of paper, take a picture of that, and just kind| to push it out, and that should work. So looks like John Doe was created. I'm just gonna go back here, and you can see that I'm using Opus 4.5, probably not the right thing to kind| to use, given how heavyweight it is, but I wanted to minimize the errors.
+08:59, Overall.
+09:01, But, first of all, I can see that this is 76 account, and then, there are probably a couple of John Does over here.
+09:09, Given that I have done the… but you can see that, it is using the John Doe at example.com as a thing, but it created a 76 one.
+09:21, Alright, let's go back to the real thing, right? Like, so the real deal is, I want to actually drag and drop the CSV file and see what happens. And there is some timeout happening.
+09:30, Towards the end. But actually, let me just kinda, go find the file. The file that you have sent me.
+09:38, So, I'm just gonna go try to find that file… to generate a complex CSV.
+09:46, So this is… this is the file that you have provided. So there's a lot that has already happened here. Alright, so what it has done is, first is, it has imported the CSV file. Let me analyze, file was imported, the name of the file is generated complex CSV Seed1. It has 110 kilobytes and total of 3671.
+10:05, lines.
+10:07, It also, this is built in as an agent, so it actually is going through the loops, and it has… it's just so fast, given that, you know, it's… it's all, in the code. It's upload, parse, normalize, validate, and map.
+10:22, The file is received, passed the CSV structure, it looked through the CSV,
+10:26, And, it found that these are the columns that are there. Now it's normalizing. It found that there are 4 things that can be, can, need normalization or help. For example, like the date fields, maybe the formats were wrong or whatnot. It validated there were 24 issues in the data. See the details in the panel.
+10:46, But more than anything else, like, here's… it is also automatically mapping, so it is understood that reference ID is reference ID, and the confidence is 100%. So this is using AI or agents to actually kind| to map. So what I did is, like, send out
+11:00, both the new CSV that's coming in and the external CSV, it has identified that and tried to kind| to map it. At this point, I can…
+11:09, either edit the mapping, or… or I can actually, confirm the mapping, right? Like, and both of them are acceptable, parameters here, for me to kind| to do.
+11:23, Actually, let me just kind| to confirm the mapping, and you can see that it is… it's gonna proposing to kind| to import all of that, so I'm just gonna say proceed to import.
+11:33, And, it will go ahead and do that. Look, the actual, the user interface for how this mapping should be and how the customer should actually see should be looked at and, like, continue to kind| to be enhanced. I don't believe this is the right user interface for it. This is too technical for a lot of them.
+11:50, But, I wanted to kind| to, like, build out the product without paying too much attention to the user interface.
+11:57, Not because it's not important, but mainly because this is something that I have to kind| to, like, go figure it out myself, and it just takes a lot of time for me to kind| to do beyond this.
+12:09, This is also the place, sometimes, it gets stuck.
+12:12, Mainly because I think there might be some kind| to rate limit
+12:16, In Gaia, maybe, possibly? So, that is something that I haven't had time to kind| to debug, but I think it kind| to, like, taps out at a few hundred accounts.
+12:30, Alright, so looks like the demo gods are not with me. I have to kind| to go back and debug this a little bit more to see what's going on. I'll go back and fix that, but for the purpose of the video, I think that's good enough. I can just kind| to continue on.
+12:44, There is also other things around, like, if you want to understand what my approach is, you can just kind| to look, click on the link on the top.
+12:53, what's going on. It kind| to shows exactly, some of my approach.
+12:58, Same thing around the strategy, I put, like, some of my thoughts right here. As well as, like, just ask it questions, like, hey, what is the system architecture? And it should kind| to, like, just go ahead and give you what the system architecture is, and feel free to kind| to ask generic questions,
+13:15, Around it.
+13:17, There you go. so this is, like, a architecture diagram that it has kind| to presented, and I've asked it to kind| to generate a lot of ASCII images, just because I find it, useful.
+13:33, That way. But you can ask any questions, it doesn't have to be limited to,
+13:38, the ones that I have. You can ask, like, hey, what was the assignment? What was the assignment or the problem? You can ask follow-up questions around that, as well, so…
+13:50, There you go. So it kind| to just talks about what was the original context and everything else. One thing I want to call out is I definitely have spent…
+14:01, some time kind| to, like, working on this, so you can see that this is version 5. I started out with version 1, where I thought maybe I can just give a drag and drop
+14:12, kind| to a functionality, and then it just kind| to tells me, like, you know, what it is, and, like, it can help me map into the field and everything else. And you can see I started to use AI to kind| to map some of those fields. You can map the reference IDs and everything else. But I felt that this was starting to get cumbersome, so I added a co-pilot to it.
+14:31, And, it can help, questions like, What is going on here?
+14:37, Alright, it can actually, look at the current context window, and I believe this may still be a pretty good way,
+14:45, to kind| to do it. We are currently in the mapping step of our data migration process. We have uploaded the CSV file, yadda yadda yadda. It kind| to does that, but I felt that maybe… the reason I moved away from this approach
+15:01, is I really wanted to kind| to get to an agentic, because I started to see some failures happening, with the CSV file import and everything else, and I really believe that the good long-term viable option
+15:15, is building an agentic loop, like, kind| to like Cloud Code, actually, and which I have implemented on top of Cloud Code as well, I'll show you, but kind| to like a Cloud Code kind| to a thing, which can actually loop through
+15:26, till the objective is met, and this really allows us to, for a wide variety of things, that you can look at. This also has,
+15:37, this also has things like, you know, what are the different MCP information and whatnot, as well as, a few things.
+15:48, But if… if you look at the other thing that I did is, like, I moved to a V2,
+15:54, this was also, this was having, like, demo data, but, you know, this used multiple agents to kind| to do it, but the challenge is the UI was super heavy, it was just kind| to, like, I didn't really like the way…
+16:11, the product was coming out in terms of the user interface, or, like, access to information and everything else. You know, I had built in, like, a lot| to the features around, like, when should it proceed to kind| to work versus not work. For example, like, when should an agent continue to kind| to do certain things? What is the right kind| to,
+16:31, validation, how do you kind| to go about doing the field mapping? What does it mean to kind| to show that? Are you okay with the field mapping? Do you want to edit the field mapping? And various aspects. But I felt that the user interface was starting to become much more complex, it was much harder to kind| to develop perspective.
+16:50, V3, V4 were just kind| to, like, throwaways, very quickly. It's like, I thought, it's like, maybe I really need to kind| to, like, move to a terminal kind| to an approach.
+17:01, But, didn't think that this was valid, so I quickly moved to V4, which is where I started to kind| to build out the, the agent-based architecture, which, for, for just fresh reasons, I kind| to like to move to V5, and I decided to kind| to, like, move
+17:21, To a completely chat-based system, where everything is going through a chat, the entire agent system is in the background, and whatnot.
+17:29, Alright, that's a lot. Let me actually go ahead and share with you a little bit about my, what I used in terms of the systems.
+17:43, And the development environment, I actually moved around quite a bit, mostly for token hopping, in some ways, but, let me see, where is it?
+17:57, Hmm.
+17:59, So…
+18:06, So use, my preferred method is anti-gravity, but I've gone through, like, cursor, cloud code,
+18:15, codecs, pretty much everything, to kind| to build it up. But some of the things that I want to show, like, because you guys asked me for, like, my approach and everything else, a lot| to the work I do, actually, ideally, I like to kind| to build out what I call is an RFC, which is a request for comment.
+18:31, And, I asked my AI to kind| to generate something for me. Like, you can see this was generated on 123. And I kind| to… I would tell them, like, hey, this is what I want to build, can you think about it? Initially, I wanted to build, like, a data importer with an ETL step, which is extract, transfer, and load.
+18:51, And then it went ahead and kind| to proposed some of the architecture for me, is, like, how it wants to kind| to do it. It proposed, you know, we went through and, like, built out the whole process of, like, how the orchestrator will take… it will go through multiple agents, like intake, extract, normalize, validate, mapper, and everything else, how's the human feedback taken into account.
+19:14, And stuff.
+19:16, But, this just shows that… how I kind| to think about things.
+19:21, Which is, basically, I like to generally write an RFC, and then just go ahead and kind kind| to implement my RFC on a technical front, mostly. This is what I do. Of course, as a product manager, I don't expect to kind| to spend a lot| to time on the technology, but of course, I'm super interested in it. So you can see there are a bunch of RFCs here, there are a bunch of
+19:44, RFCs here, that I have.
+19:49, that kind| to goes through it, and it just looks at it. But what's… what's the most important piece is, is the actual architecture. So let me… I don't know where it is, so… here. So, this is… this is my architecture.
+20:07, that we kind| to built. Again, I ended up throwing Opus 4.5 at it, just because I could. And, the architecture mainly involved
+20:18, a few things, right? Like, so, this is an agent-first architecture. What it means is there's a workflow, and it kind| to… these are the steps that it has to kind| to do. Intake, extract, normalize, validate, resolve.
+20:30, map, yadda yadda. Then it has multiple agents that it has access to, right? So there's an orchestrator, but there's an intake agent, there's an extract agent, and a lot| to it, actually, I use along with skills. So, which is, like, one agent, but it uses a bunch of skills, right? Similar to Cloud skill, or some of the other.
+20:49, In Layer 3, we have a bunch of skills, like the parser and infer, deep clean, validate full, auto-heal, like Smart Map. These are all the skills that it has actually learned. But then I gave it a bunch of tools, so I have mainly two set of tools.
+21:04, One is the Gaiah MCP tools, and then the CSV tools, right? Like, what is… what is parse CSV, infer schema, validate rows, suggest mapping. And the skill, tools really become the superpower, for it, and then ultimately it connects to the GraphQL that you guys have for API.Gaia.com.
+21:24, And it kind| to, like, brought it out. I had to scrape all the files from API, because I just couldn't find a simple way to kind| to download it, everything, so maybe it missed a few things here and there, but I scraped the entire thing.
+21:40, Of…
+21:42, In terms of the agent catalog, these are the 14 agent catalogs. Again, you will have access to this file, so you can take a look at it. I also built the… this is my MCP server architecture, so there are two MCPs, like I said, on the Gaia is on the left-hand side, and these are the tools that I've created for Gaia. And for,
+22:03, Import workflow MCP? I guess there was a naming convention error here, because I called both of them Gaia.
+22:10, Here, and I ended up calling this Gaia API really means connecting to the API, and Gaia on the right-hand side really means, like, for the Gaia's import flow, because I called my project as Gaia Assignment. So it's just Gaia import start, Gaia set CSV, Gaia validate, and those, those things. And then MCP Client can be connected through a Chait UI cloud desktop. One interesting thing to note.
+22:36, is, in the future, it can be actually connected to a Slack, WhatsApp, email, whatever it is, so the trigger point. I wanted the architecture in such a way that web interface does not become a requirement to actually do this.
+22:52, Let's see, what else is… there's a bunch of skills that I've kind| to, like, written up, of course, with AI, that is required. Agent resolutions, oh yeah. So…
+23:07, This is… this is the high-level guidance, right?
+23:11, I want the agents to kind| to, like, follow a particular strategy as they're building. When should they escalate with the user? What's the right way to kind| to engage? Who should they kind| to go after? And this is an important strategy to kind| to look at.
+23:25, In terms of the product decisions and trade-offs, there's a lot… the key decision, I think, was around conversation UI versus not. Should we autofix with transparency, or should we actually ask people for, validation? Inline validation canvas,
+23:43, How do I generate the test data? And then rollback capability. I actually built for myself, just to kind| to test it out, as I was generating and pushing stuff through to the web. I wanted to build a rollback so I can delete those things.
+23:58, If needed, but it takes a lot| to time to kind| to do that, just because we're dealing with, like, 5,000, you know, 3,600, contacts.
+24:06, And, yeah, that's about it. I guess in terms of the strategy, this is something that I'll send it out, so take a look. But I really think that the gap is… this is really switching from being an engineer to a product manager at this point.
+24:26, And,
+24:28, which is, I think, the core job that you would probably hire me to kind| to do. But I really feel Gaia is in a unique position to help ISPs grow faster and decrease cost.
+24:40, And, this would happen through the OSSPS integration. So, if we can reduce the CAC,
+24:50, Of the customer acquisition, as well as accelerate time to revenue, or we can scale without the headcount. That would really, you know, supercharge some of the… some of the revenue potential that we have.
+25:04, Of course, these are the, gaps that I see, which is basically, there's a lot| to friction in migration, there's a trust deficit, the customers are not gonna blindly assume and kind| to… as you can see, my system was breaking, and it will break, from time to time. Export and import is, is kind| to tough.
+25:24, Right? And, so, I'll leave this here for you guys to kind| to take a look at it. These are all linked on my overall site itself, so if I can just quickly show that…
+25:39, And that'll be the last thing, I believe.
+25:43, But, you can see, I've kind| to linked on the top, there's a demo. This was auto-created by Anti-Gravity, I didn't really create it, but I have asked it to kind| to test it, so you can see what are the things that it has done, so that if we are kind| to being,
+25:59, Not sure what it actually does and how it works. You can see that it has done it. You can also see the approach and the strategy, the docs that I have just shown you guys.
+26:11, All right, I'm calling it a night. It's 11 o'clock at night here in Pacific, but I look forward to kind| to hearing with you, from you guys, and hopefully working together. Thank you so much.

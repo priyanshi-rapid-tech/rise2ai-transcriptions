@@ -1,0 +1,44 @@
+Video Title: Your first "Hello World" in 5 minutes
+Duration: 07:17
+
+Transcript:
+
+00:01, Hey guys, welcome. Alright, let's get started. First thing first, I want you to kind| to build a website in less than 5 minutes. To do that, we will… we'll do it on Lovable today, but you can choose, your choice of the tool that you want to build it on, and…
+00:18, And what I'm gonna do is actually…
+00:22, build a personal profile page. The simplest thing that you can do is go build your own personal profile page. For that, I would recommend that you actually start with LinkedIn. So, let me just quickly share my screen.
+00:35, what I'm gonna do is go to LinkedIn and download my PDF file. So to do that, just go to your LinkedIn page, and then you go to the resources, and it says Save to PDF.
+00:45, What it does, it kind| to exports your entire LinkedIn profile and creates that. Come back to Lavable, or any other product that you're using, and then just upload that file over here. So I'm just gonna go ahead and upload it.
+00:58, Alright, I just uploaded it, and now I'm just gonna go ahead and write a simple prompt.
+01:03, Build me a profile page, Using the attached…
+01:09, the resume, alright? You can actually include your complete resume, or you can do other things, and that's it. Hit go.
+01:15, And at this point, what you want to do is just sit back and relax, right? And while you're doing that, first of all, pause this video and go follow and do exactly this. Like, one of the things I want you guys to kind| to get used to is don't just watch this as Netflix, go actually build this product.
+01:32, And once you've done that, welcome back. Hopefully, you have cranked it out and it has produced something. But let's talk about, like, what are the two things that I have done here. Number one.
+01:43, what I have done is actually provided enough context, right? Like, if I open this, profile.pdf, well, the PDF preview is not available, let me see. If I open this, it has just taken my LinkedIn as is, whatever my LinkedIn says.
+01:57, And it has provided all of the details into a PDF format that LinkedIn does. So we have provided enough context about us to personalize something for me, right? It is enough information, you can take your resume.
+02:09, Now, you can take, actually, a company one-pager if you're building a startup, right? You provide that as a context, and then you want to provide the least amount of… as you start, least amount of prompt, right? Over time, we'll talk about, like, why least amount of prompts may not be enough.
+02:24, But you want to provide the least amount of prompt. It says, build me a profile page using the attached resume, right? So I'm actually telling it it's a resume. So one of the things you will learn is you want to be specific while letting the model be creative.
+02:37, And there you go. Looks like it has built it, so let me just kind| to… let's take a look at it. It says Product Leader, AI Strategist, Educator, and it has built, it has given my personal information, not a good idea, but it, has given my experience and everything else, right? And this is something that I can do. You can hit publish, and it'll… I'm not gonna go ahead and publish now, because look at how to publish in the other videos.
+03:00, But, it has done it. Now, what if I don't like the… in that case, if I don't like that, I just come back and say.
+03:08, use, use colors…
+03:13, of the fall to build the website. Or, you could say something like, you know, more of an AI background to kind| to do that, and that should be able to kind| to do it. Let's just wait for it to kind| to finish.
+03:27, Alright, it has finished it, so let's take a look. You can see the fall colors a little bit here. It has done it. If I wanted to kind| to change.
+03:35, chase a little something, we can go ahead and do it, as well. So good luck building it. Please post it on…
+03:42, You know, let me know what you build, I'd love to kind| to see… start collecting everything that you build, by the URLs, and be careful around safety and security, like, if you don't want the world to know, don't publish it, like, or remove the information, like, private information from here.
+03:57, But let's still… it looks like we are not at 5 minutes, so I'm just gonna do one more. What I'm gonna do is, I'm gonna go to Kegel, and click on Datasets, and look at some of the data.
+04:08, What I want to do next is actually want to see if I can actually plot, instead of building a static website, what if I can plot a data? You can take a CSV file, if you have, or anything else. In this case, I can see there are a bunch of data sets over here.
+04:22, So let me just click on one of them, cafe sales data set. It kind| to shows, the data of, like, okay, different aspects of the cafe.
+04:30, What are the items, quantity, price? Let's see if I can build a dashboard with that. So what I'm gonna do is copy this URL, and go back to my favorite app.
+04:40, builder, which in this case is V0, I'm just gonna say… plot of… Dashboard…
+04:49, for this data, right? And because it's Kegel, hopefully it has access to information. Very similar kind| to a deal in terms of how the interface looks like. But you can see it's just kind| to cranking through the data set, and it's trying to kind| to fetch the datasets and, like, build out a dashboard for you.
+05:08, So if you have a dashboard, or if you want to have a CSV data or something else that you want to use, you can go ahead and use that and build it out.
+05:18, Okay, still cranking. So, the principles I followed is exactly the same as the first one, a simple prompt, which says that plot dashboards for this data.
+05:27, But also, I provided context, right? Which is what makes this app powerful. It can actually… I took the data sets from Kaggle around, like, various things that it has, and if I wanted to kind| to just kill through the data, using, different things, I'm just kind| to bringing it out and building my own dashboard. Typically, this would require, a data scientist.
+05:46, But in this case, you are able to kind| to do that just by building it out.
+05:50, You should pause the video now, go back, and please build it, here. Don't watch it, just kind| to go build it, and I wanna, see what you build.
+06:00, Okay, so just, finishing B, what do we have? As soon as it kind| to loads up.
+06:10, does not work, so I just can say, shows, blank. Oh, actually, it loaded up, sorry, just took a sec, to kind| to load it up. Otherwise, I'll just say it's showing a blank page. I'm gonna collapse this.
+06:23, And just, there's some errors, we'll, we'll look at how do you fix that. Actually, let me just kind| to hit fix with V0, so that what it does is, while we are looking at it, v0 actually going and fixing some of the errors that it has shown. It's a good way to kind| to fix errors. And let's just take a look at,
+06:41, the dashboard while it's cranking through, so it is actually showing a very detailed dashboard of what's going on, much better than what we were able to kind| to see here. So you can see that you are able to plot, you know.
+06:53, Any of the graph, it has given some filters, last 7 days, last 14 days, and others.
+06:58, But you can also add more here. We'll learn through some of them later as well. So, with that, I think good luck building the two. We promised one, but gave you two, but I also took a couple of extra minutes on top of that. So, good luck building your first Viboding project.
+07:16, Thanks.

@@ -1,0 +1,33 @@
+# Lesson Summary: VibePRD Day 3 — The Drafter Agent
+
+### What are we building?
+We're adding a second "Agent" to our app called **The Drafter**. While the Interviewer focuses on asking questions, the Drafter is a professional technical writer that takes your entire conversation and turns it into a high-quality, formatted Product Requirement Document (PRD). We'll also add Google-Doc-style features like inline editing and the ability to regenerate specific sections of the document.
+
+### Quick thoughts before you start
+*   Why is it better to have one AI "Interview" you and a *different* AI persona "Draft" the final paper?
+*   How does being able to edit the AI's work directly make the app feel more like a real professional tool?
+
+### Expert Vocabulary
+*   **Multi-Agent Architecture:** A design where you use different "AI Personas" for different tasks (e.g., an Interviewer vs. a Writer). This prevents the AI from getting confused by trying to do too many things at once.
+*   **Technical Writer Persona:** A specialized prompt that tells the AI to be concise, avoid jargon, and follow a strict document structure.
+*   **Granular Regeneration:** A feature that allows you to hit a "Refresh" button on just one section (like "Success Metrics") without changing the rest of your PRD.
+*   **Visual Hierarchy:** Using bold headings, bullet points, and spacing to make a document easy for a human to scan and read.
+
+### Key Takeaways
+1. **Persona Separation Matters.** If one AI tries to both interview and write, it often does a mediocre job at both. By creating a dedicated "Drafter" prompt, you ensure the output is professional and structured.
+2. **Handle Vague Data Gracefully.** A great Drafter doesn't "make things up" (hallucinate) if you gave a vague answer during the interview. Instead, it should list those missing details under a "Risks and Open Questions" section.
+3. **Formatted Text vs. Raw Markdown.** Your app shouldn't just show `### Header` with hashtags. It should render real, beautiful headings and bullet points that look like a professional PDF or Google Doc.
+4. **The Power of Inline Edits.** No AI is perfect. Adding the ability to click and type directly on the PRD allows the user to fix small mistakes or add their own flair, which builds trust in the tool.
+
+### Reflection Questions
+*   If you changed the Drafter's instructions to be "A creative marketing expert," how would the tone of the PRD change?
+*   How does the "Edited" indicator help a team keep track of what was written by AI versus what was changed by a human?
+
+### Your Action Item
+In Replit, use the **Module 3 Checkpoint A** prompt to wire your "Generate PRD" button. 
+1. Run a full interview and click the button. 
+2. Use **Checkpoint B** to add the "Inline Editing" and "Section Refresh" icons. 
+3. Try deleting one bullet point and verify that the "Edited" label appears.
+
+### In short...
+Day 3 turns your chat experiment into a professional drafting suite. By separating the "Interviewing" and "Writing" roles, you've mastered a core principle of advanced AI engineering.

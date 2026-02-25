@@ -1,0 +1,34 @@
+# Lesson Summary: Your Personal Portal — Vibe Coding in Action
+
+### What are we building?
+We're building a professional **Personal Profile Website** for a high-level executive (Yamini Rangan, CEO of HubSpot). This project demonstrates how to use "Vibe Coding" to go from a simple text prompt to a fully polished, live portfolio that includes accurate career history, custom design, and a unique "vibe."
+
+### Quick thoughts before you start
+*   If an AI can build a website in 3 minutes, why is it still important for you to provide "Inspiration" and "Detailed Data"?
+*   What happens to the design if you tell the AI to "Think like a CEO" versus "Think like a creative designer"?
+
+### Expert Vocabulary
+*   **Static Page:** A simple website used to display information (like a resume or portfolio) that doesn't change based on who is looking at it.
+*   **Design Inspiration:** The act of showing the AI a screenshot or image (e.g., from Dribbble) so it can replicate the "feel," font, and colors for your own site.
+*   **Vibe Coding Badge:** A small logo some tools (like Lovable) put on your site by default. Professional developers usually hide this in the settings.
+*   **Visual Edit:** A feature in some AI tools that lets you click and change parts of the design directly (like turning a button from green to red) without typing a prompt.
+
+### Key Takeaways
+1. **Data Makes it Real.** Don't just rely on what the AI "knows" globally. Uplifting a PDF of your LinkedIn profile or resume ensures the website has 100% accurate dates, titles, and achievements.
+2. **Combine Creativity with Specificity.** Let the AI be "Creative" with the layouts, but be "Specific" with your constraints (e.g., "Don't use brand colors" or "Make it professional yet bold").
+3. **Use Screenshots as Blueprints.** One of the fastest ways to get a high-end design is to find a website you love, take a screenshot, and tell the AI: "Redesign my site taking inspiration from this image."
+4. **The AI is Self-Correcting.** If the AI detects an error (like a text box being cut off), it will often take its own screenshot, analyze the problem, and fix the code before you even notice.
+
+### Reflection Questions
+*   Why is it more effective to upload a PDF of your resume than to just type out your work history in the chat?
+*   How does the "Vibe" of a website change if you choose a "Teal and Charcoal" color palette versus "Coral and White"?
+
+### Your Action Item
+Go to Lovable.dev. Build your own profile page.
+1. Start with the prompt: "Build a personal portfolio for [Your Name], an expert in [Your Topic]."
+2. Upload a PDF of your resume to add detail.
+3. Find a cool design on Dribbble, take a screenshot, and prompt: "Redesign my site using this image as inspiration."
+4. Hit **Publish** and share your link!
+
+### In short...
+You are the director, and the AI is your production team. By providing a mix of raw data (resume) and visual direction (screenshots), you can create a world-class website in less time than it takes to get a coffee.

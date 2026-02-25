@@ -1,0 +1,197 @@
+Video Title: Context Engineering
+Duration: 26:19 (Approx)
+
+Transcript:
+
+00:11, We are really here to talk about context engineering, and…
+00:15, The thing is, all of us have a lot of ideas, right? Like, this is, all of us think about, like, can we build this?
+00:22, And now, For the first time, it's possible to build that.
+00:26, And what it takes to kind of build today is a prompt, right? You take an LLM, wrap it with some kind of a nice prompt.
+00:34, And there comes the output. You can ask it to translate from one language to another. It can ask you to kind of build an… for my startup, I build an exchange management system in less than an hour, right? Instead of going and paying Conker, sorry if somebody from Concord is here.
+00:50, But, there are things that we can do which has never been possible before, and now those ideas can be brought to life.
+00:58, But…
+00:59, I think that prompt engineering had got us here, but it may or may not be able to kind of take us forward, right?
+01:05, what… what is happening is we… I don't believe prompt engineering itself is enough, and I'm not saying this.
+01:12, Right? Context engineering is needed. This is… this is the tweet that came out from Toby from Spotify, he's the CEO of Spotify, he's been very pro-AI in how things should be, and he framed the term context engineering. What he says is that prompt engineering feels very stale.
+01:29, It feels like that is something that you have to kind of just defined once, and it's supposed to work all the time, and then it has gotten a very broad acceptance in the industry. Andres Karpathy, if you guys know and follow from Tesla and, like, OpenAI background.
+01:42, he has written a lot about prompt engineering as well, and now Anthropic just released an article, like, 2 days ago, also talking about this. So, context engineering seems to be the next thing.
+01:52, But before we get to the context engineering, let's try to understand
+01:56, how, how LLMs work. There is a big misconception many times, is that LLMs can actually have a memory, they learn over time.
+02:06, Like, if this is one thing that you have to take away from the entire talk today.
+02:10, is just know that LLMs don't have memory. They are stateless.
+02:15, So every time you ask a question, you have to give an entire context
+02:20, to the LLM, just by itself. What it means is that you have to give everything that you want the LLMs to do.
+02:27, Through an input, barring the fine-tuning and others, because that goes into the training, but during inferencing.
+02:33, the only way to kind of tell LLM something is by giving an input. And also, any other broader context must be provided from outside. What it means
+02:43, Is that if you take a model.
+02:45, There is a way, an opportunity for us to kind of augment that.
+02:49, and then provide that information, whatever that could be. We don't have to just use a prompt, we can actually augment it through context.
+02:57, Those can be considered tools like memory.
+02:59, Tools and, you know, different types of retrieval.
+03:04, So, if I kind of break down the context engineering into, like, what are some of the things, or what is the anatomy of a context engineering.
+03:12, On the left-hand side, as broadly the same thing as prompts, but it can be fancier. So you, of course, for prompt engineering, you have your system, system prompt, which kind of tells you, like, what to do. Act like a resume reviewer and let me know what you think, right? You give them some kind of a prompt.
+03:28, And then there is a user prong which says that while you behave that as a user, this is the immediate question that I have. These two don't change as much. Actually, that can also evolve a little bit.
+03:39, And then you provide a few short examples, where you say, if I have… if I'm a customer support agent, this is how I would generally resolve it. This is also something that you have seen very broadly in the prompt engineering space.
+03:52, The way it enhances with context engineering is, actually, what you do is you don't have to use the same example for every single prompt that the user is making.
+04:02, One of the opportunities that you have is, like, based on if the… if I'm a customer support agent, and if I'm processing a return for Amazon, for example, versus, like, helping them identify more information about a product that they want to know more about, I can switch the examples in real time.
+04:17, and say, hey, instead of using all the examples all the time, this is what it is. And even in the system prompt, we have an opportunity to kind of retrieve data, and this is where we start to kind of go towards the right-hand side, is we can actually use the retrieved data and find, like, based on this prompt, or based on this question that the person is asking, and for this particular information.
+04:37, Is there a way for us to kind of retrieve the data?
+04:40, Right? You also have tool definition. As we move from LLMs to agents.
+04:45, The key thing that differentiates that is tool calling.
+04:48, And you have to define how these tools are working by actually defining what these tools are. So what are the tools you have access to? In case of a customer support.
+04:57, You may say you have access to the tools which tells you what products that you have, and you can query for that. Or you can look at our policy on our return policies, or you can look at a tool that can help you ship a product.
+05:09, And now you can call all of that and dynamically bring that in.
+05:12, And of course, you have the conversation history. This is probably the, that one piece that all of you are very familiar with. Every time you chat GPD or anything else, you are using the conversation history. So there are so many ways to kind of get context, right? Like, so if I kind of explain that into a block diagram, when somebody says, I have a question.
+05:33, the question goes into the model, and all… all three arrows kind of goes into a single prompt. It's not three different prompts. You have your system prompt.
+05:41, But then you also have all of this context, which can be the policies, the database of questions, everything else. Let's call that as a context that can either be fed through a RAG, which is the Retrieval Augmented Generation. Remember we talked about we can augment the inputs?
+05:58, So you can either fed that as a rag and give that information, for context engineering.
+06:04, Or, even better, right, you can actually give a limited amount of information with the prompt, and let the models figure out, or the agents figure out what they need.
+06:14, And in this particular case, the agents can actually call a tool, typically through MCP, but it could be something else, but MCP is really the one that's kind of catching up.
+06:22, which can on-demand call and ask for some things. So as you kind of, like, start a conversation, you may have that the person says, like, hey, I would like to kind of understand how does your return work, and they're just answering generic questions, and at some point say, I would like to return my last order that I made yesterday night.
+06:40, Right? And now, all of a sudden, they have to kind of go retrieve the information, insert the context, not through the prompt, but the agent actually goes and calls it in. I don't think there is an official name for this, I just call it on-demand contacts. If you guys know something else, please, love to kind of hear about that as well. But now you can see that that's happening.
+06:59, Now, on a turn-by-turn basis, turn for the folks who are, like, as a term.
+07:06, Turn is every time you ask a question on chat, on a chat interface, every follow-up question is a turn.
+07:13, And what happens is, in the first turn, you may actually have a user message.
+07:18, and the tool message, which kind of provides the system prompt and everything else, and then there's an extended thinking that's happening. As you would have seen, if you choose, like, a thinking model or a reasoning model, it generates a bunch of internal tokens that are not used by the users directly.
+07:33, Right? All of them kind of goes into the context of window.
+07:37, Right? And this is also the response that comes out, that kind of goes into the context window, and the tool use… as the tool kind of goes and retrieves things, or kind of understands what's happening.
+07:48, If you move to the next turn.
+07:50, Everything in the first term is, turn is actually protected.
+07:54, and then you append the next question and the next, all of the context and everything else. So what happens is, at some point, turn over turn, the context becomes really, really large.
+08:05, And this is why, if you're in early days, if you're using Claude specifically, you would see that after some time, it will say that your… your thread has run out of context, and kind of switch over to something else.
+08:16, And as you keep doing this, over time, whatever it is, the… in this case, it shows, this is an anthropic slide, but it shows 200K token, they have definitely upgraded from there. But at some point, your token's context is being cut
+08:30, And the choice is, do you just drop off what was told early on?
+08:34, Or is there a selective way to kind of drop off the context over time?
+08:38, Right? So let's actually take an example.
+08:42, Let's suppose that we are building a trip planner, and let's start with the prompt engineering.
+08:47, The job is really simple. I think I want to build an app which says that, helps users with things like, plan me a 5-day trip to Italy.
+08:56, In this particular case, the user… the prompt actually does not know much about the user, their preferences, anything else.
+09:02, A lot of this, responses are very generic.
+09:05, And it is still pretty good. It's better than going and researching on Reddit or anywhere else.
+09:11, But the responses are much more generic.
+09:14, However, Context can help here.
+09:17, Like, what if, instead of just providing a generic prompt which says that, build me a trip planner, what if we can provide more context?
+09:25, So if I, why? First of all, context is growing quite a bit, right? So what we are seeing is, up to 10 million contacts has been promised, by Llama 4. Yesterday, Elon Musk actually tweeted about, how Grok is gonna have 2 million contacts. So it looks like the context size is really growing.
+09:43, And maybe we don't have to worry about the cutting off the 200K mark that I showed, right? Like, so maybe we can just throw everything at the model, and it does the job.
+09:53, So, in this particular case.
+09:56, we can just dump a lot of information about the trip planner, and it says, if you want to plan a trip to Italy, I can actually look at your email, calendar, a lot of the historical chats that you have done with the model.
+10:09, And I can learn a thing or two about you. I can learn the types of places that are… the types of hotels that you have booked, the, you know, the… if you have booked business class flights, or you build, like, basic flights, and how do you kind of… if you prefer an aisle seat or not.
+10:23, And all of that information cannot then be pulled in.
+10:26, Just by adding maybe one or two of this, context.
+10:30, And we could just suck it in.
+10:32, And what we can do is, given that we just talked about context window is not a problem, right? Like, it's gonna be a large.
+10:39, we can dump all of that into the model. Now, all of a sudden, we should have a much better response, hopefully.
+10:45, Than what we had before.
+10:48, But dumping… maybe there is more we can do than beyond dumping, right? Like, if you look at my Gmail, gosh, I don't know, I signed it up in 2006 or something. How much of those emails that you really want? Can it really fit into a 10 million context window? What can we really do? Well, it turns out
+11:06, is that more tokens is not better. Just because we can support it, it's not necessarily better, right? It feels like long context window is the solution to a lot of the things.
+11:16, But it can also become a little bit of a needle in the haystack, right? Now, I have my business trips in there, my personal trips in there, like, I have, you know, my family members have followed me trips and everything else, and it really gets confused around, like, what is the real preference?
+11:31, that I have. Do I really prefer aisle? Because I've seen book seats all the time. They don't know
+11:38, aisle seats were available or not. Like, did I book middle seats because I enjoy them? Like, that's the takeaway that they can have.
+11:45, So, accuracy can really drop as the context size becomes larger.
+11:50, Not only that, the cost.
+11:52, Like, what about the cost? If this user is not a paid customer, it's a free ad-supported, or like, I just launched it out, can I really afford to have 10 million contacts or 2 million contacts for every question that is asked? For every turn that I'm asking the question, the context improves.
+12:09, And…
+12:10, there are tons of other itsfalls as well, right? What you would see is what we call is, like, context rot.
+12:17, If I say that, find me a budget-friendly hotel, over time it may convert that into a cheap hotel.
+12:24, Right? And all of a sudden now, maybe it's, what I was really looking for is budget-friendly, and there is a difference, there is slight nuanced difference.
+12:32, between budget-friendly and cheap, right? And how do you kind of, like, really… is that really what I meant by my original question by the, you know, 50th turn or the 20th turn?
+12:42, What if I'm overstuffing? Like, do we really need my 10 years of email and all the calendar invites that I have, including the one-on-one meetings that I had with my boss? Is that really relevant here? Like, should we just kind of overstuff?
+12:56, Right? And there's a lot of tool overlap, right? We just connected two of these things, but my calendar is also accessible on Gmail, and also available, here.
+13:06, A lot of the tools, and this is one of the big challenges that Anthropic also talked about, in the, in the blog they wrote two days ago.
+13:13, Is people are just adding a lot of tools.
+13:16, And without clearly defining what tool is meant for what.
+13:20, So if you have your different tools all connected there, and if the… if a human cannot be sure that this is exactly the tool I will use for this purpose.
+13:30, you cannot expect the LLMs to actually find out the right tools. So just because you have the tool, you shouldn't be stuffing it in.
+13:38, And there is no good way to kind of retrieve the information, where it's like, you're retrieving emails, which has information, a typical hotel reservation has, like, terms of services and yada yada yada, they have all the ads they have added there, like, I have no interest in.
+13:53, which may seem like I have an interest. Now, all of a sudden, Booking.com's ranking problem of why they thought that I might be interested in an activity.
+14:02, rots my…
+14:03, context, right? So just because you can bring all of these things together, may be not the solution.
+14:10, So, one approach that's evolving here
+14:14, Is maybe we should not just take, let's just call it raw context.
+14:18, It's like, maybe we should not just call the raw context and use that information.
+14:24, maybe we call it something like a memory, and if you would have seen, a lot of the chatbots now have the memory feature, right? But I… there are 3 types of memories that are really evolving. The short-term, the long-term, mid-term, and the long-term memories. What it means is that you actually don't… context become your global…
+14:43, Access of all the information or the data that you may have.
+14:47, But you're really classifying it based on specific needs. You're saying things like, in the short-term memory, it's like recent chat threads, like, these are the things that you have talked about, and these are the things that you have… how you have approached.
+14:59, You know, what are the follow-up questions? Am I asking is, like, is there a better seat available? Is there, is there a different connection available? Can I have, something that kind of leaves in the evening rather than leaving in the daytime?
+15:11, These are the things that we should store in the short-term memory, where it could be a lot of them, but something that you kind of, like, store.
+15:18, You should also think about mid-term, memories, where as you're even within the turn, as you… the chart threads become really long.
+15:28, It summarizes, like, this person is trying to book a trip to Italy.
+15:31, And they want to travel with the family, and they want to spend a week.
+15:35, That is a midterm context that it could be… should be summarized and should not be lost across.
+15:41, How do you crunch that information? And this is something that you have to do offline processing of it. Like, going from the yellow to the purple. There should be a decent amount of crunching going on, which is continuously updating, like, what should the short-term memory look like, what should the mid-term memory look like.
+15:59, And then, the real moat.
+16:02, Right? The real mode comes from the long-term memory.
+16:05, Which is Do I understand the type of traveler Vikas is?
+16:10, Do I understand?
+16:12, that on business trips, he likes to spend lavishly, and when he comes on a personal trip, he's always looking for budget-friendly options, right? Can he understand his preferences around, like, the type of restaurants that… is he vegetarian, not vegetarian?
+16:26, Is he kind of, like, looking at refundable tickets versus not? Is he preferring United over some other airlines? How does it do?
+16:35, And as you build your moat, what you would see is, like, that really becomes your big moat.
+16:42, Because if you can… short-term memory is something that you can, you know, it's great for you to kind of have, but your competitors will be able to kind of build that very quickly.
+16:51, But the mid-term and the long-term memory, as you kind of build.
+16:55, And really understand your user to the extent where, as you ask questions, it understands and kind of brings all of that information together, could really become your differentiation.
+17:05, Right? So, if you have to kind of go build the perfect context.
+17:10, I would say is, you need to write
+17:13, what is the preferences? You have to somehow figure out what the person wants, and write that context out, right? Not just kind of, like, have and collect the context.
+17:24, It is also important to select and retrieve the right context, because if you have all of the access to entire Gmail, for example, in this case, or my social entire graph from LinkedIn.
+17:35, Selecting the right information can make a lot of difference, and retrieving and building the retrieving algorithms and everything else would be important.
+17:43, How do you compress that?
+17:45, How do I compress these 20 lines of, prompts in, like, 50 different turns?
+17:50, into something that says that, oh, he's looking for a flight, a family trip to Italy for a week, dates are kind of flexible, but the cities are non-negotiable, must go to Florence, kind of a thing. If you can compress
+18:04, Short-term, mid-term, and long-term.
+18:06, aspects into insights, That would become your mode.
+18:11, And then can you isolate? Maybe not every task
+18:15, Needs every single piece of context.
+18:18, If I have multiple agent systems, where one agent is just trying to kind of find out what flights are you gonna take.
+18:25, probably does not need to know that I'm vegetarian.
+18:28, If there is another agent which is going to try to kind of book meetings with my friends when I'm there, that probably does not need to know a lot of the other things. So if you can isolate it, that's another way to kind of bring the context to a point where folks are gonna be, you know, your agents are going to start to become, important.
+18:46, So, a trip planner that is started from, like, what we did on the left-hand side, right, which is just generic. Now, all of a sudden, knows that, you know, the person loves art, you know, hates crowd and vegan, and based on that.
+19:01, Whatever you generate.
+19:03, is gonna be so much personalized, so much specific to the person and the need of the hour, that that would become the mode. Like, this is where the rappers really start to kind of stick, when you talk about the rappers are gonna stick around or not.
+19:16, Right? So, in summary, what I would say is,
+19:21, Context is memory in many ways, right? Like, what do you actually remember about the person, the interaction, and everything else?
+19:28, You have to create and bring the right type of memories. You cannot just bring everything is not important.
+19:34, What is the window size? Just because you have access to the window size of 10 million.
+19:39, maybe go ahead and use it, but just know that large does not mean great, right? And both in terms of the cost and accuracy and the needle in the haystack problem is real. Imagine if we gave you, like, tons of files and say, go do this.
+19:53, As humans, if we can't do that, agents can't do that as well.
+19:56, Right? And memories can actually persist, and this is what ChatGPT and others are also trying to do. They're trying to persist across Chad interfaces. Like, when you ask a question, it remembers something that you have told them maybe 6 months ago, and tries to connect that and says, since you live in Fremont, California, XYZ,
+20:14, And, ideal context is something that is perfect on time, just in time.
+20:20, just the right amount of information, right? So, good luck, happy to take questions.
+20:34, While building LLMs, training LLMs, how do you balance between giving the right context versus avoiding bias?
+20:42, To the model.
+20:44, Through… during training? During training, yeah.
+20:47, Yeah, it's by giving… so, there is only one way models learn.
+20:53, They learn through data out, you know, the right types of diversity of data?
+20:58, So what you have to kind of make sure is this, how do you kind of go about showing them different types of data and see what… ask different questions and see the different answers. One of the things that is actually being talked in the research community quite a bit
+21:13, is, since a lot of the training data is actually based on what humans are saying on Reddit and some of the other places, they don't actually see out everything that you do. There's a lot of internal thoughts that LLMs have completely skipped. We think through a lot of things, and we say something else.
+21:30, And there's a lot of work going on in terms of generating synthetic data.
+21:34, of can we also generate what humans would have thought about before writing it out into a post, or a blog, or something else that we train on? And that's the missing piece, and that's why models are trying to jump directly into something that they have outputted as a comment.
+21:48, But humans have actually thought through it. So, yeah, great question, but I think it's all in the data. Hi, yeah, you spoke about isolating the context. How do you effectively do that? What happens is, when you are
+22:02, Let's say if you are in… depending upon the type of question, if you have a single-agent system, and it can respond to both returns.
+22:10, As well as the products that you want to work on.
+22:14, Or you can think of, like, two different agents.
+22:16, you don't have to always send all the data. So in case of,
+22:22, examples, right? The multi-shot examples that you have to provide. Initially, you would be providing… there is two examples of how to handle returns. There are two examples of how do you kind| of, like, help them with the product.
+22:31, selection, two examples or something else. Isolating really means that understanding the crux of the question, and that may require you to kind of, like, send that question to another LLM which classifies them as, like, which questions to choose.
+22:44, and then kind of feeding it in. So just know that even though there is only one LLM at the center of it.
+22:50, Right? It does not really mean that there's only one LLM being used. For every little task of it, you might be using multiple LLMs to kind| to, real time, or maybe asynchronously, like, for example, going from yellow to the purple here, memory, you might be using a lot of them, there.
+23:06, One question, you said that context is memory, and we need to, like, isolate it into short, mid, and long term, but how would the model know which one to access, and would all the… would all this memory be built in, like, vector DBs?
+23:23, Yes, it can be vector DB, or it can be, just, key-value pairs as well.
+23:29, What would happen is, for example.
+23:32, you may decide that all the long-term memory will be given all the time. So, even if you're asking a question, it's like,
+23:40, You know, how do you build, give me the recipe for a sandwich, a vegan sandwich.
+23:45, it will always say that, you know, Priyanka understands, Priyanka is a vegan, she always prefers spicy food, and she lives in, you know, Redwood City, California, yada yada, yada. Because I think what would happen is, knowing some of this long-term memory.
+24:01, actually help, because now they can… they understand that, oh, Redwood City, California has pretty good avocados, and, like, maybe if she's looking for vegan, I can recommend that.
+24:11, So this is where your really long-term memory can be fed all the time. Some of the others, either the tools can come back.
+24:18, and ask for the right information based on, like, can we tell us about, like, the eating habits, can you tell us about, like, the price sensitivity and others? And the short-term memory may be fed in, right? So it really… there is a lot of engineering, system engineering, that will go into here, both in terms of what you feed as a rag.
+24:35, as well as what the in-context memory can happen. If the models become really smart, at some point, I can see where RAG are not required anymore, but I think there's a lot of enhancements going on in both sides where either would be possible.
+24:48, So, Vikash, we are seeing that, as you mentioned, context windows are becoming larger. Like, is there a way to leverage the size
+24:57, Like, to ensure that memory is retained.
+25:01, I think, even though… it's a great question, like.
+25:05, The question, maybe if I have to reframe it, is like, Vikash, are you saying, like, never use 10 million, and, like, those companies are building it for the wrong reason?
+25:13, I think there are places and time for using the large context.
+25:17, But it cannot be a dump.
+25:19, The way I would say is, like, even in the large context, you may want to actually, structure it in a way when it's easier for the model to kind of parse, which you may say is chapters, or you may say, just like a large,
+25:32, doc, like, NoSQL doc would be written.
+25:35, Or it can be used early on for really early analysis. You'd upload the whole book and say, give me the summary of it. So it can be a great starting point for a lot of the, such aspects of it. So I think long context windows still have a pretty significant place for us, because as the compute becomes cheaper.
+25:53, and some of these models kind of learn how to kind of, like, keep within the context. This will evolve. So definitely expect a lot of evolution, but also don't completely discount other certain places where long context window can be super helpful. I think, that's all I have. Thank you, folks.
+26:19, End of session.

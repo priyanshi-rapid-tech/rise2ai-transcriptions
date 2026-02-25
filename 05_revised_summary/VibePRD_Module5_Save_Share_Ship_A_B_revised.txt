@@ -1,0 +1,33 @@
+# Lesson Summary: VibePRD Day 5 — Save, Share & Ship
+
+### What are we building?
+We're taking our VibePRD app and making it permanent. Day 5 is about **Persistence** (saving work to a database), **Sharing** (generating public links for others), and **Shipping** (deploying the app to a live URL). We're moving from a temporary "experiment" to a real product that remembers your history and can be shared with your colleagues.
+
+### Quick thoughts before you start
+*   If you build a great PRD but can't save it or send it to your team, does the app have any real value?
+*   How does an "Autosave" indicator (like in Google Docs) change how much a user trusts your software?
+
+### Expert Vocabulary
+*   **Persistence:** The technology that ensures your data (chat history and PRDs) is still there when you refresh the page or log in from a different computer.
+*   **Replit Auth:** A built-in system that lets users log in using their Replit credentials, removing the need for you to build a complex login system.
+*   **Public URL:** A permanent link (e.g., `yprd.replit.app`) that anyone on the internet can visit to see your tool.
+*   **Export as Markdown:** A feature that converts your AI-generated document into a `.md` file, perfect for copy-pasting into Jira, GitHub, or Notion.
+
+### Key Takeaways
+1. **User Accounts are the Foundation.** By adding Replit Auth, you allow each user to have their own private "workspace." This ensures your PRDs aren't mixed up with anyone else's.
+2. **Database vs. Design.** On Day 1, we just had a "picture" of a sidebar. On Day 5, that sidebar is "alive"—it pulls project titles from a Postgres database and allows you to switch between different ideas instantly.
+3. **The "Share" Experience.** Professional software needs a clean "Read-Only" mode. When you share a PRD link, your colleague should see a beautiful document, not a messy chat window with AI bubbles.
+4. **Deploying to Production.** The final step is clicking "Publish." This moves your app from the "Garage" (Development) to the "World" (Production), giving it a permanent home on the web.
+
+### Reflection Questions
+*   How does having a "Project Sidebar" turn individual chats into a long-term "Library" of ideas?
+*   Why is it important to show a "Saved" indicator in the header while the user is editing their PRD?
+
+### Your Action Item
+In Replit, use the **Module 5 Checkpoint A** prompt to add authentication and the sidebar. 
+1. Log in and verify that your username appears in the header. 
+2. Use **Checkpoint B** to add the "Share" and "Download" buttons. 
+3. Click "Publish/Deploy" to get your live URL. Open that URL in an "Incognito" window to see how it looks to the public!
+
+### In short...
+Congratulations! You've gone from a blank screen to a full-stack, multi-agent AI product. You've mastered the shell, the interview, the draft, the review, and finally, the launch. You're ready for your Capstone project!

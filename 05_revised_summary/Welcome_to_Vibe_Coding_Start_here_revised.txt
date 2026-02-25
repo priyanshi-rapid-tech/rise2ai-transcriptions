@@ -1,0 +1,35 @@
+# Lesson Summary: Welcome to Vibe Coding (Start Here)
+
+### What are we building?
+We're preparing to transform from "Requirement Writers" into **Builders**. This course is designed for busy professionals who want to skip the theory and go straight to shipping live products. By the end of this journey, you won't just have ideas; you'll have a portfolio of 5–10 live applications that you built and deployed yourself.
+
+### Quick thoughts before you start
+*   How does being able to ship a "Working Prototype" in 5 minutes change your relationship with your engineering team?
+*   Vikas says you are "one vibe away" from having a portfolio. What is the first app you would build if you knew the technology wouldn't stop you?
+
+### Expert Vocabulary
+*   **Vibe Coding:** A method of building software where you focus on defining the "Intent" and "Feel" of a product and let AI agents handle the complex code and deployment.
+*   **Async-First:** A learning style where you go at your own pace—pausing, building, and re-watching—rather than sitting through a long live lecture.
+*   **Shadow Build:** A phase of the course where you follow the instructor step-by-step to build one complex app (like VibePRD) to see how all the pieces fit together.
+*   **The "Unblock":** That magical moment when you deploy your first AI agent in 5 minutes and suddenly realize you are no longer limited by your lack of technical coding skills.
+
+### Key Takeaways
+1. **Action over Theory.** You can finish this entire course in 5 concentrated hours. The goal is muscle memory—building and shipping until it feels natural.
+2. **The 3-Week Roadmap.** 
+    *   **Week 1 (Quick Builds):** 5 skills, 5 products.
+    *   **Week 2 (Shadow Build):** One advanced app that uses everything you learned.
+    *   **Week 3 (Capstone):** Your unique MVP that you ideate and ship.
+3. **A New Way to PM.** Instead of writing a spec and waiting weeks for a mockup, you build the prototype yourself, test it with users, and *then* hand the "Working Spec" to your engineering team.
+4. **Tools of the Trade.** You don't need to install anything. We'll be using browser-based power tools like **Replit** (Highly Recommended) or **Google AI Studio**.
+
+### Reflection Questions
+*   Why is "Practice" more important than "Holistic Understanding" when you're first starting with AI coding?
+*   How does having 10 live projects in a portfolio give more "Signal" to the world than a resume full of buzzwords?
+
+### Your Action Item
+1. Decide on your primary tool: **Replit** or **Google AI Studio**.
+2. Commit to the "25 Minutes a Day" challenge. 
+3. Open your chosen tool and try to "Vibe" your first greeting: "Build me a simple website that says 'Hello World, I am a Vibe Coder!'" and hit **Publish**.
+
+### In short...
+You are here to stop being an "outsider" to technology. It's time to stop writing documents and start shipping products. Let's get building!

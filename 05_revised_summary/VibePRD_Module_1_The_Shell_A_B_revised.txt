@@ -1,0 +1,33 @@
+# Lesson Summary: VibePRD Day 1 — Building "The Shell"
+
+### What are we building?
+We're starting Day 1 by building the **"Shell"** of our AI Product Manager. This isn't a working app yet; it's a visual prototype (a "Design") that features a split-screen interface: a chat window on the left and a professional document preview on the right. A great UI gives you something real to react to before you even touch the backend code.
+
+### Quick thoughts before you start
+*   Why is it better to build the "Container" (UI) of an app before you build the "Brain" (AI logic)?
+*   How does a split-screen design help a user feel like they are "collaborating" with an AI?
+
+### Expert Vocabulary
+*   **The Shell:** The visual skeleton of an app. It looks like the real product but doesn't perform any complex tasks yet.
+*   **Split-Screen Interface:** A layout where the screen is divided (e.g., Chat on the left, Preview on the right) for easier multitasking.
+*   **Design Mode:** A setting in tools like Replit that focuses purely on the look and feel (HTML/CSS) without setting up databases or servers.
+*   **Progress Indicator:** A visual bar (often with 5-6 steps like "Problem," "User," "Metrics") that shows the user exactly where they are in a multi-step process.
+
+### Key Takeaways
+1. **Convince the Eye first.** A professional-looking UI makes the development process feel real. Use a "minimalistic" style with standard features like a Top Nav Bar and a New Chat button to make it feel familiar.
+2. **Use Realistic Sample Data.** Instead of empty boxes, ask the AI to fill the preview with a "mock" PRD (like for a "Smart Grocery List App"). This helps you see if the fonts, headings, and bullet points actually look good.
+3. **Atomic UI Changes.** Use Checkpoint A to build the main screen, then use Checkpoint B to add extra details like the "Generate PRD" button and the step-by-step progress tracker.
+4. **Vibe over Syntax.** You don't need to know HTML or CSS to build this. You just need a clear "Vision" of where buttons and text should go. The AI handles the "how," while you handle the "what."
+
+### Reflection Questions
+*   If you showed this "Shell" to a friend, would they believe it's a real app? If not, what one visual thing would make it look more professional?
+*   Why did we ask the AI *not* to rewrite or restructure anything when we moved to Checkpoint B?
+
+### Your Action Item
+Open Replit and start a new project in **Design Mode**. 
+1. **Checkpoint A:** Paste the prompt for the "Split-Screen Shell." Verify the chat bubbles and document area look correct. 
+2. **Checkpoint B:** Add the "Progress Indicator" for the 6 stages of a PRD. 
+Double-check that your "Generate PRD" button is prominent and easy to find!
+
+### In short...
+Day 1 is about establishing the "vibe" of your product. By focusing on a clean, professional design first, you create a foundation that makes building the actual AI features much easier on Day 2.

@@ -1,0 +1,30 @@
+# Lesson Summary: Building Your Own ChatGPT
+
+### What are we building?
+We're building a custom **AI Chat Interface** similar to ChatGPT, but with a unique twist: the ability to switch between different AI models (like Claude, Gemini, and GPT-4) in a single app using an **AI Gateway**.
+
+### Quick thoughts before you start
+*   What is an "AI Gateway," and why would you use one instead of just connecting directly to OpenAI?
+*   Why is a "Blank Screen" the biggest enemy of a good chatbot, and how do we fix it?
+
+### Expert Vocabulary
+*   **AI Gateway (e.g., Open Router):** A central bridge that connects your app to multiple AI providers through one single API key. It handles routing and cost management.
+*   **Predictive Pills:** Small, clickable suggestion buttons that appear after an AI response to guide the user to the next logical question.
+*   **Joystick Interface:** A design philosophy that prioritizes buttons, sliders, and toggles over empty text boxes to make AI more intuitive.
+*   **Grounding:** Ensuring the AI's responses are based on specific facts or system instructions to prevent it from "hallucinating" (making things up).
+
+### Key Takeaways
+1. **Chat is not always the answer.** Use chat for complex, multi-step tasks. Use simple buttons (Joysticks) for high-frequency actions like "Next Song" or "Volume."
+2. **Contextual guidance wins.** Don't leave your users hanging with a blinking cursor. Provide starting chips and predictive pills to show them what's possible.
+3. **Be honest about limitations.** Adding a small note like "Responses may be inaccurate" or providing citations builds long-term user trust.
+4. **Choose your model for the task.** Some models are better at logic, while others are better at speed. A custom interface lets you pick the right tool for every prompt.
+
+### Reflection Questions
+*   How does adding "Thumbs Up/Down" buttons help you as a product manager understand if your AI is actually doing its job?
+*   If you were designing a travel app, would you prefer a chat-first interface or a search-first interface with an AI helper on the side?
+
+### Your Action Item
+Open an AI builder like Bolt.new or Base44. Use a "Detailed Prompt" to build a chatbot that connects to Open Router. Add 3 "Predictive Pills" that appear after the AI finishes talking to help the user brainstorm startup ideas.
+
+### In short...
+Building a chatbot is easy, but building a great one requires moving beyond the blank screen and giving users "joysticks" to control the AI's power.

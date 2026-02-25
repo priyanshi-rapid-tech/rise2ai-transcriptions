@@ -1,0 +1,33 @@
+# Lesson Summary: Vibe Coding with ChatGPT
+
+### What are we building?
+We're using **ChatGPT's Canvas mode** to build a **Billionaire Calculator**. This simple but fun tool calculates how many years it will take you to reach $1 billion based on your current age, net worth, and annual interest rate. This project demonstrates that you don't always need a specialized coding tool—sometimes a general-purpose AI is all you need for quick, logic-heavy prototypes.
+
+### Quick thoughts before you start
+*   If you can build a working calculator inside ChatGPT, why would you ever need to learn how to write JavaScript manually?
+*   How does the "Canvas" interface change the way you interact with an AI's code compared to a regular chat window?
+
+### Expert Vocabulary
+*   **ChatGPT Canvas:** A side-by-side view in ChatGPT that allows you to see, edit, and run code directly next to your conversation.
+*   **Compounding Interest:** The mathematical logic used in our calculator where your money grows faster over time because your earnings also earn interest.
+*   **Token Consumption:** The amount of "data" used in an AI conversation. In ChatGPT, every time you make a tiny change, the entire codebase is re-sent, which can use up your message limits quickly.
+*   **Single-Page Tool:** A simple application (fixed in one HTML file) that works entirely in the browser without needing a complex backend database.
+
+### Key Takeaways
+1. **The Playground is Everywhere.** You don't always need Replit or V0 to build something functional. For simple math tools or UI mockups, ChatGPT is an excellent "vibe coding" starting point.
+2. **Be Specific about the Tech Stack.** When using ChatGPT, tell it exactly what you want: "Build a single-file HTML/Javascript interface." This prevents the AI from getting too complicated.
+3. **Canvas is the Editor.** If you have access to Canvas, use it! It allows you to see the "Preview" button, which turns raw code into a working app that you can actually click and test immediately.
+4. **Vibe it, then Stage it.** Start your small ideas in ChatGPT. If they grow too large or need a real database, then move the code over to a more advanced tool like Replit or Lovable.
+
+### Reflection Questions
+*   How does changing the "Interest Rate" from 7% to 12% change your "Time to Billionaire" results? (This shows the power of testing your own tools).
+*   What is the main disadvantage of building a large app in ChatGPT compared to a tool like Replit?
+
+### Your Action Item
+Open ChatGPT (ensure you have the **Canvas** or **Code Interpreter** enabled). 
+1. Use the prompt: "Build a Billionaire Calculator in a single HTML/JS file. I want inputs for age, net worth, and annual interest rate."
+2. Click the **Preview** button to run the code. 
+3. Try different numbers (e.g., $10,000 net worth at 10% interest) and see the power of compounding in action!
+
+### In short...
+ChatGPT is the ultimate "zero-setup" coding environment. If you have a quick idea for a calculator or a planning tool, you can build it in seconds without ever leaving the chat window.

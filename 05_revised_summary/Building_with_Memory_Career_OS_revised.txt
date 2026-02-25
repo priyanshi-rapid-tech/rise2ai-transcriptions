@@ -1,0 +1,30 @@
+# Lesson Summary: Building a Career OS with Memory
+
+### What are we building?
+We're building a **Career Assistant** that actually "remembers" you. Unlike normal chatbots that forget who you are every time you start over, this app uses a tiered memory system to track your job goals, interview frameworks, and application history.
+
+### Quick thoughts before you start
+*   How can an AI use "Long-Term" vs "Short-Term" memory to give you better advice over time?
+*   Why is it better for an AI to maintain a "JSON State" rather than just relying on the chat history?
+
+### Expert Vocabulary
+*   **Persistent JSON State:** A structured data object (like a digital notebook) that the AI reads and updates constantly to keep track of your information.
+*   **Tiered Memory (Long/Mid/Short):** A strategy where the AI categorizes info into permanent goals (Long-term), current projects (Mid-term), and immediate tasks (Short-term).
+*   **Grounding with PDFs:** Uploading your actual resume to ensure the AI's advice is based on your real experience, not generic guesses.
+*   **Predictive Pills:** Dynamic buttons that suggest the next logical step in your career journey (e.g., "Mock Interview" or "Draft Cover Letter").
+
+### Key Takeaways
+1. **Memory is Personalization.** An AI only becomes truly useful when it knows your specific "non-negotiables" (like remote-only) and your unique "superpowers."
+2. **JSON is the AI's "Brain."** By asking the AI to maintain a hidden JSON object, you ensure your important details aren't lost even if the chat gets very long.
+3. **Connect to the Live Web.** Using models like Gemini allows your Career OS to search for real, live job postings that match your saved preferences.
+4. **Agents adapt frameworks.** Once you "teach" the AI a framework (like the Circles method), it can apply that specific logic to every interview practice session moving forward.
+
+### Reflection Questions
+*   How would you feel about an AI that remembers your long-term career goals better than you do?
+*   What other "Life Operating Systems" (like meal planning or trip planning) could benefit from this tiered memory approach?
+
+### Your Action Item
+Go to Google AI Studio. Use the prompt: "Build a Career OS. Maintain a JSON memory object for my Long-term, Mid-term, and Short-term goals." Tell it your name and dream job. Check the "Settings" or "Memory" tab to see if the AI accurately recorded your details in the JSON.
+
+### In short...
+Memory turns a generic chatbot into a personalized assistant that grows with you and your career goals.

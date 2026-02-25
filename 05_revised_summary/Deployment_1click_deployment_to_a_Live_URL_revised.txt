@@ -1,0 +1,30 @@
+# Lesson Summary: One-Click Deployment to a Live URL
+
+### What are we building?
+We're learning how to take our local AI prototypes and push them live to the web. This session covers the **Publishing Pipeline**, showing you how to go from a chat interface to a hosted, live URL that anyone can visit in under 60 seconds.
+
+### Quick thoughts before you start
+*   What is the difference between a "Preview" in your builder and a "Live URL"?
+*   Why is it important to check your **Privacy Settings** before you hit the final "Publish" button?
+
+### Expert Vocabulary
+*   **Deployment Pipeline:** The automated process that converts your raw code into a compiled, live website that can handle traffic.
+*   **Favicon:** The small icon that appears in a browser tab. You can customize this (e.g., to a "heart") using a simple AI prompt instead of designing one manually.
+*   **Metadata:** Information like the page title and description that search engines use to understand and display your site in search results.
+*   **Custom Domain:** A human-readable web address (e.g., `yourname.com`) that you can link to your AI project to make it look professional.
+
+### Key Takeaways
+1. **One Click is all it takes.** Modern AI tools (like Lovable, V0, or Replit) allow you to ship a production-ready web app without ever touching a server or an FTP client.
+2. **Metadata matters.** Before you publish, ensure your title and description are professional. If the builder doesn't give you a box for it, just prompt: "Update my metadata for a professional look."
+3. **Visibility Control.** Always check if your project is "Public" or "Private." Most free plans require your site to be public, meaning anyone with the link can find it.
+4. **Iterate after Publishing.** You don't have to get it perfect the first time. You can make an update, hit "Publish" again, and the changes will be live instantly on the same URL.
+
+### Reflection Questions
+*   How does being able to ship a live URL in 10 seconds change your ability to test new business ideas?
+*   Why would you choose a "Private" or password-protected site even for a internal team prototype?
+
+### Your Action Item
+Open your current project in V0 or Lovable. Find the "Publish" button. Set a custom URL name (if allowed), then check the "Preview" to ensure your Favicon and Page Title look correct. Hit **Publish** and visit your live site on your phone.
+
+### In short...
+The gap between an idea and a live product has vanished; with one-click deployment, we are now building and shipping in real-time.

@@ -1,0 +1,246 @@
+Video Title: Capstorne - Eat Our Helper - Build in V0
+Duration: 31:43
+
+Transcript:
+
+00:02, Hey folks, welcome. So, I wanted to see if I can build an actual product with you all.
+00:10, And, is there a way to kind| to share that? What I thought would be useful for me to build is what I'm calling it as an eat-out helper. And the idea is to kind| to build, you know, whenever I go to restaurants, or anywhere else, or ordering on DoorDash, online, anywhere.
+00:30, If, it takes a lot| to time for me to kind| to process, like, what to eat.
+00:35, things that I can do. For example, if I just want to see vegetarian choices, I want to see things with a particular item, like if I want to get spicy food, or want to get food for kids.
+00:46, Or, if we're in a group| to 10, we want to order appetizers in the beginning, and some| to the other aspects, it just takes a lot| to time. So the idea with the Eat Out Helper is, overall, as a mission, is a smart dining companion that helps users decide what to order from any restaurant menu.
+01:02, But not only that, it can do, I guess, we can even think about expanding this in the future to anything that relates to eating out.
+01:10, Right?
+01:11, So the key idea that I'm thinking is, if we have to kind| to build a product that we can upload a photo, paste text, paste a menu, menu URL, or scan a QR code, or even the previous receipts| to what I've eaten.
+01:26, And can I load that as a menu and say, hey, I have questions about that? So, my prompt basically is gonna evolve around, like, allow users to ask follow-up questions using AI chat.
+01:38, about the menu, or use it to build creative questions, like help order food for 4 vegetarians and 10 people, or what items should I order for kids? Can you look at allergies?
+01:50, Check my, check my receipts.
+01:54, Check my receipts for accuracy.
+01:59, translate.
+02:02, this menu.
+02:04, are some| to the examples. It should store the web app
+02:11, should store specific preferences as it discovers. Like, this is the memory part| to people's preferences,
+02:20, as it discovers into memory, for example, asking, are you a vegetarian? Do you like spicy? And then over time kind| to stores it. All the stored informations are on local browser. This is to simplify. This is so that I don't…
+02:38, need to use SQL, or keep my data private.
+02:46, And… but it takes all| to this information, provides a way to kind| to send this question in context to an AI model, because, you know, and I wanted to kind| to support OpenAI and Gemini, ask for API key that is stored in the local browser, ask for API key…
+03:03, in the…
+03:04, settings page, and then, ultimately, I should be able to kind| to use it on the phone, because if I can use it on the phone, then it's also more useful versus just using it on the desktop. Design, so, why this is required? Because some| to these features, like camera and others, may require a little bit more| to information.
+03:24, And design should feel warm and inviting and very simple. Ensure it is, it minimizes the job it requires.
+03:33, Job, as in… jobs to be done.
+03:38, for the… for the users to do. When possible, just do the job for them, for providing recommendation on the chat interface or the next question to ask. So this is the basic product that I want to make. It is a eat-out helper. If I have to build this, and I'm gonna use v0.app.
+03:56, from Vercel. To build this, you are free to kind| to use whatever else that you want to use, for example, Replit, Lavable, or anything else. And one thing, I can just take this and paste this…
+04:09, into V0, but that is not my recommended method, because I think there's a lot| to details which are missing here. So what I'm gonna do is actually I'm gonna go to ChatGPD, put on the thinking mode on,| to whatever version that you have, and say, help me
+04:26, Write the prompt.
+04:29, for Vercel, V0, To use, to… to build this app.
+04:38, What this does is, while it is generating, I'll let you know, and I'll just copy-pasted the whole thing. What this does is it really kind| to takes and, enhances
+04:49, the it out helper.
+04:51, And, enhances the prompt for me so that Vercel has a much more specific output, right? Here's a single copy-pasteable prompt you can give to V0. You can see that it has provided me some information, and I can choose how I want to do.
+05:06, Or not. So let's just look through this. Build a responsible Next.js app,
+05:12, Router. I actually don't like to provide the technology here, because… unless I'm sure. So, what I'm gonna say is remove…
+05:21, Tech requirements… let V0 figure it out.
+05:29, And then…
+05:31, Now, what you can see is it has provided that user choose AI model, work beautifully on phones.
+05:37, Designed to minimize user effort, proactively suggest the next best action, chips button. So it has provided some| to that, but it also provided what are the pages that it wants.
+05:47, readout helper plus brief subtext, it has provided what the page would be, what the menu review should be, what the settings page would be, a little slice about, how it works, global UI elements, it has provided a bunch| to things around that.
+06:01, And, actually, I don't even need to kind| to provide the preferences, everything else. You can see that it has provided the setting forms, like what it should have, so it has done a lot| to the work. So instead| to getting this work to be in V0, it has done the work here.
+06:18, And, yeah.
+06:22, Ingestion and parsing… Okay, so you can see that it has done a lot| to work.
+06:31, Around, many| to these things.
+06:34, I'm just gonna ask it… Is this… the best… Way to send this prompt.
+06:44, to V0… Or should I do something differently?
+07:10, So, okay, at this point, I think we are good enough, because it has provided a lot| to recommendation. I want to give you a basic version| to what the app could actually look like. So, let me just make, copy the prompt. So, I'm going to go to the previous one and just copy the whole prompt, and
+07:30, remove some| to these items, like nice to have and others, right? So, I'm just gonna go here and paste the prompt.
+07:38, And… from this… I will actually remove the nice-to-have.
+07:44, I don't know if it lets me to move.
+07:46, The basted item?
+07:48, Okay, I have to hit edit.
+07:51, And then I'm just gonna remove the nice-to-have.
+08:00, Alright, it didn't let me edit that, so that's fine. What I'm just gonna do is leave it like that. So, I've just pasted that, and I'm just gonna hit go. So, you can see that I actually didn't write the prompt on
+08:12, V0, I rather actually asked ChatGP to generate it. This is a good way to start your prompt in a much more detailed way.
+08:21, Right, so what I'm gonna do is, at this point, pause the video, and wait and come back.
+08:27, when this is actually generated. In the meantime, what you would see is V0 is going through, processing all| to this content, and it has done things like created a project plan, and based on where you are, you may see different things.
+08:44, So, like, you know, these tools are improving every week, almost, so by the time you watch this, it's possible that the way it has generated and things may be different, but you can see it has created a project plan.
+09:00, It will build out the app, generate a design brief, and it started to generate the code. And you can see there are two tabs here.
+09:08, One is the code tab, and one is the preview tab. So, as the code is generated, you will see a lot more| to that being generated, and being available. So, again, I'm gonna pause that and come back.
+09:21, Once the generation is complete, it has the five tasks, set up project structure and code layout, build menu ingestion system, create menu explorer and filters.
+09:29, Implement AI Chad, and add setting and preferences Management. Pause.
+09:34, Okay? Still going on, so it is…
+09:39, It's starting to, you know, it's gone through…
+09:42, Some| to it, we're still in the Task 1| to 5 progress, so the Task 1 is completed.
+09:49, But you can see there's a lot| to, lot| to tasks left.
+09:52, Still going on, task 3.
+09:56, Right now, so you can see…
+09:59, I'm just going through, creating different files.
+10:10, Alright, looks like, this just completed. So, let's take a look. I have also not, taken a look, looks like it has given it a logo, it out helper.
+10:21, your smart dining companion.
+10:23, I can put a photo, a U… text, URL, a QR code.
+10:30, Or some kind| to receipt, and go from there. So… let's see.
+10:38, It also has a settings page, where…
+10:41, It kind| to, like, provides, some settings, like vegetarian and dairy and spicy, and spice tolerance.
+10:49, Display preferences. I didn't really…
+10:52, I wasn't really thinking it that way, because this is not that flexible, but I guess this is fine.
+10:58, It is a new menu, goes back to that. And let's see if there is a way, to actually show…
+11:06, So prices, show images, auto says, okay, display preferences. I don't see a place for, setting up.
+11:15, the API keys where the… and the chat will be there. But let me see what happens if I'm gonna just try to upload a photo, let me get an image. Actually, I want to make a few changes. First| to all,
+11:29, Where is the… chat interface. I want to see the chat interface right away.
+11:35, Make it such… that I can just… Attach… And my new ETC.
+11:46, R opened the camera.
+11:49, And take a picture.
+11:52, for QR code, BDC as well.
+11:58, And, where… Where is the… Settings… for, API key.
+12:08, For various, child, GPT models.
+12:15, Right? So, I'd rather ask it to kind| to, like, fix that now. I don't want to spend too much time debugging it broadly. I think I like what it has done, but it's just too complicated for me, right? Like, there is so much choices.
+12:29, As an AI product, I want to minimize the number| to choices, start with the defaults, and then I can go into the specifics when I need to.
+12:38, So, I'm just gonna pause the video again, just see where it lands, and then I'll come back when it's done.
+12:44, So you can see that it has found those issues. I can see the issue now. It says the chat interface exists, but it's only accessible after uploading a menu, so I guess it would have been possible, and the ingest components are missing. And there is no API key management in setting. So let me fix all| to of this. It's going ahead and fixing those things.
+13:05, Right, it just finished.
+13:08, So… It has given two sections, so let's see if the chat interface is there or not.
+13:16, Okay, there is a GPT-40 and the Google Gemini. I don't know, okay. GPT-440…
+13:24, It has given the API key for OpenAI and Gemini, so I can actually provide that. I don't know which model will it be using by default.
+13:33, So that's, that's a good question, so I can just ask that.
+13:39, Or which models… Will this use for the provider?
+13:45, Like… OpenAI… Can you use, gemini… 2.5 Pro and GPD5.
+14:02, as default, just because I want to get a good outcome here. And the cost is not that much| to an issue. Hopefully, it understands that I didn't say 25 Pro here, but 2.5.
+14:14, Ideally, it should actually go fix that, read the chart, so it is gonna actually go ahead and figure it out, so I'll come back.
+14:23, Okay, it just finished, so let me go take a look at the setting.
+14:27, So, you can see that it has the GPT-5. What I'm gonna do is just paste my API key. Actually, let's just get the GPD5… I will go to Google AI Studio, and from there, I can get the, when I go to AIstudio.google.com.
+14:43, You can get the API key, you can also get an API key from,
+14:48, Other places, so here in Google AI Studio, I'm just gonna create an API key, just gonna say it out,
+14:57, a helper, zero.
+15:00, And, okay, I'm just gonna use… This, as a project, And, create key.
+15:16, Alright, looks like it has, we created the key.
+15:20, Just go ahead and copy the key here, and paste it over here.
+15:28, Okay.
+15:30, And save the model preferences.
+15:36, I hope it is getting saved, not sure, so let me just go back.
+15:41, Here, and come back…
+15:43, To see, okay, the model preferences shape. Some| to the usability issues are there. I'm just gonna ask a question.
+15:51, Hello?
+15:52, Let's see if the chat even works. Looks like it is asking me to kind| to upload, so let me get a URL, for, for a menu, so I'm just gonna ask for…
+16:02, menu… Honda Express… And,
+16:10, let me just download this menu. Actually, maybe not that, but a real menu from… Why don't I take…
+16:18, One| to… one| to the restaurants that I go to.
+16:21, Okay, I'm just searching for a Chinese restaurant menu. I found this menu, it looks like a pretty good menu, it has some variety.
+16:30, Around images and everything else. I'm just gonna copy this. It does not look like it supports pasting, let me see. So that would be something that I have to do. Just gonna save this as save image as…
+16:43, Menu 1, and then I come back here.
+16:48, Upload menu, upload photo, menu 1.
+16:53, Alright, so now I have… Build out the menu.
+16:58, What I can see is, like, nothing happens here, so…
+17:03, I wanna look at the console. So, I'm gonna ask it. So, looks like…
+17:10, when I upload the image, Nothing happens.
+17:15, Are you processing that image? Give proper Success and error messages.
+17:24, Also, support… Pasting| to images directly.
+17:30, Lastly, give, console, log.
+17:36, Right? So, I wanna… Actually see a lot| to that,
+17:42, Things and see what happens. And let's come back and see.
+17:48, Okay, some errors, so I'm just gonna kill, look through and kind| to fix the errors. Basically, the way you fix the errors is copy-paste a lot| to these errors from console that can be found from here.
+18:01, And see what are some| to the errors. So I'm gonna go through fixing some| to these things. For example…
+18:07, I… previously I said the code returns the following error, and I just pasted it, and
+18:14, ask you to do it. Sometimes it gives you fix with V0, or different tools may provide different things, but it's a very typical thing to iterate, with the vibe coding, just to kind| to see this. Alright, so it looks like it has done something. I'm going to paste my,
+18:31, Code here. So, let me just get the code.
+18:35, Paste it here… And then also get the code, for AI Studio.
+18:41, And then, paste it over here…
+18:48, Alright, so let's see. Now I'm gonna take an image.
+18:53, Over here, and let's see if things actually work.
+18:57, Alright, so… it has, looks like it is using Gemini Flash 2.
+19:02, Okay, so it has done something. Now I can… what's a… what's good for vegetarian? So I'm asking… I've uploaded an image, and I'm asking a question, what's good for a vegetarian?
+19:14, It's asking again, alright, so let me provide that again.
+19:18, And then…
+19:23, Legal approval, okay.
+19:25, So, I, so…
+19:31, Alright, looks like the chat does not work, so I have to go back and tell them.
+19:36, The chat is confusing.
+19:41, And… does not work.
+19:44, Oh, actually, looks like, there is some other error.
+19:50, Alright, so let me…
+19:52, Let me fix this with V0. Basically, I'm just gonna ask it to kind| to fix it, so you saw how I pressed that button. So, let's see.
+20:00, what happens? You can just fix with V0, and we can go through each| to the errors, and let's see. If it does not, then I will dive in to understand, but by default, I just ask it to kind| to fix in with V0, so it's easier, and at some point, if AI gives in, then we have to kind| to really go and start to debug a little bit, okay? So…
+20:20, Let's just go, go again, copy the image.
+20:25, Paste it.
+20:28, And then, I wanna say something.
+20:31, Okay, it's asking for it again, so there is some definitely…
+20:36, aspect| to it does not let me do much once I've done that.
+20:40, So there is an issue. But let's see if, last time it kind| to popped in a little bit late.
+20:46, Let me go to the setting.
+20:51, And see what's going on.
+20:55, Hmm.
+20:56, It does not have any aspect| to it.
+21:00, Alright, so let me try to fix it.
+21:03, Okay, this sims… Hello?
+21:09, This seems, confusing.
+21:14, after I ask…
+21:17, Oh, wait, it came back with an error. So it looks like it has been very slow.
+21:24, And let me see if I can pick… so it is showing me 6 errors.
+21:28, Sdk error… Parse menu error…
+21:32, AI processing failed, invalid JSON response, AI processing failed. So I'm just gonna do fix with V0 for the last one. Let's see if a different, aspect matters. I'm gonna continue to debug this for a little bit, and then come back once the bugs are fixed.
+21:49, Actually, I want to show you guys one thing. So, I would say the interface is confusing.
+21:53, Just give me, chatGPT-like interface.
+21:58, So I'm being much more listing. With… Options… to attach… optional images ETC.
+22:10, In case, in case there is nothing, Provide, response.
+22:19, Without any attachments.
+22:23, Maintain… History| to the chart.
+22:28, So, let me just go change the interface a little bit, because I find it really confusing when I upload something, then it does not actually take into account that upload, it does not let me do anything here.
+22:42, So, let's try this.
+22:44, Alright, now it has provided a very different interface. I just pasted the menu.
+22:49, Here, and let's say… What is vegetarian?
+22:55, Here, I don't think it will work, but I want to start with something. The reason I said I don't think it will work, because there might be errors like this, but, that's good. We're down to two errors, hopefully the right ones. So let me just go out and,
+23:11, figure out. First| to all, you can say that you could… you did build, like, a chat GPD kind| to interface, it has the delete icon, the setting, it only supports, like, one chat at this point.
+23:22, And it has a bunch| to other things as well. So, you know, you have a basic ChatGPD that you have just built from scratch.
+23:33, Thanks for the introduction.
+23:42, Alright, so finally, I have, you know, some| to the errors figured out, so what I'm gonna do is take this menu.
+23:49, For example, this here.
+23:54, And, I can paste it, and I can start to ask questions to this. So I can say…
+24:02, I am vegetarian.
+24:06, What food items?
+24:09, are applicable.
+24:15, And| to course, this could be made better with giving free choices and everything else, but I wanted to at least show you guys how you kind| to go about doing this.
+24:26, And, what it should do is it should take the video, and should be able to kind| to, like, bring back the responses from ChatGPD,
+24:34, or, whatever else it is. Looks like I still ran into some errors, so, let me fix this.
+24:42, Alright, so I've fixed that, limit to increase the max number| to tokens errors. Let's suppose that that won't be the case.
+24:51, Help me order.
+24:53, look for… Four people, during lunch.
+24:59, One| to them is, vegetarian.
+25:05, So I want to see if it can actually prepare the order for four| to us, given that this is the menu, and the constraint is one| to us is vegetarian.
+25:16, And, hopefully it does not hit the… A max token, limit.
+25:37, Okay, so… what it has done is…
+25:42, Of course, ordering for the group, especially with different dietary needs, can be tricky. I would help you out. First, here's the full breakdown| to the menu to make it easier to see all options. It has given the full menu. I don't know if this is needed, but it's nice that it has given it.
+25:56, And then it says that, it identified the vegetarian-friendly options, and said, hey, these are the vegetarian-friendly options.
+26:05, Then it went into…
+26:07, We're going into sample lunch order for 4, family size, it says appetizer 2 times vegetable egg rolls, steamed dumpling, main dishes.
+26:17, For vegetarian, chicken dish.
+26:21, And dip dish. So you can see that it has picked the main dish, where one vegetarian was there, extra noodle rice optional.
+26:29, and it provides me a detail| to what's going on here, right? Like, one| to the things that I can do is I could actually,
+26:36, If I was to paste this again…
+26:39, Give me order, I can make… For 4 people.
+26:47, One is a vegetarian.
+26:52, Also, give me exact… Way to place, order, to the restaurant.
+27:02, No need to print.
+27:07, the menu… Provide… Total cost as well.
+27:15, So, I think I'm typing this in right now, but I think one| to the things would be…
+27:21, Is there a way we can make that… some| to these things go into the system prompt, right? Over time, you would realize that people may want to actually just see what they want to place an order. You can have a button which says that.
+27:33, And, you know, it just allows you to kind| to, like, say, like, hey, what are the options? So in this case, now it didn't print the menu. Your recommendation order is appetizers, and it gives me the price for all| to it.
+27:47, You can see there is one vegetarian item, one vegetarian appetizers, how to place your order. Hi, I would like to place an order to pick up a delivery. I have one order| to 15 vegetable dumpling, yadda yadda yadda, then 80,
+28:04, So it provides the numbers as well, so I guess there is a number here. You can see each| to them has a number, so it kind| to provides the number, as well as, like, what the order should be. Your total cost before tax and any delivery fees would be $52, right? Like, so I'm able to kind| to do that. So, what I can now do is…
+28:24, Allow for some… predefined prompts.
+28:31, For example… Fine vegetarian food.
+28:36, Order for kids.
+28:40, And… order for… group.
+28:45, Make sure you give… Total price… When placing orders.
+28:55, And… For group, ask for… How many people's… And any restriction?
+29:09, So, I'm gonna enhance this. Hopefully, it will show you guys that we can actually have some| to the predefined prompts in there, how that will look like. So.
+29:18, Let's wait for it, and we'll come back to see what happens.
+29:22, Okay, so you can see that it's there, so if I can actually paste the same image again…
+29:30, And I say, find vegetarian option, predefined, show me all vegetarian options for the menu. If I have the kids thing, it can show, help me order food suitable for kids. It kind| to predefines order for a group. I need order for a group, can you help me plan the order?
+29:45, Fine spicy dishes can be there. So let me just kind| to see if that… it does it, so…
+29:52, Let's try to do it for the group.
+29:57, And, hopefully, it can do a lot| to those things that we have already talked about. This is where prompt tuning and, like, context engineering will come in further, where you are able to kind| to store a lot| to the information into the memory and not.
+30:10, Now, this is something that I would love for you guys to kind| to see how you're gonna do. But look at this. We are already in verse number 21.
+30:17, In terms| to, how many I have built. So a lot| to times, it will take time,
+30:22, You know, it will take time. So, it has… now what it has done is printed the entire menu, and it's asking me group details. It's, like, 4 people.
+30:32, One kid.
+30:34, So I'm just providing one kit and no other restriction, for example. Or I can say, hey, gluten-free is an option. So those| to the things that we would like to kind| to see. So let's see how it comes back with this.
+30:50, And for the attachment, Alright?
+30:55, So here, before it says in order, there are dietary has to know. For example, in the meantime, here's a well-rounded suggestion, so it went ahead and provided a suggestion. This is what it is, and it is even provided, like, a total| to 49.83.
+31:09, Which is… this is the total order, 2 times vegetable egg roll, how it should be. Which is, pretty good. Let me see if it allows for QR code, so it does not.
+31:23, Does it allow for… Link and QR code.
+31:29, So, I'm going to continue to kind| to improve it, but I wanted to share this with you guys so that you can start building this. Again, go back into the settings and see how you can store some| to this thing into,
+31:43, specific display preferences, show prices, show images, auto-suggest, a lot| to different things. So maybe you can do some| to the settings, so play around with this. Good luck. Thank you.

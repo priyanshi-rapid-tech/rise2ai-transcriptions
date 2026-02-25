@@ -1,0 +1,111 @@
+Video Title: Vibe coding with Replit; Build a Task Manager
+Duration: 17:34
+
+Transcript:
+
+00:02, Hey everyone, welcome. So, today I want to talk about Replit.
+00:08, Replit is, is probably… I feel like it has done a pretty good job, in terms of building a full-stack solution, which is… not just can you wipe code, like, Livable and YZero and others, a lot of them are starting to kind| to look the same and feel the same.
+00:26, But I think if you're looking for a serious contender outside of Google AI Studio, if you want more enterprise-y, I think Replit probably is, as of January 2020,
+00:39, 6. It is, definitely seems to have a lot of features. So, let's go through some of these things and what I even mean. So, I'm gonna start with introduction.
+00:49, to some of the features, and from there, we're gonna see what, what other things that we can do. So, as soon as you log in, once you have created your account, which should be free, is, you should see two different tabs, like App and Design.
+01:04, And what it really means is that,
+01:08, I recommend starting out, building the product in the design mode, where it actually builds just the front end, and it's not actually built on the back end and stuff like that. You can get a look and feel, understanding out of it, and, stuff like that. But once you're ready, you can convert that into an app.
+01:26, And, by converting, and we'll show you, like, how to convert that into an app.
+01:31, It also has, you know, do you want it to be much more, quick and lightweight, or…
+01:39, Do you want it to be autonomous? And some of this, you can say that it says core as a feature. What it really means is that you need to be in a paid plan, right? Like, the free plan has limitations on how much token you have and everything else. You want to be on the paid plan if you want to move to that.
+01:56, What you'll also realize is that very soon your free plants are gonna run out in pretty much all of it, right? So I, I literally have paid plans for all of these guys, and I think at this point, I don't know what to say, but…
+02:10, you have to kind| to think about committing or paying for tokens to one place or the other. If you're just skirting around, and like, if you just need a little bit here and there, it's okay. There's so many different ways to still kind| to get a pretty decent mileage, but if you want to connect
+02:23, commit on a professional level to a particular product, you have to think about paying for some of these things.
+02:30, So, you can see that it has a bunch of different connections, possible, and, like, they support different, app types, right? They support, web app, which is default.
+02:45, But they also have something called Automation App, which is more of an agentic aspect of it, I'll show you that. They have 3D Game, they have Data App and Mobile App, which just got released. And this is my free account, but I can also log into my paid account and show you some of those things over there as well.
+03:05, So, two things, once you start to kind| to build, for the first prompt.
+03:10, You have to… again, you can see the choice for a web app, mobile app.
+03:15, or a data app, 3D game, agents, and automation, or start from scratch. I'm just gonna go to the design.
+03:22, And I'm gonna post, something to build. So, I think maybe one of the things we can build is, like, a simple task manager. It's pretty handy, for you to kind| to use. And I have always wanted to kind| to build a task manager. So let me go ahead and kind| to prompt it out for that.
+03:42, Please, build out, last manager.
+03:48, Using local storage.
+03:51, And I'm saying local storage because I wanted to kind| to use a local browser storage.
+03:56, Means I don't want it to kind| to use any kind| to, database or any other services, just to kind| to keep it simple for the tool usage. In the actual, thing, we will go through, using the local store… instead of local storage, like a broad database storage. Using local broader stores, no DB.
+04:13, Our API ETC.
+04:17, So that I can create… And track my tasks.
+04:24, Allow me to… Allow, we need to check them off.
+04:29, And also… Search… tasks.
+04:36, and set.
+04:38, severe, urgency.
+04:42, Let's go. Task… make it… Clean. Layout.
+04:48, and user-friendly.
+04:55, Alright, let's just go.
+04:57, From here, let's see…
+04:59, what's going on. So as soon as you kind| to hit that, remember we used the, not the build or the app mode, but we're using the design mode. It just kind| to shows everything over here. And, the tool is very similar. You have, you have the preview tab.
+05:18, You will see that there is, on the right-hand side, you can see all the code. So this is all the code it has already started to generate. You can see it has used, there is an interesting .replit file, which is very specific to Replit. It kind| to tells you, like, what modules it's using, what kind| to channel.
+05:37, what port are they using and everything else. So.replit is a very specific, file just, just by Replit, but it may have a bunch of different, code and product that is starting to build, and let's just, we'll come back once the build is out.
+05:58, Alright, looks like it just completed it, so you can see…
+06:02, That it has provided a simple task, here, so I can say something like,
+06:10, Prepare for my… Vibe.
+06:15, By putting… dot class…
+06:19, Add that as a medium. Of course, there's, there are others. I can also say, I'll pick up kids.
+06:26, Prepare PRD.
+06:29, And as you can see, it allows you to kind| to search as well, so if I say PRD, it lets you search.
+06:36, I have, added all of them. There's no edit feature, looks like, but there is a check-off feature. They do allow, looks like, a delete piece of it.
+06:46, There's no grouping of it or anything like that. So those are the things, if I really wanted to, I can actually do it. There is something called Made with Replit here, which I think can be taken away, through some of the settings.
+06:58, And you can see that on the top, it says that the app is in design mode, which is best for rapid design and websites. Click to convert it to a full functional application. We'll leave it there for now.
+07:08, I'm gonna collapse out the… The Finds tab over here.
+07:13, Oops.
+07:20, Okay.
+07:23, Alright, there you go. Just drag it over there. And, what you will also see is, on the left-hand side, you can see it provided all the input. I've built a task manager with soft pop design, aesthetics, clean, urgency level. You can drag and drop, files here. This app is live, you can start adding tasks immediately.
+07:42, One thing I would like to do is I would… I want to be able to, edit. I want to be able to edit tasks.
+07:53, And also, divide by categories.
+07:59, Right? So that would be nice. If you want to just have a, task, and you can have
+08:05, things like that. I'll let it go. In the meantime, I'll show you on the top of it, we are in the preview tab, but there's a console which provides you some of the details, so as it kind| to errors out and things like that, you will see it in console. It's an important part of it.
+08:20, But you see there's a plus icon right next to it, right? And what it is, is, like, it is… it provides you a bunch of different things that you can do with this.
+08:30, For example, we are already seeing the preview tab, there is a publishing tab, so if I hit Publish here.
+08:38, On the top, or you go here, it will actually show, allow me to kind| to publish,
+08:45, from this, and you can see, to remove made with Riplet, I have to kind| to upgrade it to core, but I can generally say Task Manager Lite with 104, so let's see if it actually fixed the core. Looks like it has completed, so I'm just gonna try to refresh this page.
+09:03, And, okay. So good news is, like, it… well, not good news, but I think you can see that there was some kind| to an error. In this case, in most cases, first of all, I'll go to console and see what is the error. I'm sometimes able to copy-paste. It says that runtime error.
+09:20, It says that there was some kind| to an error. Either I can copy-paste this.
+09:24, Or, in most cases, you can just say debug with a replicate. In this case, it actually pushes the agent to go and debug this for you.
+09:35, If I go back to the plus icon while it's cranking out, it has options for integrations, so it can… actually, there are a lot of different apps that Replit supports.
+09:45, For example, Replit has a database, Replit has an app storage. This is for object storage. Object stores, like, things like AWS S3, or Google Cloud Storage GCS, which is for mostly storing files and blobs and others.
+10:00, It has a replicate authentication, so if you want a built-in, like, authentication, like SSO,
+10:05, And others can be used, and replicate domains, if you want to, like, point your domains to this.
+10:11, You can also connect directly to a bunch of different Git providers, which can, which can also be, seen here.
+10:21, If you go to the database, we don't… we are not using a database at this point. Well, it looks like it's using 29MB. Actually, it has a development database, so you can have development and production databases. Let's see what's inside that. If you go inside the database.
+10:37, It looks like it's completely empty, at this point, and it has tabs for, like, viewing the data if it had it, so once we get to the database class, we'll definitely learn about that. But it has settings, you know, and I'm just gonna keep closing this out so we don't
+10:53, pile up a bunch of this, we'll leave the published one, open. Let me go back and see if the reprint actually fixed it.
+11:01, Yep, so you can see now it allows me to kind| to edit it. It, allows me to kind| to
+11:07, Put it into, like, a different one.
+11:11, Go to, go by.
+11:14, some AI books.
+11:17, Okay.
+11:18, and it has given me, like, tabs where I can look through and kind| to build it up. I like the app. Again, we're not focusing on the app. If I like the app, I can hit publish here. And what this does is, if I go back to the Publish tab here.
+11:36, It will show that it is a… well, this is the most clear articulation that I have seen across all apps, is it kind| to tells you exactly what's going on. So, for an app to be published.
+11:47, You have to go through provisioning of the app.
+11:50, which is, like, you know, what are the things that you need? It goes through a security scan, a built-in security scan, just to kind| to make sure there is no challenges there. There is build, and I'll copy the link it has given, but,
+12:05, It is, let me just kind| to republish so I can see.
+12:08, those things, and then it bundles it up. Once it has built, which is compiled and everything else, it kind| to bundles it up, ready for it to be deployed, and it kind| to promotes it to the server. Below here, you can see that the type of file is static, but you can see it has given me a URL, so if I click on that, this is, at this point, published
+12:32, product, with, with, of course, Replit, at the bottom of it, but I can… those, workloads are missing, or the tasks are missing, because
+12:43, for every URL, it stores it in, most likely in the cookie, or some of the local browser storage, which is affiliated with the URL, right? So, first of all, I can't see it because that was a different URL, but if I send it to you or somebody else, you can also not see.
+12:59, Why? Because, this is, this is something that Riplet has created. Sorry, your browser has. If I open it up in a new browser, I can't see it. If you open it in a new browser, you can't see and access my data, which is a privacy feature in some way, why you don't use it.
+13:18, So, you can also go and look at, auth.
+13:22, Where if you have all users and others, we'll look at it later. Auth can be built in here. You can look at security scanners, which is… it can… it will scan for vulnerabilities, right? And you can see the settings here to kind| to make sure that what kind| to vulnerabilities are you looking at.
+13:39, And none of those things are there. It has secrets. What are secrets? Secrets are, basically.
+13:47, ways to kind| to pass passwords, if you have API key that you want to pass on to the server, or, like, there are other aspects of it. Those are the things that you don't want to check into your codebase.
+13:58, You want to store that into a separate .en… ultimately uses something called a .env, or .environment file, where it stores all the passwords. And for different servers, generally production, deployment, and others.
+14:12, You may have different. You don't have to worry about it. Again, this is… I'm kind| to sharing that for folks who maybe, if you are more inclined towards learning about those things, that is something for you to kind| to look at.
+14:23, Search through the code console, very, you know, these are very much, easy for you to kind| to identify. These are extensions,
+14:32, So, you can actually make your workflow more powerful with a new tool command or integration. So, I haven't explored this, but I think, please go ahead and explore, and I may be able to explore that in the future as well. Git is something that I have used quite a bit, right? What happens is every time you,
+14:50, type a command. See, it allows you to kind| to roll back, right? And it allows you to roll back, which, what it means is that it ultimately commits back, so if I want to go back… so, let's say I'm here, you can see the edit features, and I want to roll back to the first one.
+15:04, I could just hit rollback here.
+15:07, And then it says, are you sure you want to roll back to the checkpoint? I say yes, and it will go ahead and actually roll back the site without the edit feature at this point. So it's very useful for you to kind| to, like, try out.
+15:23, features, you can see the edit is gone, or if you want to go back and forth around that, right? Git allows that, but the other piece that I use heavily is I actually store a lot| to my files into GitHub, so I have personal control over there, not just Replict. It allows me to kind| to do a lot more with it.
+15:43, Nope.
+15:45, So, some of this other, we will, let's leave it off for now.
+15:51, We can just play around with that, different aspects of it, right? So, now, once we are ready, let's say if we had built a little bit better, product that we are ready to kind| to upgrade, I think this is fine as a static website, I can actually convert that into a fully functional lab.
+16:09, So, as soon as I click that.
+16:11, Oh, look at that. It just wants me to kind| to convert, and it requires me to kind| to have the core product. So,
+16:19, over the class, you will see that I have a paid plan as well that I want to use, but I want to show you guys what it takes, a look at it, the free plan, and what it feels like. So, again.
+16:31, you can, if you wanted to kind| to start a new, new plan, you can actually just… you could also create teams, actually. Yeah, so this is a very useful feature, paid feature, of course.
+16:43, But what it does is, like, if you have multiple team members working on Replit, you're able to see each other's project without being installed. You're also able to kind| to, like, share files
+16:56, Things like that. So a lot| to, a lot| to those aspects, also come into account here. And if you go to your account, you can see there are different, there's an account-level secret. So, for example, I have stored my OpenAI key.
+17:11, Over here, for me to kind| to use. in the past, I can connect a service, I can connect my, different domains, and whatnot, so those are all, good to have.
+17:28, Alright, that's all it is. Go and play with Riplet, and we'll start building. Thanks.
